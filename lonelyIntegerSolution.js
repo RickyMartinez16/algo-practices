@@ -16,3 +16,6 @@ function lonelyinteger(a) {
 
 //input: a = [1, 1, 2]
 //output = 2
+
+//input: a = [0, 0, 1, 2, 1]
+//output = 2
