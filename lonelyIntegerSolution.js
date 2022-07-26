@@ -13,3 +13,6 @@ function lonelyinteger(a) {
 
 //input: a = [1, 2, 3, 2, 1]
 //output = 3
+
+//input: a = [1, 1, 2]
+//output = 2
