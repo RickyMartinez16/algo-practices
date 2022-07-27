@@ -16,3 +16,6 @@ function pangram(string){
 
 //output: true
 //output:  false
+
+
+//https://javascript.plainenglish.io/javascript-algorithm-detect-pangram-9d57ca713d0d#:~:text=A%20pangram%20is%20a%20sentence,the%20alphabet%20at%20least%20once.&text=The%20first%20thing%20we%20are,let%20strArr%20%3D%20string.
