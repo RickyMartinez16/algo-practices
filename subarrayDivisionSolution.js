@@ -22,13 +22,15 @@ function birthday(s, d, m) {
 
 
 function birthday(s, d, m) {
-    // Write your code here
+    //set count var to return as 0
     let count = 0;
   
-    for (let i = 0; i < s.length; i++) {
-        let curr = s.slice(i, i + m).reduce((prev, currN) => prev + currN);
+    for (let i = 0; i < s.length; i++) {   //lop thru s array
+        //slice the s array so you only get m consecutive values. use reduce to add those values
+        let curr = s.slice(i, i + m).reduce((accumulator, currentValue) => accumulator + currentValue);
+        //if curr var equals d then add one to the count
         if (curr === d) count++;
     }
-  
+    //return count
     return count;
-  }
+}
