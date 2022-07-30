@@ -1,3 +1,12 @@
+let matrix = [
+    [112, 42, 83, 119,],
+    [56, 125, 56, 49,],
+    [15, 78, 101, 43,],
+    [62, 98, 114, 108]
+]
+
+console.log(matrix)
+
 function flippingMatrix(matrix) {
     let m = matrix
     let l = matrix.length - 1
@@ -19,3 +28,7 @@ function flippingMatrix(matrix) {
 // 62 98 114 108
 
 //output: 414
+
+// https://www.youtube.com/watch?v=1jGAutnHuYM&ab_channel=CoderDmitri
+
+//https://www.youtube.com/watch?v=YWbBFOsN7I0&ab_channel=praveen    
