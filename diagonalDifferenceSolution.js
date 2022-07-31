@@ -1,4 +1,6 @@
 
+
+
 function diagonalDifference(arr) {
     
     let principalDiagonal = 0;    //set principal diagonal var to 0
