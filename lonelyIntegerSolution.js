@@ -19,3 +19,30 @@ function lonelyinteger(a) {
 
 //input: a = [0, 0, 1, 2, 1]
 //output = 2
+
+// let a = [1, 1, 2]
+
+// function lonelyinteger(a) {
+//     let arrSum = 0;
+//     let uniqueSum = 0
+//     let uniqueArr = new Set(a);
+//     console.log(uniqueArr)
+    
+//     for(let i = 0; i < a.length; i++){
+//         arrSum += a[i]
+//         console.log("arry sum: " + arrSum)
+//     }
+    
+//     // for(let i = 0; i < uniqueArr.length; i++){
+//     //     uniqueSum += uniqueArr[i]
+//     //     console.log("uniquearry: " + uniqueSum)
+//     // }
+
+//     uniqueArr.forEach((int) => {
+//         uniqueSum += int
+//     })
+
+//     return 2 * uniqueSum - arrSum
+// }
+
+// console.log(lonelyinteger(a))
