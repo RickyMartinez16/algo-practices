@@ -1,6 +1,6 @@
 function pangram(string){
     let lowerCaseString = string.toLowerCase();     //lowercase in input string
-    let alphabet = "abcdefghijklmnopqrstuvwxyz".split(' ');     //make an alphabet array using .split(" ")
+    let alphabet = "abcdefghijklmnopqrstuvwxyz".split('');     //make an alphabet array using .split("")
 
     for(let i = 0; i < alphabet.length; i++){           //loop thru the aplhabet array 
         if(lowerCaseString.indexOf(alphabet[i]) < 0){       //if a certain char is not found in lowerCaseString (the indexOf method returns -1), 
@@ -9,6 +9,18 @@ function pangram(string){
         }
     }
     return "pangram"        //if loop runs to complete that means its a pangram
+}
+
+function pangrams(s) {
+    let lowerCaseString = s.toLowerCase()
+    let alphabet = "abcdefghijklmnopqrstuvwxyz".split(' ')
+
+    for(let i = 0; i < alphabet.length; i++){
+       if(lowerCaseString.indexOf(alphabet[i]) < 0){
+        return "not pangram"
+        } 
+    }
+    return "pangram"
 }
 
 //input: "The quick brown fox jumps over the lazy dog." 
