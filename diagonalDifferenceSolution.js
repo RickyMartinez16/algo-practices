@@ -26,3 +26,6 @@ function diagonalDifference(arr) {
     return Math.abs(principalDiagonal - secondaryDiagonal);   //math.abs returns postive number no matter what of the two digaonals
     
 }
+
+
+
