@@ -7,7 +7,7 @@ function caesarCipher(s, k) {
 
     if (letter.match(/[a-zA-Z]/)) {
       let code = s.charCodeAt(i) + k;
-      
+
       if (code > 122) {
         code = code - 26;
       }
@@ -23,6 +23,23 @@ function caesarCipher(s, k) {
   }
   return finalMessage;
 }
+
+
+// 12
+// Hello_World!
+// 4
+
+// Lipps_[svph!
+
+//expected: Lipps_Asvph!
+
+//10
+//www.abc.xy
+//87
+
+//´´´. .µ¶
+
+//expected: fff.jkl.gh
 
 
 //https://www.petefreitag.com/cheatsheets/ascii-codes/
