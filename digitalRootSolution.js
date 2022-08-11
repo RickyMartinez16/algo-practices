@@ -8,4 +8,8 @@ function digitalRoot(n) {
   
   }
 
-  //recursive
+  //recursive ^
+
+  function digital_root(n) {
+    return (n - 1) % 9 + 1;
+  }
