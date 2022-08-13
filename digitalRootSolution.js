@@ -1,9 +1,9 @@
 function digitalRoot(n) {
-    if (n < 10) return n;
+    if (n < 10) return n;     //if n is less than 10 theres only one digit so just return n 
     
-    return digitalRoot(
-      n.toString().split("").reduce((previousValue, currentValue) => {
-      return previousValue + +currentValue
+    return digitalRoot(       //call digitalRootFunction again. make n a string and split it to put it into an array
+      n.toString().split("").reduce((previousValue, currentValue) => {    //reduce the array
+      return previousValue + +currentValue    //??
     },0))
   
   }
