@@ -1,10 +1,10 @@
 function validBraces(braces) {
-  let stack = [];
+  let stack = [];       // set a new stack
   return (
     braces
-      .split("")
-      .map((brace) => {
-        if ("({[".indexOf(brace) >= 0) {
+      .split("")        //split each brace into a new array    
+      .map((brace) => {     //map over the new brace array
+        if ("({[".indexOf(brace) >= 0) {       //
           stack.push(brace);
           return true;
         } else {
