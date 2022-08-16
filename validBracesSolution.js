@@ -12,6 +12,6 @@ function validBraces(braces) {
           return "({[".indexOf(e) == ")}]".indexOf(brace);
         }
       })
-      .every((brace) => brace) && stack.length == 0
+      .every((brace) => brace) && stack.length == 0  //every 
   );
 }
