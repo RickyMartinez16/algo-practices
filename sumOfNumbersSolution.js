@@ -8,9 +8,10 @@ function getSum(a, b) {
   }
 }
 
+//------ best practice solution ------//
 
-// getSum(3, 6)
-
-// 3 + 4, 6
-// 3 + 5, 6
-// 3 + 6, 6
+const GetSum = (a, b) => {
+    let min = Math.min(a, b),
+        max = Math.max(a, b);
+    return (max - min + 1) * (min + max) / 2;
+  }
