@@ -17,5 +17,6 @@ function openOrSenior(data){
 // Arrow Functions: () => {} https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
 
 function openOrSenior(data){
+    //return mapped array. destrcuture the age and handi out of data then use ternery 
     return data.map(([age, handicap]) => (age > 54 && handicap > 7) ? 'Senior' : 'Open');
   }
