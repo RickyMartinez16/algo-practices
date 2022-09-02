@@ -11,7 +11,7 @@ function getSum(a, b) {
 //------ best practice solution ------//
 
 const GetSum = (a, b) => {
-    let min = Math.min(a, b),
-        max = Math.max(a, b);
-    return (max - min + 1) * (min + max) / 2;
+    let min = Math.min(a, b),       //var min to find the smaller of the a , b
+        max = Math.max(a, b);       //var max to find the higher of the a, b
+    return (max - min + 1) * (min + max) / 2;       //math it out. 
   }
