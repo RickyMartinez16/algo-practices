@@ -8,3 +8,7 @@ makeNegative(0.12); // return -0.12
 Notes
 The number can be negative already, in which case no change is required.
 Zero (0) is not checked for any specific sign. Negative zeros make no mathematical sense.
+
+//math abs 
+
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
