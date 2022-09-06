@@ -1,8 +1,8 @@
 function longest(s1, s2) {
-  let uniqueLetters = [...new Set(s1), ...new Set(s2)];
-  let finalArray = [...new Set(uniqueLetters)].sort();
-  return finalArray.join("");
-}
+  let uniqueLetters = [...new Set(s1), ...new Set(s2)];     //make an array of unique letters from each string via Sets
+  let finalArray = [...new Set(uniqueLetters)].sort();      //make final array of unique letters and sort them
+  return finalArray.join("");       // join the final array without a space and return contents
+}  
 
 
 //----best practice-----//
