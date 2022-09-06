@@ -26,6 +26,12 @@ function isIsogram(str){
     return new Set(str.toUpperCase()).size == str.length;
   }
 
+//   The string is converted to a set, so we now have a list of characters which are completely unique (aka no duplicates)
+
+//   Then there's a comparison between the size of the set and the length of the string.
+  
+//   If the lengths are equal, there's no repeating characters within the string, thus the string is an isogram.
+
 
 
   function isIsogram(str){ 
