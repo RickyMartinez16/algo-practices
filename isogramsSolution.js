@@ -16,3 +16,16 @@ function isIsogram(str) {
 //you can use .indexOf() and .lastIndexOf() to determine if an index is repeated. 
 //Meaning, if the first occurrence of the character is also the last occurrence, 
 //then you know it doesn't repeat. If not true, then it does repeat.
+
+
+
+
+//--------best practice / clever solutions-----------//
+
+function isIsogram(str){
+    return new Set(str.toUpperCase()).size == str.length;
+  }
+
+function isIsogram(str){ 
+    return !/(\w).*\1/i.test(str)
+  }
