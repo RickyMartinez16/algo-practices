@@ -8,3 +8,6 @@ function longest(s1, s2) {
 //----best practice-----//
 
 const longest = (s1, s2) => [...new Set(s1+s2)].sort().join('')
+
+//spred a new set inato an array. the set will take only the unique letters. then sort. then join
+
