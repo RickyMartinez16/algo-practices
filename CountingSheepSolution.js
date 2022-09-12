@@ -7,3 +7,10 @@ function countSheeps(arrayOfSheep) {
   }
   return finalArray.length;     //return array length
 }
+
+
+//--------best prac----------//
+
+function countSheeps(arrayOfSheeps) {
+    return arrayOfSheeps.filter(Boolean).length;        //filter if its a true boolen and the length
+  }
