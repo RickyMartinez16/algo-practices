@@ -5,3 +5,10 @@ function lovefunc(flower1, flower2) {
     return false;
   }
 }
+
+
+//-------diff soltuion-----//
+
+function lovefunc(flower1, flower2){
+    return flower1 % 2 !== flower2 % 2;     //checks if each number is odd or even
+  }
