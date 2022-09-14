@@ -7,5 +7,5 @@ function validatePIN(pin) {
 //-------best prac------//
 
 function validatePIN(pin) {
-    return /^(\d{4}|\d{6})$/.test(pin)
+    return /^(\d{4}|\d{6})$/.test(pin)      //regex
   }
