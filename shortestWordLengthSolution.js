@@ -10,3 +10,12 @@ function findShort(s) {
   }
   return shortestWordLength;    //return shortest word var
 }
+
+
+//------best prac example----//
+
+
+function findShort(s){
+    let arr = s.split(" ").sort((a, b) => a.length - b.length);     // split into new array then sort the new array
+    return arr[0].length        //get length of first index
+  }   
