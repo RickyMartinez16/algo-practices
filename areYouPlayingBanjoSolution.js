@@ -6,3 +6,12 @@ function areYouPlayingBanjo(name) {
     return name + " does not play banjo";       //if not return not playing
   }
 }
+
+
+//------best practice-----//
+
+function areYouPlayingBanjo(name) {
+    return name + (name[0].toLowerCase() == 'r' ? ' plays' : ' does not play') + " banjo";
+  }
+
+//ternery
