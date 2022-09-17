@@ -13,3 +13,19 @@ function DNAStrand(dna) {
   }
   return newDNA.join("");   //return new array joined so its a string
 }
+
+
+//----- best practice ----- //
+
+function DNAStrand(dna) {
+    return dna.replace(/./g, function(c) {
+      return DNAStrand.pairs[c]
+    })
+  }
+  
+  DNAStrand.pairs = {
+    A: 'T',
+    T: 'A',
+    C: 'G',
+    G: 'C',
+  }
