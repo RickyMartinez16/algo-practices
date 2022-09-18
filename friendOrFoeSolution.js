@@ -5,5 +5,12 @@ function friend(friends) {
       friendsArray.push(friends[i]);    //push it into new array
     }
   }
-  return friendsArray;  //return final aray
+  return friendsArray;  //return final array
 }
+
+
+//-------best practice------//
+
+function friend(friends){
+    return friends.filter(n => n.length === 4)  //filter with arrow function
+  }
