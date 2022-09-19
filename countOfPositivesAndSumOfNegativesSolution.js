@@ -55,3 +55,5 @@ function countPositivesSumNegatives(input) {
     
     return [positive, negative];
 }
+
+//https://github.com/christopher-nemeth/codewars/blob/master/count-of-positives-sum-of-negatives.md
