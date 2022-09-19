@@ -5,3 +5,15 @@ function squareSum(numbers){
     }
     return count
   }
+
+
+  function squareSum(numbers) {
+    let sum = 0
+    numbers.forEach( number => {
+        sum += (number * number)
+    })
+    return sum
+}
+
+
+//https://losseff.xyz/katas/013-squeare-sum/javascript/
