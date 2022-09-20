@@ -17,3 +17,9 @@ String.prototype.toJadenCase = function () {
 // Then using the Join method all the words are joined to make a sentence
 
 // Thus it returns the sentence with the First letter of each word Capitalized
+
+String.prototype.toJadenCase = function () { 
+    return this.split(" ").map(function(word){
+      return word.charAt(0).toUpperCase() + word.slice(1);
+    }).join(" ");
+  }
