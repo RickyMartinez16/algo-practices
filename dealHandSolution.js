@@ -3,7 +3,7 @@ function dealHand(deck, hand_size) {
 
   while (hand.length < hand_size) {
     let card = getRandomItem(deck);
-    console.log(card);
+    
     if (!hand.includes(card)) {
       hand.push(card);
     }
