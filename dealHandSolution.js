@@ -20,7 +20,6 @@ function getRandomItem(deck) {
 
   // get random item
   const item = deck[randomIndex];
-  console.log(item);
 
   return item;
 }
