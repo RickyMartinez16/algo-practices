@@ -24,3 +24,7 @@ function towerBuilder(nFloors) {
   }
   return tower;
 }
+
+
+
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat
