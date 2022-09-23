@@ -25,6 +25,7 @@ function towerBuilder(nFloors) {
   return tower;     //return the tower array
 }
 
+//.repeat(num) repeats the specified string a specific number of times
 
 
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat
