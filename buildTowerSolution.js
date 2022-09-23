@@ -14,15 +14,15 @@ function towerBuilder(nFloors) {
 //-------working----//
 
 function towerBuilder(nFloors) {
-  var tower = [];
-  for (var i = 0; i < nFloors; i++) {
-    tower.push(
-      " ".repeat(nFloors - i - 1) +
-        "*".repeat(i * 2 + 1) +
-        " ".repeat(nFloors - i - 1)
+  var tower = [];       //empty array
+  for (var i = 0; i < nFloors; i++) {       //run as long as the number of floors you need
+    tower.push(     //pushing in the string example: "    ***    "
+      " ".repeat(nFloors - i - 1) +     //calculate number of spaces
+        "*".repeat(i * 2 + 1) +         //calcyalte number of stars
+        " ".repeat(nFloors - i - 1)     //calculate number of spaces
     );
   }
-  return tower;
+  return tower;     //return the tower array
 }
 
 
