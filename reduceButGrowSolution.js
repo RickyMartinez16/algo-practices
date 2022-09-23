@@ -5,3 +5,9 @@ function grow(x) {
   );
   return sumWithInitial;
 }
+
+
+
+//--------------//
+
+const grow=x=> x.reduce((a,b) => a*b);
