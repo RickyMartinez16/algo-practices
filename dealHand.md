@@ -8,3 +8,4 @@
 // 2. The cards dealt must come from the deck.
 // 3. A card may not be used more than once.
 
+[3 of hearts, 7 of clubs, ace of spades]
