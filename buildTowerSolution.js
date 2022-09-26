@@ -8,7 +8,7 @@ function towerBuilder(nFloors) {
     floor += "**";
     console.log(floorsArray);
   }
-  return floorsArray;
+  return floorsArray; //return floors array
 }
 
 //-------working----//
