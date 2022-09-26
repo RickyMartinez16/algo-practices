@@ -16,10 +16,10 @@ function expandedForm(num) {
 
 const expandedForm = (n) =>
   n
-    .toString()
-    .split("")
-    .reverse()
-    .map((a, i) => a * Math.pow(10, i))
+    .toString()     //turn input into string
+    .split("")      //split the string into an array each letter
+    .reverse()      //reverse the order
+    .map((a, i) => a * Math.pow(10, i))     //map the array ???????
     .filter((a) => a > 0)
     .reverse()
     .join(" + ");
