@@ -1,14 +1,14 @@
 function descendingOrder(n) {
-  let stringN = String(n);      
-  let arrayN = stringN.split("");
+  let stringN = String(n);      //turn the input into a string
+  let arrayN = stringN.split("");     //split the string into an array
 
   let sortedArray = arrayN.sort(function (a, b) {
     return b - a;
-  });
+  });                               //sort the array
 
-  let sortedString = sortedArray.join("");
+  let sortedString = sortedArray.join("");      //join the array and remove form the array
 
-  return Number(sortedString);
+  return Number(sortedString);      //turn the sorted string into a number
 }
 
 
