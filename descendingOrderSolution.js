@@ -1,5 +1,5 @@
 function descendingOrder(n) {
-  let stringN = String(n);
+  let stringN = String(n);      
   let arrayN = stringN.split("");
 
   let sortedArray = arrayN.sort(function (a, b) {
@@ -10,3 +10,10 @@ function descendingOrder(n) {
 
   return Number(sortedString);
 }
+
+
+//------best practice-----//
+
+function descendingOrder(n){
+    return parseInt(String(n).split('').sort().reverse().join(''))
+  }
