@@ -17,3 +17,8 @@ function descendingOrder(n) {
 function descendingOrder(n){
     return parseInt(String(n).split('').sort().reverse().join(''))
   }
+
+
+
+
+//   parseInt() parses a string and returns the first integer
