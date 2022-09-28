@@ -16,9 +16,9 @@ function wave(str) {
 //------best prac------//
 
 function wave(str) {
-  let result = [];
+  let result = [];      //make array to hold final answer
 
-  str.split("").forEach((char, index) => {
+  str.split("").forEach((char, index) => {      //split the string by letter, for each letter check if its lowercase
     if (/[a-z]/.test(char)) {
       result.push(
         str.slice(0, index) + char.toUpperCase() + str.slice(index + 1)
