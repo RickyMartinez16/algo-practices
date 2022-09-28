@@ -32,10 +32,10 @@ function firstNonConsecutive(arr) {
 }
 
 function firstNonConsecutive(arr) {
-  for (let i = 0; i < arr.length - 1; i++) {
-    if (arr[i] + 1 !== arr[i + 1]) {
-      return arr[i + 1];
+  for (let i = 0; i < arr.length - 1; i++) {    //loop thru array stop at second to last one cause youre comparing to the last one
+    if (arr[i] + 1 !== arr[i + 1]) {    //if each num + 1 doesnt eqauls the next num
+      return arr[i + 1];    //return that num
     }
   }
-  return null;
+  return null;      //if all good return null
 }
