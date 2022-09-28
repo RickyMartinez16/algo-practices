@@ -7,3 +7,10 @@ function opposite(number) {
     return 0;    //return 0
   }
 }
+
+
+//-----best practiee-----//
+
+function opposite(number) {
+    return(-number);
+  }
