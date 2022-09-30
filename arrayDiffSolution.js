@@ -18,3 +18,11 @@ function arrayDiff(a, b) {
 function array_diff(a, b) {
   return a.filter((e) => !b.includes(e));
 }
+
+
+//-----O(n) solution -------//
+
+function array_diff(a, b) {
+    b = new Set(b)
+    return a.filter(v => !b.has(v))
+  }
