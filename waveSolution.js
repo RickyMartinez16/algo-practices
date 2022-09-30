@@ -26,5 +26,5 @@ function wave(str) {
     }
   });
 
-  return result;
+  return result; //return the result array
 }
