@@ -23,6 +23,6 @@ function array_diff(a, b) {
 //-----O(n) solution -------//
 
 function array_diff(a, b) {
-    b = new Set(b)
-    return a.filter(v => !b.has(v))
+    b = new Set(b)      //create a new set for unique values for b
+    return a.filter(v => !b.has(v))     //filter out if doesnt have values from A
   }
