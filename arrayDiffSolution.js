@@ -15,8 +15,8 @@ function arrayDiff(a, b) {
 
 //----- best practice -----//
 
-function array_diff(a, b) {
-  return a.filter((e) => !b.includes(e));
+function array_diff(a, b) {     
+  return a.filter((e) => !b.includes(e));       //filter thru a filter out the ones not included in b
 }
 
 
