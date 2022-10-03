@@ -1,13 +1,13 @@
 function sumArray(array) {
-  if (!array) {
+  if (!array) {     //check condition if array is empty return 0
     return 0;
   }
-  let sortedArray = array.sort((a, b) => a - b);
-  console.log(sortedArray);
-  let newArray = sortedArray.slice(1, sortedArray.length - 1);
-  const sumWithInitial = newArray.reduce(
+  let sortedArray = array.sort((a, b) => a - b);    //sort the array
+  
+  let newArray = sortedArray.slice(1, sortedArray.length - 1);      //create new array without first and last number
+  const sumWithInitial = newArray.reduce(               //reduce the array to one number
     (previousValue, currentValue) => previousValue + currentValue,
     0
   );
-  return sumWithInitial;
+  return sumWithInitial;        //return the reduced number
 }
