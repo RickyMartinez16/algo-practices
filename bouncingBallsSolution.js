@@ -16,13 +16,13 @@ function bouncingBall(h,  bounce,  window) {
 //-----best prac----//
 
 function bouncingBall(h,  bounce,  window) {
-    if( h <= 0 || bounce >= 1 || bounce <= 0 || window >= h) return -1
-    let seen = 0;
+    if( h <= 0 || bounce >= 1 || bounce <= 0 || window >= h) return -1  //if the conditions arent met return -1
+    let seen = 0;    //count variable
     
-    while(h > window){
-      seen += 1
-      h *= bounce
-      if(h > window) seen += 1
+    while(h > window){      //while the hieight is greater than the window
+      seen += 1     //add one to seen var
+      h *= bounce       //height is times bounce
+      if(h > window) seen += 1      //if the height is greater than the windpw add one to seen
     }
     
     return seen;
