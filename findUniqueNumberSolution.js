@@ -4,3 +4,11 @@ function findUniq(arr) {
                                             //if arr[0] equals arr[1] return arr.pop() (the last in the array)
                                             //if not return arr[0]
 }
+
+
+
+//----------//
+
+function findUniq(arr) {
+    return arr.find(n => arr.indexOf(n) === arr.lastIndexOf(n));
+  }
