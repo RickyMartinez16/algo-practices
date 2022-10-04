@@ -18,19 +18,21 @@ function alphabetPosition(text) {
 //-------working--------//
 
 function alphabetPosition(text) {
-  let alphabet = "abcdefghijklmnopqrstuvwxyz";
-  let alphaNumbers = [];
+  let alphabet = "abcdefghijklmnopqrstuvwxyz";      //make alphabet var to compare to
+  let alphaNumbers = [];        //final array
 
-  text = text.toLowerCase();
+  text = text.toLowerCase();    //clean the text
 
-  for (let i = 0; i < text.length; i++) {
-    let index = alphabet.indexOf(text[i]);
+  for (let i = 0; i < text.length; i++) {       //loop thru the input text
+    let index = alphabet.indexOf(text[i]);      //find the index of each text letter in the alphabet
 
-    if (index === -1) {
+    if (index === -1) {     //if the index equals -1 continue because the symbol / space is not in the alphabet
       continue;
     } else {
-      alphaNumbers.push(index + 1);
+      alphaNumbers.push(index + 1);     //if the letter is in the alphabet 
     }
   }
-  return alphaNumbers.join(" ");
+  return alphaNumbers.join(" ");        //join the array by a space
 }
+
+//indexOf() returns the position of the first occurrence of text[i] in alphabet.
