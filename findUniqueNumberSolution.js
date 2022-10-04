@@ -10,5 +10,5 @@ function findUniq(arr) {
 //----------//
 
 function findUniq(arr) {
-    return arr.find(n => arr.indexOf(n) === arr.lastIndexOf(n));
+    return arr.find(n => arr.indexOf(n) === arr.lastIndexOf(n));  //find the element where the first index is also the last index of it
   }
