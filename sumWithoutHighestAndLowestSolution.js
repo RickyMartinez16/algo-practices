@@ -6,7 +6,7 @@ function sumArray(array) {
   
   let newArray = sortedArray.slice(1, sortedArray.length - 1);      //create new array without first and last number
   const sumWithInitial = newArray.reduce(               //reduce the array to one number
-    (previousValue, currentValue) => previousValue + currentValue,
+    (previousValue, currentValue) => previousValue + currentValue,  //you dont need the initial val always
     0
   );
   return sumWithInitial;        //return the reduced number
