@@ -13,3 +13,10 @@ function minMax(arr) {
   final.push(sortedArr.pop());          //push the last number into it
   return final;                         //reutn the final
 }
+
+
+//-----best pracitce-----//
+
+function minMax(arr){
+    return [Math.min(...arr), Math.max(...arr)];        //return min of the array and max of the array in an array
+  }
