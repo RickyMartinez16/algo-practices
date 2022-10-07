@@ -24,3 +24,10 @@ function countSmileys(arr) {
   }
   return incr;      //return final count
 }
+
+
+//-------best-------//
+
+function countSmileys(arr) {
+    return arr.filter(x => /^[:;][-~]?[)D]$/.test(x)).length;       //flter approved faces with regex
+  }
