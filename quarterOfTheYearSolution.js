@@ -9,3 +9,8 @@ const quarterOf = (month) => {
     return 4;
   }
 };
+
+
+// beest------//
+
+const quarterOf = m => Math.ceil(m/3); //math.ciel rounds up to nearest whole number
