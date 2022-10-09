@@ -9,9 +9,9 @@
 
 function getMiddle(s){
    
-    let evenOdd = s.length % 2 === 0
-    let minMid = s.charAt(s.length/2-1)
-    let mid = s.charAt(s.length/2)
+    let evenOdd = s.length % 2 === 0        //is even true 
+    let minMid = s.charAt(s.length/2-1)     //find the char to the left of mid
+    let mid = s.charAt(s.length/2)      //find the true mid
     
-    return (evenOdd == true)? minMid.concat(mid): mid
+    return (evenOdd == true)? minMid.concat(mid): mid       //if evenodd is true then return minmid + mid, if not return mid
   }
