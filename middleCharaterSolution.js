@@ -15,3 +15,11 @@ function getMiddle(s){
     
     return (evenOdd == true)? minMid.concat(mid): mid       //if evenodd is true then return minmid + mid, if not return mid
   }
+
+
+  function getMiddle(s) {
+    var middle = s.length / 2;
+    return (s.length % 2) 
+      ? s.charAt(Math.floor(middle))
+      : s.slice(middle - 1, middle + 1);
+  }
