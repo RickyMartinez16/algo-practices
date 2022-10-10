@@ -26,3 +26,5 @@ function accum(s) {
   function accum(s) {
     return s.split('').map((c, i) => (c.toUpperCase() + c.toLowerCase().repeat(i))).join('-');
   }
+
+ //split the input string, map over it, new map is character upperCase plus character lowercase repeated i times and then joined by a - 
