@@ -12,3 +12,9 @@ function correct(inputString) {
     // if it finds a mistake, run the function that takes the mistake and replaces it with the correct char from the corrections object
     return inputString.replace(/[501]/g, (char) => corrections[char]);
   }
+
+
+  //----best----//
+
+
+  correct = s => s.replace(/0/g,'O').replace(/1/g,'I').replace(/5/g,'S')  //regex
