@@ -20,3 +20,9 @@ function accum(s) {
   
     return result.join("-")     //join the array with a -
   }
+
+  //-----------best-------//
+
+  function accum(s) {
+    return s.split('').map((c, i) => (c.toUpperCase() + c.toLowerCase().repeat(i))).join('-');
+  }
