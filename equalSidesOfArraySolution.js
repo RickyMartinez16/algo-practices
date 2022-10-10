@@ -19,3 +19,6 @@ function findEvenIndex(arr) {
   }
   return -1;        //if no answer return -1
 }
+
+
+//https://javascript.plainenglish.io/javascript-algorithm-equal-sides-of-an-array-e4e06055bf4a
