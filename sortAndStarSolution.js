@@ -15,3 +15,6 @@ function twoSort(s) {
   return sorted[0].split("").join("***");       //first, split, join
 }
 
+function twoSort(s) {
+    return s.sort()[0].split('').join('***');
+  }
