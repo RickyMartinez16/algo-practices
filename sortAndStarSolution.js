@@ -1,17 +1,17 @@
 function twoSort(s) {
-  console.log(s.sort());
-  let sorted = s.sort();
-  let first = sorted[0];
+  let sorted = s.sort();        //sort the input
+  let first = sorted[0];        //grab first one
 
-  let firstSplit = first.split("");
+  let firstSplit = first.split("");     //split the first one
 
-  let final = firstSplit.join("***");
+  let final = firstSplit.join("***");   //join by ***
 
-  return final;
+  return final; // return final
 }
 
 function twoSort(s) {
-  let sorted = s.sort();
+  let sorted = s.sort(); //sort input
 
-  return sorted[0].split("").join("***");
+  return sorted[0].split("").join("***");       //first, split, join
 }
+
