@@ -1,7 +1,7 @@
 //-------not working-----//
 
 function removeSmallest(numbers) {
-    let newArray =  new Array(...numbers)
+    let newArray =  new Array(...numbers) //tried putting the numers into a new array to not mess up the original array
     
     let sortedNumbers = newArray.sort(function(a, b){return a-b});
     let array = []
