@@ -5,3 +5,8 @@ function index(array, n) {
     return -1;      //if it doesnt exist return -1
   }
 }
+
+
+//---------best------//
+
+const index = (array, n) => array.length > n ? Math.pow(array[n], n) : -1;
