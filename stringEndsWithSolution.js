@@ -13,3 +13,12 @@ function solution(str, ending) {
     return false;
   }
 }
+
+
+//best//
+
+function solution(str, ending){
+    return str.endsWith(ending);
+  }
+
+  //lol
