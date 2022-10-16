@@ -9,3 +9,12 @@ function fakeBin(x) {
   }
   return string;        //return final string
 }
+
+
+//-------best-----//
+
+function fakeBin(x) {
+    return x.split('').map(n => n < 5 ? 0 : 1).join('');
+}
+
+//split the string, map over the new split array. n is each letter. if n is less than 5 return 0, else return 1. then join the array to make string
