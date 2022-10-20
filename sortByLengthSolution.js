@@ -1,3 +1,3 @@
 function sortByLength(array) {
-  return array.sort((a, b) => a.length - b.length);
+  return array.sort((a, b) => a.length - b.length);     //sort function compare by length
 }
