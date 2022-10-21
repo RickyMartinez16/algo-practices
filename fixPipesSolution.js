@@ -6,5 +6,5 @@ function pipeFix(numbers) {
   for (var i = first; i <= last; i++) {     //loop thru starting at first and going until i eqauls last
     arr.push(i);        //push every int into new array
   }
-  return arr;
+  return arr; //return the full array
 }
