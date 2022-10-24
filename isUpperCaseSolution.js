@@ -4,5 +4,5 @@ String.prototype.isUpperCase = function () {
 
 
   String.prototype.isUpperCase = function() {
-    return this.toUpperCase() === this.toString();
+    return this.toUpperCase() === this.toString();  //returns true if this string to uppercase is the same as this string
   }
