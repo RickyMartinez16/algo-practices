@@ -4,3 +4,8 @@ function remove (string) {
     }
     return string       //if not return the ogirinal stirng
   }
+
+
+  //--------------//
+
+  const remove = s => s.replace(/!$/, '');      //replace the explcamtion with nothing using regex
