@@ -5,8 +5,8 @@ function factorial(n) {
 }
 
 function factorial(n) {
-  if (n < 0 || n > 12) throw RangeError();
-  var f = 1;
-  while (n > 1) f *= n--;
-  return f;
+  if (n < 0 || n > 12) throw RangeError();  //if n is less than 0 or greater than 12 throw new range error
+  var f = 1;        //let f equal 1
+  while (n > 1) f *= n--;       //while n is greater than one set f to equal f times n minus 1
+  return f;         //return f 
 }
