@@ -10,3 +10,4 @@ function factorial(n) {
   while (n > 1) f *= n--;       //while n is greater than one set f to equal f times n minus 1
   return f;         //return f when n is no longer greather than 1
 }
+//a factorial is 5! is 5*4*3*2*1 = 120
