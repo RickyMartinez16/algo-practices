@@ -6,3 +6,11 @@ function warnTheSheep(queue) {
     return `Oi! Sheep number ${queue.length - 1 - index}! You are about to be eaten by a wolf!`;  //return message with mathed index postion
   }
 }
+
+
+//-------------//
+
+function warnTheSheep(queue) {
+    const position = queue.reverse().indexOf('wolf');  //reverse the queue and get the index of wolf
+    return position === 0 ? 'Pls go away and stop eating my sheep' : `Oi! Sheep number ${ position }! You are about to be eaten by a wolf!`;
+  }
