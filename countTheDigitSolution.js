@@ -21,10 +21,10 @@ function nbDig(n, d) {
  //--------answer--------//
 
  function nbDig(n, d) {
-    let count = '';
-    const re = RegExp(d, 'g');
-    for (let i = 0; i <= n; i++){
+    let count = '';     //set count as a string
+    const re = RegExp(d, 'g');      //create regex to filter the d youre looking for
+    for (let i = 0; i <= n; i++){       //loop thru thr input, squaring each number and adding it to the count string
       count += i**2;
     }
-    return count.match(re).length;  
+    return count.match(re).length;  //match the regex and get the length of the match
   }
