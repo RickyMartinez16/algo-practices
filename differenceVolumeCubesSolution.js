@@ -11,3 +11,10 @@ function findDifference(a, b) {
   console.log(sumB);
   return Math.abs(sumA - sumB);     //absolute value so its alwasy positive diffrence of the two arrays
 }
+
+
+//one liner--------//
+
+function find_difference(a, b) {
+    return Math.abs(a.reduce((previous, current) => previous * current) - b.reduce((previous, current) => previous * current));
+  }
