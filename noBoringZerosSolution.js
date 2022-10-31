@@ -7,3 +7,11 @@ function noBoringZeros(n) {
   
   return Number(nArray.join(""));   //join the remaining array to a single string and then turn string into a number
 }
+
+
+//------best------//
+
+function noBoringZeros(n) {
+    return +`${n}`.replace(/0*$/, "");      //regex
+  }
+  
