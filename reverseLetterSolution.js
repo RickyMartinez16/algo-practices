@@ -2,7 +2,7 @@
 
 function reverseLetter(str) {
     console.log(str)
-    let regex = /^[a-zA-Z]*$/
+    let regex = /^[a-zA-Z]*$/           //regex wrong. needs to be: let regex = /[^a-z]/gi
     let newString = str.replace(regex, "")
     console.log(newString)
     return newString.split("").reverse().join("")
@@ -11,4 +11,4 @@ function reverseLetter(str) {
 
   //------working-----//
 
-  
+  reverseLetter=(s)=>s.replace(/[^a-z]/gi,'').split('').reverse().join('');
