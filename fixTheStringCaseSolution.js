@@ -32,15 +32,15 @@ function solve(s) {
 //------------working-----------//
 
 function solve(s){
-    let lowerC = 0;
-    let upperC = 0;
-    for( let i = 0;i<s.length;i++){
-      if( s[i] == s[i].toUpperCase()){
-        upperC++;
+    let lowerC = 0;     //set var to count the lower case letters
+    let upperC = 0;     //set var to count the upper case letters
+    for( let i = 0; i < s.length; i++){     //loop thru the string
+      if( s[i] == s[i].toUpperCase()){      //if the letter is the same as the letter in uppercase
+        upperC++;                           // add one to the uppercase count
       }
       else{
-        lowerC++;
+        lowerC++;                           //else add one to the lowercase count
       }
     }
-    return lowerC >= upperC ? s.toLowerCase() : s.toUpperCase()
+    return lowerC >= upperC ? s.toLowerCase() : s.toUpperCase()     //if lowercase is greater or equal than uppercase count change everythingto lowercase. if not go to uppercase
 }
