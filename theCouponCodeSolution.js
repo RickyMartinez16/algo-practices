@@ -1,12 +1,12 @@
 
 
 function checkCoupon(enteredCode, correctCode, currentDate, expirationDate) {
-  if (enteredCode === correctCode) {
-    let today = new Date(currentDate);
+  if (enteredCode === correctCode) {        //if the code is the same code
+    let today = new Date(currentDate);      //make a new date of today with input
     console.log(today);
-    let expired = new Date(expirationDate);
+    let expired = new Date(expirationDate); //make a new date of expiration date with exp input
     console.log(expired);
-    if (today <= expired) {
+    if (today <= expired) {     //compare the dates
       return true;
     } else {
       return false;
