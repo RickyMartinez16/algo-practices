@@ -19,8 +19,8 @@ function checkCoupon(enteredCode, correctCode, currentDate, expirationDate) {
 
 function checkCoupon(enteredCode, correctCode, currentDate, expirationDate) {
   return (
-    enteredCode === correctCode &&
-    new Date(currentDate) <= new Date(expirationDate)
+    enteredCode === correctCode &&      //if the codes are the same
+    new Date(currentDate) <= new Date(expirationDate)       //compare the new dates
   );
 }
 
