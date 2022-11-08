@@ -33,3 +33,11 @@ function rowWeights(array){
     let t2 = array.filter((x, i)=>i%2!=0).reduce((a,item)=>a+item,0);   //filter the array by indexs that are not divisible by 2 then reduce them
     return [t1, t2] //return final 
   }
+
+  function rowWeights(array){
+    var arr = [0, 0];
+    for (var i = 0; i < array.length; i++) {
+      i % 2 == 0 ? arr[0] += array[i] : arr[1] += array[i];
+    }
+    return arr;
+  }
