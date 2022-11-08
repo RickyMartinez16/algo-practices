@@ -19,6 +19,6 @@ function predictAge(age1,age2,age3,age4,age5,age6,age7,age8){
 //-----------//
 
 function predictAge(age1,age2,age3,age4,age5,age6,age7,age8){
-    let arr = [age1, age2, age3, age4, age5, age6, age7, age8]
-    return Math.floor(Math.sqrt(arr.map(a => a * a).reduce((b,c) => b + c)) / 2)
+    let arr = [age1, age2, age3, age4, age5, age6, age7, age8]  //push all ages into an array
+    return Math.floor(Math.sqrt(arr.map(a => a * a).reduce((b,c) => b + c)) / 2)    //math floor the square root of mapped ages and then reduced age
   }
