@@ -39,5 +39,5 @@ function rowWeights(array){
     for (var i = 0; i < array.length; i++) {        //loop thru array
       i % 2 == 0 ? arr[0] += array[i] : arr[1] += array[i];     //if index is divisible by 2 new arr first value equals plus array[i] if its not divisble by two the second value equals plus array[i]
     }
-    return arr;
+    return arr;     //return final
   }
