@@ -22,9 +22,9 @@ function evaporator(content, evap_per_day, threshold){
   function evaporator(content, evap_per_day, threshold){ 
     var days = 0;
     var gas = 100;
-      while(gas >= threshold){
-        gas -= gas * evap_per_day / 100;
-        days++;
-    }
-      return days;
+      while(gas >= threshold){      //while gas is greater than or equal than threshold 
+        gas -= gas * evap_per_day / 100;        //gas equals minus calucltae percentage
+        days++;     //add one to days
+    }  
+      return days;      //return days
     }
