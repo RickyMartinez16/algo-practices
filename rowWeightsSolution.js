@@ -23,3 +23,13 @@ function rowWeights(array){
     console.log(a1, a2)
     return final
   }
+
+
+
+  //----working------//
+
+  function rowWeights(array){
+    let t1 = array.filter((x, i)=>i%2==0).reduce((a,item)=>a+item,0);   //filter the array by indexs that are divisible by 2 then reduce them
+    let t2 = array.filter((x, i)=>i%2!=0).reduce((a,item)=>a+item,0);   //filter the array by indexs that are not divisible by 2 then reduce them
+    return [t1, t2] //return final 
+  }
