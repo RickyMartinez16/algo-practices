@@ -1,9 +1,9 @@
 var number = function (array) {
-  let number = 1;
-  let finalArray = [];
-  for (let i = 0; i < array.length; i++) {
-    finalArray.push(number + ": " + array[i]);
-    number += 1;
+  let number = 1;   //set the prepend
+  let finalArray = [];      //make a final array
+  for (let i = 0; i < array.length; i++) {      //loop thru the input array
+    finalArray.push(number + ": " + array[i]);  //push the correct prepend into array
+    number += 1;        //add to the number var
   }
-  return finalArray;
+  return finalArray;        //return final array
 };
