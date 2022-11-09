@@ -12,7 +12,7 @@ var number = function (array) {
 //-------best practice-----//
 
 var number = function(array) {
-    return array.map(function (line, index) {
-      return (index + 1) + ": " + line;
+    return array.map(function (line, index) {   //make a map, take the line and index
+      return (index + 1) + ": " + line;     //return the index plus 1 cuase it starts at 0, colon and then the line
     });
   }
