@@ -6,3 +6,11 @@ function minValue(values) {
   });
   return Number(sorted.join(""));   //join the array and make it a number
 }
+
+
+//--------------//
+
+function minValue(values){
+    let arr = Array.from(new Set(values))       //make an array from a new set that push the values 
+    return parseInt(arr.sort().join(''))    //parse int the sorted array after its joined
+  }
