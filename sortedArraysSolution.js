@@ -2,7 +2,7 @@
 
 function isSortedAndHow(array) {
   
-    let a = array.sort(function(a, b){return a - b})
+    let a = array.sort(function(a, b){return a - b})    //mutates original array
     console.log(a)
     let d = array.sort(function(a, b){return b - a})
     console.log(d)
