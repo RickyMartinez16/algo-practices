@@ -4,3 +4,7 @@ function evenNumbers(array, number) {
     
     return even.slice(-Math.abs(number))    //slice off the last Number of items
   }
+
+
+
+  const evenNumbers = (array, number) => array.filter(item => item % 2 === 0).slice(-number);
