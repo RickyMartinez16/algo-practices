@@ -10,7 +10,7 @@ function arithmetic(a, b, operator){
       return a / b
     }
   }
-
+//check for each one and then do it with if else 
 
   //------best------//
 
@@ -20,3 +20,5 @@ function arithmetic(a, b, operator){
     'multiply': a * b,
     'divide'  : a / b
   }[operator]);
+
+  //make object with key val
