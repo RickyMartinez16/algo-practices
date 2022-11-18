@@ -7,9 +7,10 @@ function codeSignal (array){
                 (previousValue, currentValue) => previousValue + currentValue,
                 0
               );
-            array.splice()
+            array.splice(array[i], range.length, sum)
         }
     }
+    return array
 }
 
 codeSignal([1, 1, 1, 2, 3, 4, 5, 5, 5, 6])
