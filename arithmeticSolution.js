@@ -1,7 +1,7 @@
 function arithmetic(a, b, operator){
   
-    if(operator === "add"){
-        return a + b
+    if(operator === "add"){ //if operator is add
+        return a + b    //return a PLUS b
     } else if (operator === "subtract"){
       return a - b
     } else if (operator === "multiply"){
