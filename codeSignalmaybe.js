@@ -3,14 +3,14 @@ function codeSignal (array){
         let j = i + 1
         if(array[i] === array[j]){
             let range = array.slice(array.indexOf(array[i]), array.lastIndexOf(array[i] + 1))
-            console.log("indexOf: " + array.indexOf(array[i]))
-            console.log("last indexOf: " + array.lastIndexOf(array[i] + 1))
-            console.log("range: " + range)
+            // console.log("indexOf: " + array.indexOf(array[i]))
+            // console.log("last indexOf: " + array.lastIndexOf(array[i] + 1))
+            // console.log("range: " + range)
             let sum = range.reduce(
                 (previousValue, currentValue) => previousValue + currentValue,
                 0
               );
-            console.log("sum: " + sum)
+            // console.log("sum: " + sum)
             array.splice(array[i - 1], range.length, sum)
         }
     }
