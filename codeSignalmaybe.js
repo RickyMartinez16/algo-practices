@@ -11,7 +11,7 @@ function codeSignal (array){
                 0
               );
             console.log("sum: " + sum)
-            array.splice(array[i], range.length, sum)
+            array.splice(array[i - 1], range.length, sum)
         }
     }
     return array
@@ -27,3 +27,5 @@ function codeSignal (array){
 //return the final array
 
 console.log(codeSignal([1, 1, 1, 2, 3, 4, 5, 5, 5, 6]))
+
+//3, 2, 3, 4, 15, 6
