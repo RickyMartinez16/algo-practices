@@ -10,3 +10,16 @@ function calculateYears(principal, interest, tax, desired) {
     }  
   return years      //return final years counter
 }
+
+
+//best//
+
+function calculateYears(principal, interest, tax, desired) {
+    // your code
+    var years = 0;
+    while(principal < desired){
+      principal += (principal * interest) * (1 - tax);      //math wiz
+      years++;
+    }
+    return years;
+}
