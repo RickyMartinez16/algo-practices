@@ -7,3 +7,11 @@ function multipleOfIndex(array) {
     }
     return finalArray
   }
+
+
+
+  //------best------//
+
+  function multipleOfIndex(array) {
+    return array.filter((num, i) => num % i === 0);     //filter the array numbers that are divisible by their index
+  }
