@@ -7,3 +7,11 @@ function addLength(str) {
     return finalArray       //return finalarray
   }
   
+
+  //best-----//
+
+  function addLength(str){
+    return str.split(' ').map(function(v){return v+' '+v.length})
+  }
+
+  //split the input by words, then map over them and make a new array the returns the word plus the length
