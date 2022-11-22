@@ -7,3 +7,15 @@ function noOdds( values ){
     }
     return evenArray        //return even array
   }
+
+
+
+//-----top------//
+
+function noOdds( values ){
+    function isEven(number){     //make a helper function 
+    return number%2 == 0;
+    }
+    
+    return values.filter(isEven);       //use the helper function in filter array method
+  }
