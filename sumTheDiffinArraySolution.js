@@ -15,3 +15,13 @@ function sumOfDifferences(arr) {
       0
     );
   }
+
+
+
+  //-----top------//
+
+  function sumOfDifferences(arr) {
+    return arr.length > 1 ? Math.max(...arr) - Math.min(...arr) : 0;
+}
+
+//if array length is greater than 2 then return Math.max and spread in the array to get the highest number minus math.min spread array to get lowest number. or return 0
