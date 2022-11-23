@@ -14,3 +14,7 @@ function bump(x){
       return "Woohoo!"
     }
   }
+
+  //----working----//
+
+  const bump=x=>x.split('n').length>16?"Car Dead":"Woohoo!"     //split the input by "n"s. if the length of the array is over 16 return car dead else return woohoo
