@@ -10,3 +10,7 @@ function gooseFilter (birds) {
 
 //------working------//
 
+function gooseFilter (birds) {
+    var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];  //given geese array
+    return birds.filter(b => !geese.includes(b));   //return a filtered array that includes birds if geese array does not include b
+  };
