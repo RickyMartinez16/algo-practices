@@ -1,3 +1,3 @@
 function reverseList(list) {
-    return list.reverse()
+    return list.reverse()       //reverse array method
   }
