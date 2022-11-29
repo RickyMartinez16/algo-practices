@@ -11,3 +11,5 @@ var maxSequence = function(arr){
 
   /* [-2, 1, -3, 4, -1, 2, 1, -5, 4] */
   /* [4, -1, 2, 1] = 6 */
+
+  //https://medium.com/@rsinghal757/kadanes-algorithm-dynamic-programming-how-and-why-does-it-work-3fd8849ed73d
