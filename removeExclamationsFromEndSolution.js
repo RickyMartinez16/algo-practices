@@ -1,8 +1,8 @@
-//not working//
+// working//
 
 function remove (string) {  
     if(string[string.length - 1] === "!"){
-      return string.replace(/\!+/, "")
+      return string.replace(/\!+$/, "")
     } else {
       return string
     }
