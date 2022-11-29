@@ -13,3 +13,16 @@ var maxSequence = function(arr){
   /* [4, -1, 2, 1] = 6 */
 
   //https://medium.com/@rsinghal757/kadanes-algorithm-dynamic-programming-how-and-why-does-it-work-3fd8849ed73d
+
+  function maxSequence(arr) {
+    var max = 0     //let max var eqaul 0
+    
+    for (var i = 0; i < arr.length; i++) {  //loop thru array
+      for (var sum = 0, j = i; j < arr.length; j++) {   //loop thru sub array
+        sum += arr[j]
+        if (sum > max) max = sum
+      }
+    }
+    
+    return max
+  }
