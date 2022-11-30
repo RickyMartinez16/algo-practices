@@ -18,9 +18,9 @@ function adjacentElementsProduct(array) {
   //-------working------//
 
   function adjacentElementsProduct(array) {
-    let newArr = []
-    for(let i=0; i < array.length-1; i++){
-      newArr.push(array[i]*array[i+1])
+    let newArr = []     //make a new array
+    for(let i=0; i < array.length-1; i++){      //loop thru array
+      newArr.push(array[i]*array[i+1])      //push the sums into the new array
     }  
-    return Math.max(...newArr)
+    return Math.max(...newArr)      //return the biggest number
   }
