@@ -16,11 +16,11 @@ function solution(string) {
 //working//
 
 function solution(string) {
-    string = string.split('').map(function (el) {
-      if (el === el.toUpperCase()) {
-        el = ' ' + el
+    string = string.split('').map(function (el) {       //split the string and then map thru it. looking at each element
+      if (el === el.toUpperCase()) {        //if element eqauls element to upper case
+        el = ' ' + el       //change the element to add a space
       }
-      return el
+      return el     //return the element 
     })
-    return string.join('')
+    return string.join('')      //join the final array
   }
