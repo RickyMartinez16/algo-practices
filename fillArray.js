@@ -1,1 +1,1 @@
-var websites = new Array(1000).fill("codewars");
+var websites = new Array(1000).fill("codewars");        //fill a new array 1000 times with codewars
