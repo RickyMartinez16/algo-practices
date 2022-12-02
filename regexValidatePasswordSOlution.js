@@ -6,3 +6,4 @@
 // contains a digit
 // only contains alphanumeric characters (note that '_' is not alphanumeric)
 
+const REGEXP = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[A-Za-z\d]{6,}$/;
