@@ -7,3 +7,10 @@ function strCount(str, letter){
     }
     return count        //return the count
   }
+
+
+  // clever
+
+  function strCount(str, letter){  
+    return str.split(letter).length-1       //split the string by the letter length minus 1
+  }
