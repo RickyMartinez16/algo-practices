@@ -5,3 +5,5 @@ function deleteNth(arr,x){
       return obj[number] <= x       //return obj number only if its less than or equal to x in the filter
     })
   }
+
+  //need to work on this
