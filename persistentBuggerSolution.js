@@ -10,14 +10,19 @@ function persistence(num) {
     }
     console.log(realDigits.length)
     let count = 0
+    let digitsLength = realDigits.length
     
-    while(realDigits.length > 1){
+  
       let product = realDigits.reduce(
       (accumulator, currentValue) => accumulator * currentValue,
       0
       );
-      let numLength = product.length;
+      digitsLength = product.length;
       count++
-    }
+    
+      if(digitsLength > 1){
+        persistence(product)
+      }
+    
     return count
   }
