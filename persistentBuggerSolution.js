@@ -32,13 +32,13 @@ function persistence(num) {
   //-------working-----//
 
   function persistence(num) {
-    var times = 0;
+    var count = 0;      //make a var count
+
+    num = num.toString();   //convert num to string
     
-    num = num.toString();
-    
-    while (num.length > 1) {
-      times++;
-      num = num.split('').map(Number).reduce((a, b) => a * b).toString();
+    while (num.length > 1) {    //while the length of the string is greater than one
+      count++;  //add one to the count
+      num = num.split('').map(Number).reduce((a, b) => a * b).toString();   //num is the reduced number of first digit times second digit. while loop checks num again
     }
     
     return times;
