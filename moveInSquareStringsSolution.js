@@ -4,10 +4,10 @@ function vertMirror(str) {
       .join('\n')   //join the lines by the \
 }
 function horMirror(str) {
-    return str.split('\n')
-      .reverse()
-      .join('\n')
+    return str.split('\n')  //rsplit the string by the \
+      .reverse()        //reverse it 
+      .join('\n')       //join it
 }
-function oper(fct, s) {
-    return fct(s)
+function oper(fct, s) {     // takes which function as an input and a string inpit
+    return fct(s)       //return the result of using that function on a string
 }
