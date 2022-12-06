@@ -11,3 +11,5 @@ function horMirror(str) {
 function oper(fct, s) {     // takes which function as an input and a string inpit
     return fct(s)       //return the result of using that function on a string
 }
+
+//practice map
