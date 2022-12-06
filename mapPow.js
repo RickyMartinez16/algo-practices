@@ -79,8 +79,39 @@
 // The given input is a string of multiple words with a single space between each of them. Abbreviate the name and return the name initials.
 
 
-const input = "George Raymond Richard Martin";
+// const input = "George Raymond Richard Martin";
 
-let initials = input.split(" ").map((word) => word[0]).join("") //split the input by each word, map over each word and getthe first letter into a map, then join the map
+// let initials = input.split(" ").map((word) => word[0]).join("") //split the input by each word, map over each word and getthe first letter into a map, then join the map
 
-console.log(initials)
+// console.log(initials)
+
+
+
+//-----------------------------------------------------------------------------//
+
+// Find the difference in age between the oldest and youngest family members, and return their respective ages and the age difference.
+
+const input = [
+    {
+      name: "John",
+      age: 13,
+    },
+    {
+      name: "Mark",
+      age: 56,
+    },
+    {
+      name: "Rachel",
+      age: 45,
+    },
+    {
+      name: "Nate",
+      age: 67,
+    },
+    {
+      name: "Jeniffer",
+      age: 65,
+    },
+  ];
+
+  
