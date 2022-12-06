@@ -17,7 +17,7 @@
 
 // If the given input is an array of numbers, return the sum of all the positives ones. If the array is empty or there aren't any positive numbers, return 0.
 
-const input = [1, -4, 12, 0, -3, 29, -150];
+// const input = [1, -4, 12, 0, -3, 29, -150];
 // let postArray = []
 
 // let mapSumPos = input.map(function(num){
@@ -41,6 +41,32 @@ const input = [1, -4, 12, 0, -3, 29, -150];
 
 
 
-let mapSumPos = input.filter((num) => num > 0).reduce((accum, current) => accum + current, 0)
+// let mapSumPos = input.filter((num) => num > 0).reduce((accum, current) => accum + current, 0)
 
-console.log(mapSumPos)
+// console.log(mapSumPos)
+
+
+//------------------------------------------------------------------------------------------------//
+
+
+// Calculate the mean and median values of the number elements from the input array.
+
+const input = [12, 46, 32, 64];
+
+
+input.sort((a, b) => a - b);
+
+input.reduce(
+  (accumulator, currentValue, index, array) => {
+    accumulator.mean += currentValue / array.length;
+
+    if (Math.abs(index + 1 - array.length / 2) < 1) {
+      accumulator.median = currentValue;
+    }
+
+    return accumulator;
+  },
+  { mean: 0, median: 0 }
+);
+
+console.log(mean)
