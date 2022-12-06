@@ -51,22 +51,36 @@
 
 // Calculate the mean and median values of the number elements from the input array.
 
-const input = [12, 46, 32, 64];
+// const input = [12, 46, 32, 64];
 
 
-input.sort((a, b) => a - b);        //sort the input array
+// input.sort((a, b) => a - b);        //sort the input array
 
-input.reduce(   //reduce the input array
-  (accumulator, currentValue, index, array) => {        //take the 4 values
-    accumulator.mean += currentValue / array.length;    //accumulator.mean = add the currentVal / array.length
+// input.reduce(   //reduce the input array
+//   (accumulator, currentValue, index, array) => {        //take the 4 values
+//     accumulator.mean += currentValue / array.length;    //accumulator.mean = add the currentVal / array.length
 
-    if (Math.abs(index + 1 - array.length / 2) < 1) {       //if positive version of (math.abs) index + 1 - array.length / 2 is greater thna one
-      accumulator.median = currentValue;    //then the accumulator.median is the current valeu
-    }
+//     if (Math.abs(index + 1 - array.length / 2) < 1) {       //if positive version of (math.abs) index + 1 - array.length / 2 is greater thna one
+//       accumulator.median = currentValue;    //then the accumulator.median is the current valeu
+//     }
 
-    return accumulator; //return the accumulator should hae two valurs
-  },
-  { mean: 0, median: 0 }
-);
+//     return accumulator; //return the accumulator should hae two valurs
+//   },
+//   { mean: 0, median: 0 }
+// );
 
-console.log(mean)
+// console.log(mean)
+
+
+
+//-------------------------------------------------------------------------------------------------------//
+
+
+// The given input is a string of multiple words with a single space between each of them. Abbreviate the name and return the name initials.
+
+
+const input = "George Raymond Richard Martin";
+
+let initials = input.split(" ").map((word) => word[0]).join("") //split the input by each word, map over each word and getthe first letter into a map, then join the map
+
+console.log(initials)
