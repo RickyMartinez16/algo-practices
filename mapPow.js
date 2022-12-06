@@ -54,17 +54,17 @@
 const input = [12, 46, 32, 64];
 
 
-input.sort((a, b) => a - b);
+input.sort((a, b) => a - b);        //sort the input array
 
-input.reduce(
-  (accumulator, currentValue, index, array) => {
-    accumulator.mean += currentValue / array.length;
+input.reduce(   //reduce the input array
+  (accumulator, currentValue, index, array) => {        //take the 4 values
+    accumulator.mean += currentValue / array.length;    //accumulator.mean = add the currentVal / array.length
 
-    if (Math.abs(index + 1 - array.length / 2) < 1) {
-      accumulator.median = currentValue;
+    if (Math.abs(index + 1 - array.length / 2) < 1) {       //if positive version of (math.abs) index + 1 - array.length / 2 is greater thna one
+      accumulator.median = currentValue;    //then the accumulator.median is the current valeu
     }
 
-    return accumulator;
+    return accumulator; //return the accumulator should hae two valurs
   },
   { mean: 0, median: 0 }
 );
