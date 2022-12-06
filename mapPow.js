@@ -114,4 +114,11 @@ const input = [
     },
   ];
 
+  let diff = input.map(Math.min(input.age), Math.max(input.age), Math.max(input.age) - Math.min(input.age))
+
+  
+  const ages = input.map((person) => person.age); //map over each person and create an array of just ages
+
+[Math.min(...ages), Math.max(...ages), Math.max(...ages) - Math.min(...ages)];  //in the array put the smallest num, the biggest and diff
+
   
