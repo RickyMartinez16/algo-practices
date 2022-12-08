@@ -133,8 +133,17 @@
 //There won't be any punctuation in the sentence. g2d l2k e6e
 
   
-const input = "Every developer likes to mix kubernetes and javascript";
+// const input = "Every developer likes to mix kubernetes and javascript";
 
-let nyms = input.split(" ").map((word) => word = `${word[0]}${word.length - 2}${word[word.length - 1]} `).join("")
+// let nyms = input.split(" ").map((word) => word = `${word[0]}${word.length - 2}${word[word.length - 1]} `).join("")
 
-console.log(nyms)
+// console.log(nyms)
+
+
+
+
+//-------------------------------------------------------------------------------------------------------------------------------------//
+
+// Count the occurrences of distinct elements in the given 2D array. The given input is an array, 
+// the elements of which are arrays of strings. The result is an object whose property names are the 
+// values from the arrays and their value is the number of their occurrences.
