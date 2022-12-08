@@ -156,11 +156,11 @@ const input = [
 
 
 
-input.flat().reduce((accumulator, currentValue) => {
-    if (accumulator[currentValue]) {
+input.flat().reduce((accumulator, currentValue) => {        //flatten the input array so its all in one array
+    if (accumulator[currentValue]) {    //if the accumltaor[currentvalue] (which is the letter) exists then add one to the value
       accumulator[currentValue] += 1;
     } else {
-      accumulator[currentValue] = 1;
+      accumulator[currentValue] = 1;    //if the letter does not already exist in the accumulator then insert and set it to number 1
     }
-    return accumulator;
+    return accumulator;     //return accum
   }, {});
