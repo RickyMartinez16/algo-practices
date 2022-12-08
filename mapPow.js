@@ -51,7 +51,7 @@
 
 // Calculate the mean and median values of the number elements from the input array.
 
-// const input = [12, 46, 32, 64];
+const input = [12, 46, 32, 64];
 
 
 // input.sort((a, b) => a - b);        //sort the input array
@@ -147,3 +147,20 @@
 // Count the occurrences of distinct elements in the given 2D array. The given input is an array, 
 // the elements of which are arrays of strings. The result is an object whose property names are the 
 // values from the arrays and their value is the number of their occurrences.
+
+const input = [
+    ["a", "b", "c"],
+    ["c", "d", "f"],
+    ["d", "f", "g"],
+  ];
+
+
+
+input.flat().reduce((accumulator, currentValue) => {
+    if (accumulator[currentValue]) {
+      accumulator[currentValue] += 1;
+    } else {
+      accumulator[currentValue] = 1;
+    }
+    return accumulator;
+  }, {});
