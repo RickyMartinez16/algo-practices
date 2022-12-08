@@ -13,7 +13,7 @@
 
 //   [1, 4, 9, 16, 25];
 
-//-----------------------------------------------------------//
+//-------------------------------------------------------------------------------------------------------------------------------------//
 
 // If the given input is an array of numbers, return the sum of all the positives ones. If the array is empty or there aren't any positive numbers, return 0.
 
@@ -46,7 +46,7 @@
 // console.log(mapSumPos)
 
 
-//------------------------------------------------------------------------------------------------//
+//---------------------------------------------------------------------------------------------------------------------------------------//
 
 
 // Calculate the mean and median values of the number elements from the input array.
@@ -73,7 +73,7 @@
 
 
 
-//-------------------------------------------------------------------------------------------------------//
+//--------------------------------------------------------------------------------------------------------------------------------------//
 
 
 // The given input is a string of multiple words with a single space between each of them. Abbreviate the name and return the name initials.
@@ -87,40 +87,54 @@
 
 
 
-//-----------------------------------------------------------------------------//
+//-------------------------------------------------------------------------------------------------------------------------------------//
 
 // Find the difference in age between the oldest and youngest family members, and return their respective ages and the age difference.
 
-const input = [
-    {
-      name: "John",
-      age: 13,
-    },
-    {
-      name: "Mark",
-      age: 56,
-    },
-    {
-      name: "Rachel",
-      age: 45,
-    },
-    {
-      name: "Nate",
-      age: 67,
-    },
-    {
-      name: "Jeniffer",
-      age: 65,
-    },
-  ];
+// const input = [
+//     {
+//       name: "John",
+//       age: 13,
+//     },
+//     {
+//       name: "Mark",
+//       age: 56,
+//     },
+//     {
+//       name: "Rachel",
+//       age: 45,
+//     },
+//     {
+//       name: "Nate",
+//       age: 67,
+//     },
+//     {
+//       name: "Jeniffer",
+//       age: 65,
+//     },
+//   ];
 
-//   let diff = input.map(Math.min(input.age), Math.max(input.age), Math.max(input.age) - Math.min(input.age))  <--- not working
-
-  
-  const ages = input.map((person) => person.age); //map over each person and create an array of just ages
-
-console.log([Math.min(...ages), Math.max(...ages), Math.max(...ages) - Math.min(...ages)])  //in the array put the smallest num, the biggest and diff
-
-
+// //   let diff = input.map(Math.min(input.age), Math.max(input.age), Math.max(input.age) - Math.min(input.age))  <--- not working
 
   
+//   const ages = input.map((person) => person.age); //map over each person and create an array of just ages
+
+// console.log([Math.min(...ages), Math.max(...ages), Math.max(...ages) - Math.min(...ages)])  //in the array put the smallest num, the biggest and diff
+
+
+
+//--------------------------------------------------------------------------------------------------------------------------------------//
+
+//Numeronyms
+// Devs like to abbreviate everything: k8s means Kubernetes, a11y means accessibility, l10n means localization. 
+//You get the Dev numeronyms by taking the first and the last letter and counting the number of letters in between. 
+//Words that have less than 4 letters aren't abbreviated, because that would just be odd. 
+//The input is a sentence, and you should abbreviate every word that is 4 letters long or longer. 
+//There won't be any punctuation in the sentence. g2d l2k e6e
+
+  
+const input = "Every developer likes to mix kubernetes and javascript";
+
+let nyms = input.split(" ").map((word) => word = `${word[0]}${word.length - 2}${word[word.length - 1]} `).join("")
+
+console.log(nyms)
