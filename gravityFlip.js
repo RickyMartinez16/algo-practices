@@ -5,9 +5,9 @@
 // * 'L', [1, 4, 5, 3, 5 ]  ->  [5, 5, 4, 3, 1]
 
 const flip=(d, ar)=>{
-    if(d === "L"){
+    if(d === "L"){  //if the direction is L then sort from biggest to smallest and return
       return ar.sort((a, b) => b-a )
     } else {
-      return ar.sort((a, b) => a-b)
+      return ar.sort((a, b) => a-b) //else sort from smallest to biggest and return
     }
    }
