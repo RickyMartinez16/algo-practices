@@ -8,6 +8,6 @@ const flip=(d, ar)=>{
     if(d === "L"){  //if the direction is L then sort from biggest to smallest and return
       return ar.sort((a, b) => b-a )
     } else {
-      return ar.sort((a, b) => a-b) //else sort from smallest to biggest and return
+      return ar.sort((a, b) => a-b) //else if not "L" sort from smallest to biggest and return
     }
    }
