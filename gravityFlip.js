@@ -3,6 +3,7 @@
 // Examples (input -> output:
 // * 'R', [3, 2, 1, 2]      ->  [1, 2, 2, 3]
 // * 'L', [1, 4, 5, 3, 5 ]  ->  [5, 5, 4, 3, 1]
+//so pish to one side
 
 const flip=(d, ar)=>{
     if(d === "L"){  //if the direction is L then sort from biggest to smallest and return
