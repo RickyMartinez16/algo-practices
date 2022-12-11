@@ -51,7 +51,7 @@
 
 // Calculate the mean and median values of the number elements from the input array.
 
-const input = [12, 46, 32, 64];
+// const input = [12, 46, 32, 64];
 
 
 // input.sort((a, b) => a - b);        //sort the input array
