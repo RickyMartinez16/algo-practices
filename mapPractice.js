@@ -256,11 +256,36 @@
 //abbreviated, because that would just be odd. The input is a sentence, and you should 
 //abbreviate every word that is 4 letters long or longer. There won't be any punctuation in the sentence. g2d l2k e6e
 
-const input = "Every developer likes to mix kubernetes and javascript";
+// const input = "Every developer likes to mix kubernetes and javascript";
 
-function nyms(input){
-    let words = input.split(" ")
-    return words.map((word) => word.length > 4 ? `${word[0]}${word.length - 2}${word[word.length - 1]}` : word).join(" ")
+// function nyms(input){
+//     let words = input.split(" ")
+//     return words.map((word) => word.length > 4 ? `${word[0]}${word.length - 2}${word[word.length - 1]}` : word).join(" ")
+// }
+
+// console.log(nyms(input))
+
+
+//-------------------------------------------------------------------------------------------------------------------------------------//
+
+//n! with Map and Reduce
+
+//If the given input is a number, you should return the factorial of that number. 
+//The factorial of a natural number n is the product of the positive integers 
+//less than or equal to n. So, 2! = 2, 3! = 6, 4! = 24 and so on.
+
+const input = 6;
+let array = []
+function mapReduce(input){
+    if(input > 0){
+        for(let i = input; i > 0; i--){
+            array.push(i)
+        }
+        return array.reduce(
+            (accumulator, currentValue) => accumulator * currentValue,
+            1
+          );
+    }
 }
 
-console.log(nyms(input))
+console.log(mapReduce(input))
