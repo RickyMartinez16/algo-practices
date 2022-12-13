@@ -51,25 +51,25 @@
 
 // Calculate the mean and median values of the number elements from the input array.
 
-// const input = [12, 46, 32, 64];
+const input = [12, 46, 32, 64];
 
 
-// input.sort((a, b) => a - b);        //sort the input array
+input.sort((a, b) => a - b);        //sort the input array
 
-// input.reduce(   //reduce the input array
-//   (accumulator, currentValue, index, array) => {        //take the 4 values
-//     accumulator.mean += currentValue / array.length;    //accumulator.mean = add the currentVal / array.length
+input.reduce(   //reduce the input array
+  (accumulator, currentValue, index, array) => {        //take the 4 values
+    accumulator.mean += currentValue / array.length;    //accumulator.mean = add the currentVal / array.length
 
-//     if (Math.abs(index + 1 - array.length / 2) < 1) {       //if positive version of (math.abs) index + 1 - array.length / 2 is greater thna one
-//       accumulator.median = currentValue;    //then the accumulator.median is the current valeu
-//     }
+    if (Math.abs(index + 1 - array.length / 2) < 1) {       //if positive version of (math.abs) index + 1 - array.length / 2 is greater thna one
+      accumulator.median = currentValue;    //then the accumulator.median is the current valeu
+    }
 
-//     return accumulator; //return the accumulator should hae two valurs
-//   },
-//   { mean: 0, median: 0 }
-// );
+    return accumulator; //return the accumulator should hae two valurs
+  },
+  { mean: 0, median: 0 }
+);
 
-// console.log(mean)
+console.log(mean)
 
 
 
@@ -148,19 +148,19 @@
 // the elements of which are arrays of strings. The result is an object whose property names are the 
 // values from the arrays and their value is the number of their occurrences.
 
-const input = [
-    ["a", "b", "c"],
-    ["c", "d", "f"],
-    ["d", "f", "g"],
-  ];
+// const input = [
+//     ["a", "b", "c"],
+//     ["c", "d", "f"],
+//     ["d", "f", "g"],
+//   ];
 
 
 
-input.flat().reduce((accumulator, currentValue) => {        //flatten the input array so its all in one array
-    if (accumulator[currentValue]) {    //if the accumltaor[currentvalue] (which is the letter) exists then add one to the value
-      accumulator[currentValue] += 1;
-    } else {
-      accumulator[currentValue] = 1;    //if the letter does not already exist in the accumulator then insert and set it to number 1
-    }
-    return accumulator;     //return accum
-  }, {});
+// input.flat().reduce((accumulator, currentValue) => {        //flatten the input array so its all in one array
+//     if (accumulator[currentValue]) {    //if the accumltaor[currentvalue] (which is the letter) exists then add one to the value
+//       accumulator[currentValue] += 1;
+//     } else {
+//       accumulator[currentValue] = 1;    //if the letter does not already exist in the accumulator then insert and set it to number 1
+//     }
+//     return accumulator;     //return accum
+//   }, {});

@@ -155,19 +155,38 @@
 // Sum of every positive element
 // If the given input is an array of numbers, return the sum of all the positives ones. If the array is empty or there aren't any positive numbers, return 0.
 
-const input = [1, -4, 12, 0, -3, 29, -150];
+// const input = [1, -4, 12, 0, -3, 29, -150];
 
-function sumOfPos(array){
-    let posArr = array.filter((num) => num > 0)
+// function sumOfPos(array){
+//     let posArr = array.filter((num) => num > 0)
 
-    return posArr.reduce(
-        (accumulator, currentValue) => accumulator + currentValue,
-        0
-      );
-}
+//     return posArr.reduce(
+//         (accumulator, currentValue) => accumulator + currentValue,
+//         0
+//       );
+// }
 
-console.log(sumOfPos(input))
+// console.log(sumOfPos(input))
 
 
 //-------------------------------------------------------------------------------------------------------------------------------------//
 
+// Calculate median and mean
+// Calculate the mean and median values of the number elements from the input array.
+
+const input = [12, 46, 32, 64];
+
+function meanAndMed(arr){
+    let sorted = arr.sort((a, b) => a - b)      //sort the input array
+    sorted.reduce((accum, current, index, arr) => {     //reduce the sorted array to get single mean and single median
+        accum.mean += current / arr.length      //the accum mean is the values added then divided by the length of the array
+
+        if(Math.abs(index + 1 - arr.length / 2) < 1){   //check if the index, plus one minus the length div by 2 is greater than 1
+            accum.median = current  //then the median is the current number in the array
+        }
+        return accum    //return the accum
+    },{mean: 0, median: 0}      //initial value for the reduce
+    )
+}
+
+console.log(meanAndMed(input))
