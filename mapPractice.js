@@ -174,19 +174,38 @@
 // Calculate median and mean
 // Calculate the mean and median values of the number elements from the input array.
 
-const input = [12, 46, 32, 64];
+// const input = [12, 46, 32, 64];
 
-function meanAndMed(arr){
-    let sorted = arr.sort((a, b) => a - b)      //sort the input array
-    sorted.reduce((accum, current, index, arr) => {     //reduce the sorted array to get single mean and single median
-        accum.mean += current / arr.length      //the accum mean is the values added then divided by the length of the array
+// function meanAndMed(arr){
+//     let sorted = arr.sort((a, b) => a - b)      //sort the input array
+//     sorted.reduce((accum, current, index, arr) => {     //reduce the sorted array to get single mean and single median
+//         accum.mean += current / arr.length      //the accum mean is the values added then divided by the length of the array
 
-        if(Math.abs(index + 1 - arr.length / 2) < 1){   //check if the index, plus one minus the length div by 2 is greater than 1
-            accum.median = current  //then the median is the current number in the array
-        }
-        return accum    //return the accum
-    },{mean: 0, median: 0}      //initial value for the reduce
-    )
+//         if(Math.abs(index + 1 - arr.length / 2) < 1){   //check if the index, plus one minus the length div by 2 is greater than 1
+//             accum.median = current  //then the median is the current number in the array
+//         }
+//         return accum    //return the accum
+//     },{mean: 0, median: 0}      //initial value for the reduce
+//     )
+// }
+
+// console.log(meanAndMed(input))
+
+
+//--------------------------------------------------------------------------------------------------------------------------------------//
+
+//Get name initials
+//The given input is a string of multiple words with a single space between each of them. Abbreviate the name and return the name initials.
+
+const input = "George Raymond Richard Martin";
+
+function initials(array){
+    let split = array.split(" ")
+    let initials = []
+    for(let name of split){
+        initials.push(name[0])
+    }
+    return initials.join("")
 }
 
-console.log(meanAndMed(input))
+console.log(initials(input))
