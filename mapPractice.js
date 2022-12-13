@@ -197,15 +197,51 @@
 //Get name initials
 //The given input is a string of multiple words with a single space between each of them. Abbreviate the name and return the name initials.
 
-const input = "George Raymond Richard Martin";
+// const input = "George Raymond Richard Martin";
 
-function initials(array){
-    let split = array.split(" ")
-    let initials = []
-    for(let name of split){
-        initials.push(name[0])
-    }
-    return initials.join("")
-}
+// function initials(array){
+//     let split = array.split(" ")
+//     let initials = []
+//     for(let name of split){
+//         initials.push(name[0])
+//     }
+//     return initials.join("")
+// }
 
-console.log(initials(input))
+// console.log(initials(input))
+
+
+//-------------------------------------------------------------------------------------------------------------------------------------//
+
+//Age difference from the youngest and oldest
+//Find the difference in age between the oldest and youngest family members, and return their respective ages and the age difference.
+
+const input = [
+    {
+      name: "John",
+      age: 13,
+    },
+    {
+      name: "Mark",
+      age: 56,
+    },
+    {
+      name: "Rachel",
+      age: 45,
+    },
+    {
+      name: "Nate",
+      age: 67,
+    },
+    {
+      name: "Jeniffer",
+      age: 65,
+    },
+  ];
+
+  function ageDiff(array){
+      let ages = array.map((object) => Math.max(object.age))
+      return[Math.max(...ages), Math.min(...ages), Math.max(...ages) - Math.min(...ages)]
+  }
+
+  console.log(ageDiff(input))
