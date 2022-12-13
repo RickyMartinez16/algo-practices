@@ -274,18 +274,49 @@
 //The factorial of a natural number n is the product of the positive integers 
 //less than or equal to n. So, 2! = 2, 3! = 6, 4! = 24 and so on.
 
-const input = 6;
-let array = []
-function mapReduce(input){
-    if(input > 0){
-        for(let i = input; i > 0; i--){
-            array.push(i)
-        }
-        return array.reduce(
-            (accumulator, currentValue) => accumulator * currentValue,
-            1
-          );
-    }
-}
+// const input = 6;
+// let array = []
+// function mapReduce(input){
+//     if(input > 0){
+//         for(let i = input; i > 0; i--){
+//             array.push(i)
+//         }
+//         return array.reduce(
+//             (accumulator, currentValue) => accumulator * currentValue,
+//             1
+//           );
+//     }
+// }
 
-console.log(mapReduce(input))
+// console.log(mapReduce(input))
+
+
+//--------------------------------------------------------------------------------------------------------------------------------------//
+
+//Count elements in array of arrays
+
+//Count the occurrences of distinct elements in the given 2D array. 
+//The given input is an array, the elements of which are arrays of strings. 
+//The result is an object whose property names are the values from the 
+//arrays and their value is the number of their occurrences.
+
+const input = [
+    ["a", "b", "c"],
+    ["c", "d", "f"],
+    ["d", "f", "g"],
+  ];
+
+  function occur(input){
+    let flattend = input.flat();
+    let occur = flattend.reduce((accum, current) => {
+        if(accum[current]){
+            accum[current]++
+        } else {
+            accum[current] = 1
+        }
+        return accum
+    }, {})
+    return occur
+  }
+
+  console.log(occur(input))
