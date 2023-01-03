@@ -22,7 +22,9 @@ function isPowerOfTwo(n){
     }
   }
 
+
+// working //
   function isPowerOfTwo(n){
-    return Number.isInteger(Math.log2(n));
+    return Number.isInteger(Math.log2(n));      //return a Number if the int after math log 2 is performed ?
     
 }
