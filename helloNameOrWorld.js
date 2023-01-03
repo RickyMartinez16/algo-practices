@@ -10,9 +10,9 @@
 //   or `name` = ""        => return "Hello, World!"
 
 function hello(name) {
-    if(!name){
+    if(!name){  //if no name return hello world
       return "Hello, World!"
-    } else {
+    } else {    //if the name input exsists return hello name with the first letter capped and rest lwoered
       return `Hello, ${name.slice(0, 1).toUpperCase()}${name.slice(1).toLowerCase()}!`
     }
   }
