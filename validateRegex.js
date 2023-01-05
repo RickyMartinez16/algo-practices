@@ -4,7 +4,7 @@
 // You can assume the input will always be a number.
 
 function validateCode (code) {
-    let regex = /^([1-3])/g
+    let regex = /^([1-3])/g         //regex: ^ = beginning, [1-3] checks for digits 1 to 3 
     return regex.test(code)
   }
   
