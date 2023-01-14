@@ -19,7 +19,7 @@ function highestRank(arr){
        if(obj[elem] === undefined)
         //create the element in the array as a key and make its value zero
         obj[elem] = 0;
-        //add 1 to the object value
+        //if the object does exist add 1 to the object value
         obj[elem]++;
     });
     //make vars for keys, highest and key
@@ -38,3 +38,14 @@ function highestRank(arr){
     //parse int the kay to get the numer
     return parseInt(key);
   }
+
+
+//   This code defines a function named "highestRank" which takes an array as an argument. 
+//   Inside the function, it creates an empty object called "obj". 
+//   It then uses the Array.prototype.forEach method to iterate over each element in the array passed as an argument. 
+//   For each element, it checks if the element is not defined in the obj. 
+//   If it's not defined, it sets its value to 0, otherwise it increments its value by 1.
+//    Then it creates an array of keys from the obj, and initializes highest and key to 0 and undefined respectively. 
+//    Then it iterates over the keys array, and for each element, it checks if obj[elem] is greater than or equal to highest. 
+//    If it is, it assigns the value of obj[elem] to highest and elem to key. 
+//    Finally, it returns the parseInt of key which is the most common element in the array.
