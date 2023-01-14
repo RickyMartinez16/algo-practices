@@ -10,19 +10,31 @@
 
 
 function highestRank(arr){
+    //make an empty object var
     var obj = {};
+
+    //loop thru the array. for each element in the array check 
     arr.forEach(function(elem){
+        //check if the element exsits in the object. if it doesnt
        if(obj[elem] === undefined)
-         obj[elem] = 0;
-       obj[elem]++;
+        //create the element in the array as a key and make its value zero
+        obj[elem] = 0;
+        //add 1 to the object value
+        obj[elem]++;
     });
+    //make vars for keys, highest and key
     var keys = Object.keys(obj), highest = 0, key;
+
+    //loop thru the keys
     keys.forEach(function(elem){
-       if(obj[elem] >= highest)
-       {
+        //if the element is higher than the highest
+       if(obj[elem] >= highest){
+           //make the highest var that obj[ele]
           highest = obj[elem];
+          //make the key the element
           key = elem;
        }
     })
+    //parse int the kay to get the numer
     return parseInt(key);
   }
