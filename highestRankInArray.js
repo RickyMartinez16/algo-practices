@@ -23,7 +23,9 @@ function highestRank(arr){
         obj[elem]++;
     });
     //make vars for keys, highest and key
-    var keys = Object.keys(obj), highest = 0, key;
+    var keys = Object.keys(obj) 
+    let highest = 0;
+    let key;
 
     //loop thru the keys
     keys.forEach(function(elem){
