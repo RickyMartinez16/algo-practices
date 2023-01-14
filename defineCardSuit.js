@@ -10,13 +10,13 @@
 
 function defineSuit(card) {
     //make object with key value pair of suit and name of suit
-    const s = {
+    const suits = {
       "♣": "clubs",
       "♠": "spades",
       "♦": "diamonds",
       "♥": "hearts"
     }
-    return s[card.charAt(card.length - 1)]  //return the object value at the last character of the card
+    return suits[card.charAt(card.length - 1)]  //return the object value at the last character of the card
   }
 
 
