@@ -20,7 +20,7 @@ function defineSuit(card) {
   }
 
 
-
+  //easier
   function defineSuit(card) {
       //if the card includes a specific icon return that suit
     if(card.includes('♥')) return 'hearts'
