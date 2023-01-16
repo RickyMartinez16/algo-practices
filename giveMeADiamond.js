@@ -45,5 +45,6 @@ function diamond (n) {
       //add one space break to the string
       str += '\n'
     }
+    //return final
     return str
   }
