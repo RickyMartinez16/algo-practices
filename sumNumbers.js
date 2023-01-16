@@ -29,3 +29,11 @@ function f(n){
     }
     return total
   };
+
+
+  //best-----------
+
+  function f(n){
+      //return a Number checking if n is an int and its greter than zero then n times n plus 1 divived by 2. if any check fails return false
+	return Number.isInteger(n) && n > 0 ? n * (n + 1) / 2 : false;
+};
