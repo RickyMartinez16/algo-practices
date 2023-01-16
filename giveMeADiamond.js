@@ -48,3 +48,21 @@ function diamond (n) {
     //return final
     return str
   }
+
+
+
+  //This code defines a function called "diamond" which takes an input "n" and 
+  //returns a string of characters that form a diamond shape when printed. 
+  //The function first checks if the input "n" is less than or equal to 0 or if "n" is an even number, 
+  //and if either of these conditions are true, the function returns "null". 
+  //If the input is valid, the function creates an empty string called "str" 
+  //and uses a for loop to iterate "n" number of times.
+
+//In each iteration, the variable "len" is assigned the value of the absolute 
+//value of the result of subtracting 2 times the current loop variable "i" from 1, 
+//and then dividing that by 2. The variable "str" is then appended with a string of 
+//spaces that is "len" characters long, followed by a string of "*" characters that 
+//is "n" minus 2 times "len" characters long. Finally, a new line character is appended to "str", and the loop continues.
+
+//After the for loop has completed, the function returns the final 
+//value of "str" which will be a string of characters that form a diamond shape.
