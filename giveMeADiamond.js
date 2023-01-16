@@ -29,12 +29,20 @@
 // "  *\n ***\n*****\n ***\n  *\n"
 
 function diamond (n) {
+    //check if the diamond is greater than 0 and not even if so return null
     if (n <= 0 || n % 2 === 0) return null
-    str = ''
+    //make a var to hold the diamond string
+    let str = ''
+
+    //loop 
     for (let i = 0; i < n; i++) { 
+        //let the length equal Math.abs (always postive) of n - 2 times i - 1 then divide by 2
       let len = Math.abs((n-2*i-1)/2)
+      //add the spaces to the string repeat it len times
       str += ' '.repeat(len)
+      //add the stars to the string repeat it len times
       str += '*'.repeat(n-2*len)
+      //add one space break to the string
       str += '\n'
     }
     return str
