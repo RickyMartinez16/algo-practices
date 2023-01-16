@@ -49,8 +49,6 @@ function diamond (n) {
     return str
   }
 
-
-
   //This code defines a function called "diamond" which takes an input "n" and 
   //returns a string of characters that form a diamond shape when printed. 
   //The function first checks if the input "n" is less than or equal to 0 or if "n" is an even number, 
