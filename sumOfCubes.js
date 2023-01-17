@@ -8,3 +8,13 @@
 // 3 --> 36 (sum of the cubes of 1, 2, and 3 is 1 + 8 + 27)
 
 
+function sumCubes(n){
+  
+    let sum = 0;
+    let cube 
+    for(let i = 1; i <= n; i++){
+      cube = Math.pow(i, 3);
+      sum += cube
+    }
+    return sum
+  }
