@@ -9,11 +9,15 @@
 
 
 function sumCubes(n){
-  
+    //make var to keep track of final sum
     let sum = 0;
+    //make var to keep track of cube
     let cube 
+    //make loop to get all the numbers 1 to n
     for(let i = 1; i <= n; i++){
+        //make a cube
       cube = Math.pow(i, 3);
+      //add the cube to sum
       sum += cube
     }
     return sum
