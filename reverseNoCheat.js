@@ -3,3 +3,10 @@
 // (the dedicated builtin(s) functionalities are deactivated)  reverse() method
 
 
+reverse = function(array) {
+    let finalArray = [];
+    for(let i = array.length - 1; i >= 0 ; i--){
+      finalArray.push(array[i])
+    }
+    return finalArray
+  }
