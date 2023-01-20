@@ -13,8 +13,11 @@
 
 function scramble(str, arr) {
     //loop thru arr
+    //make a new array var of empty array
     for(var r = [], i=0; i<arr.length; i++) {
-        r[arr[i]]=str[i]
+        //set r arr[i] index to whatever letter is str[i]
+        r[arr[i]] = str[i]
     }
+    //return the joined final array
     return r.join("")
   };
