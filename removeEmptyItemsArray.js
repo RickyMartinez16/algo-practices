@@ -13,4 +13,9 @@
 // After: [1, 2, 3, 4, null, undefined];
 
 
+
+
+
+
+//filter the array to return all items in the array that are true
 const clean = arr => arr.filter(_ => true);
