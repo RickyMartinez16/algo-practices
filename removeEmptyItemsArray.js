@@ -19,3 +19,12 @@
 
 //filter the array to return all items in the array that are true
 const clean = arr => arr.filter(_ => true);
+
+
+
+// In this case, the underscore (_) is being used as a placeholder variable name, 
+//indicating that the argument passed to the callback function of the 
+//filter method will not be used. It is a convention used to 
+//indicate that the variable is intended to be ignored. 
+//It is just an anonymous variable, a convention in javascript used to indicate 
+// that the value passed in the callback function is not used.
