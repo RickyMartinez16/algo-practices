@@ -24,8 +24,11 @@ function isPrime(num) {
 
     // Then it uses a for loop to iterate through all the numbers between 5 and the square root of the input number.
     for (let i = 5; i * i <= num; i = i + 6) {
-        
+
+        // In each iteration, it checks if the input number is divisible by the current number or the current number plus 2 and return false if so.
         if (num % i == 0 || num % (i + 2) == 0) return false;
     }
+
+    // Finally, if the function has not yet returned false, it returns true, indicating that the input number is a prime number.
     return true;
 }
