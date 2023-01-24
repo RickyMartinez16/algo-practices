@@ -22,9 +22,18 @@
 //WORKING-----------------------------------------
 
 function array(arr){
+    //if the input is null or 1 or 2 or 3 return null
     if(!arr || arr.length == 1 || arr.length == 2 || arr.length == 3) return null
+
+    //split the input by the commas
     let arrsplit = arr.split(",")
+
+    //make it a string without first and last char
     let finalString = String(arrsplit.slice(1, -1))
+
+    //if its emopty return null
     if (!finalString) return null
+
+    //reutn the final string replacing the commas with spaces
     return finalString.replace(/,/g, " ");
   }
