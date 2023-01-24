@@ -40,5 +40,7 @@ function array(arr){
 
 //best
   function array(arr){
+
+    //split the array by commas, slice first and last, join them with a space or null
     return arr.split(",").slice(1,-1).join(" ") || null;
   }
