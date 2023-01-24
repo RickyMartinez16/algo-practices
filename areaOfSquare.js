@@ -4,3 +4,16 @@
 
 // Note: use the π value provided in your language (Math::PI, M_PI, math.pi, etc)
 
+function squareArea(A){
+    //get the circumfrence 
+    var circum = 4 * A;
+
+    //get the radius
+    var radius = circum / (2 * Math.PI);
+
+    //get the area
+    var area = Math.pow(radius, 2);
+
+    //round to nearest second decimal
+    return Math.round(area*100)/100
+  }
