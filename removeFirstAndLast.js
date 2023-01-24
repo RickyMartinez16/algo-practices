@@ -37,3 +37,8 @@ function array(arr){
     //reutn the final string replacing the commas with spaces
     return finalString.replace(/,/g, " ");
   }
+
+//best
+  function array(arr){
+    return arr.split(",").slice(1,-1).join(" ") || null;
+  }
