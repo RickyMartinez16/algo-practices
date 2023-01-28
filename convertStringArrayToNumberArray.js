@@ -11,5 +11,6 @@
 function toNumberArray(stringarray){
         //make a new array of the stringed elements converted to Number()
       let numberArray = stringarray.map(Number);
+      //return number array
       return numberArray
     }
