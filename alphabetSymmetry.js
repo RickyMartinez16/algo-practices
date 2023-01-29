@@ -10,6 +10,7 @@
 function solve(arr){  
     //make a variable of the alphabet lowercase
     var alphabeth = "abcdefghijklmnopqrstuvwxyz";
-    
+
+    //make a map. check each letter of input arr and make it lowercase. split it. the filter the map. if i equals aplhabet indexof y. length of map
     return arr.map(x => x.toLowerCase().split('').filter((y,i) => i==alphabeth.indexOf(y)).length);
   };
