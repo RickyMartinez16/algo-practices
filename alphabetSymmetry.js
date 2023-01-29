@@ -22,7 +22,10 @@ function solve(arr){
       //make an alphabet var
     const alphabet = 'abcdefghijklmnopqrstuvwxyz'
     
+    //make arry to keep count
     let final = []
+
+    //loop thru the input array
     for (let i = 0; i < arr.length; i++) {
       let count = 0;
       for (let j = 0; j < arr[i].length; j++) {
