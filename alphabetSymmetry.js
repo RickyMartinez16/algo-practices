@@ -19,6 +19,7 @@ function solve(arr){
 
   
   function solve(arr){  
+      //make an alphabet var
     const alphabet = 'abcdefghijklmnopqrstuvwxyz'
     
     let final = []
