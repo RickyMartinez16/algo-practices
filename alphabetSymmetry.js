@@ -27,12 +27,18 @@ function solve(arr){
 
     //loop thru the input array
     for (let i = 0; i < arr.length; i++) {
+        //make count var
       let count = 0;
+
+      //loop to get a new j var
       for (let j = 0; j < arr[i].length; j++) {
+            //if arr var to lowercase equals alphabet element
         if (arr[i][j].toLowerCase() === alphabet[j]) {
+            //add one to the count
           count++;
         }
       }
+      //add the final count to the final array
       final.push(count); 
     }
     return final
