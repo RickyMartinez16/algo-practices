@@ -2,6 +2,7 @@
 
 //not all postive input ints
 
+//input
 input = [-2, -5, 0, 1, 2, 3];
 
 function findHighestVal() {
