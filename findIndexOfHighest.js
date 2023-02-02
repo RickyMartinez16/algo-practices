@@ -5,14 +5,21 @@
 //input
 input = [-2, -5, 0, 1, 2, 3];
 
+
 function findHighestVal() {
+    //initizliae a highest variable 
   let highest = -Infinity;
 
+  //loop thru the input
   for (let i = 0; i < input.length; i++) {
+      //if the element is greater than highest
     if (input[i] > highest) {
+        //input becomes the highest
       highest = input[i];
     }
   }
+
+  //return the index of highest var
   return input.indexOf(highest);
 }
 
