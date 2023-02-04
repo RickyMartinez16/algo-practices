@@ -19,7 +19,7 @@ function findHighestVal() {
     }
   }
 
-  //return the index of highest var
+  //return the index of highest var need to use input arr to use indexOf
   return input.indexOf(highest);
 }
 
