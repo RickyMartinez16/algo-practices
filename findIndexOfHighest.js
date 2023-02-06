@@ -23,5 +23,5 @@ function findHighestVal() {
   return input.indexOf(highest);
 }
 
-//check answer
+//log the answer
 console.log(findHighestVal(input))
