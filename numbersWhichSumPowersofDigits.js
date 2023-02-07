@@ -18,3 +18,20 @@
 
 // eqSumPowdig(370, 3) ----> [153, 370]
 
+
+function eqSumPowdig(hMax, exp) {
+    var result = [];
+    
+    if (hMax < 153) return result;
+    
+    for(var i = 153; i <= hMax; i++) {
+      var hMaxi = i.toString();
+      var sum = 0;
+      
+      for(var j = 0; j < hMaxi.length; j++) {
+        sum += Math.pow(parseInt(hMaxi[j]), exp);
+      }
+      if (sum === i) result.push(sum);
+    }
+  return result;
+}
