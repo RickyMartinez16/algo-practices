@@ -20,17 +20,29 @@
 
 
 function eqSumPowdig(hMax, exp) {
+
+    //make final array
     var result = [];
     
+    //check if the hMax is less than 153 becuase 153 is the smallest possible answer, return empy array if so
     if (hMax < 153) return result;
     
+    //loop with i starting at 153, will add 1 to it each loop
     for(var i = 153; i <= hMax; i++) {
+
+        //make an hMaxi variable to turn the i to a string 
       var hMaxi = i.toString();
+
+      //keep track of the sum var
       var sum = 0;
       
+      //make another loop, run it for each number in the hMaxi to power each number
       for(var j = 0; j < hMaxi.length; j++) {
+          //sum each number of the maxi to the power of exp input
         sum += Math.pow(parseInt(hMaxi[j]), exp);
       }
+
+      //if the sum is the same as the i push the sum into the result var
       if (sum === i) result.push(sum);
     }
   return result;
