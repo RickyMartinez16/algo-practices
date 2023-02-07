@@ -45,5 +45,7 @@ function eqSumPowdig(hMax, exp) {
       //if the sum is the same as the i push the sum into the result var
       if (sum === i) result.push(sum);
     }
+
+    //return final result array
   return result;
 }
