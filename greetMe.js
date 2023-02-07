@@ -4,3 +4,9 @@
 
 // "riley" --> "Hello Riley!"
 // "JACK"  --> "Hello Jack!"
+
+var greet = function(name) {
+    return "Hello " + name[0].toUpperCase() + name.substring(1, name.length).toLowerCase() + "!"
+  };
+
+  
