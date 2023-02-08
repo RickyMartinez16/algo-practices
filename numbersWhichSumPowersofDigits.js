@@ -4,7 +4,7 @@
 // The next number that experiments this particular behaviour is 370 with the same power.
 
 // Write the function eq_sum_powdig(), that finds the numbers below a given upper limit hMax (inclusive) 
-//that fulfills this property but with different exponents as the power for the digits.
+//that fulfills this property but with different exponents as  the power for the digits.
 
 // eq_sum_powdig(hMax, exp): ----> sequence of numbers (sorted list) (Number one should not be considered).
 
