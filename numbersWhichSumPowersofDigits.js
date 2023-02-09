@@ -38,7 +38,7 @@ function eqSumPowdig(hMax, exp) {
       
       //make another loop, run it for each number in the hMaxi to power each number
       for(var j = 0; j < hMaxi.length; j++) {
-          //sum each number of the maxi to the power of exp input
+          //sum each number of the maxi to the power of exp input parse int to get the number out of the string
         sum += Math.pow(parseInt(hMaxi[j]), exp);
       }
 
