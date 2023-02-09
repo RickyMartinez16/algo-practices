@@ -85,5 +85,8 @@ var orderedCount = function (text) {
 
 //best prac-------------------
 
-
+//make a new set with the str and spread that into an array
+//map over new made array
+//look at each character
+//return character and str.split by character length - 1
 const orderedCount = str => [...new Set([...str])].map(char => [char, str.split(char).length - 1])
