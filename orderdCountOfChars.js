@@ -80,3 +80,10 @@ var orderedCount = function (text) {
   return arr;
 
 }
+
+
+
+//best prac-------------------
+
+
+const orderedCount = str => [...new Set([...str])].map(char => [char, str.split(char).length - 1])
