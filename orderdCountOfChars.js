@@ -41,3 +41,42 @@ const orderedCount = function (text) {
     }
     finalArray.push(eleArray)
   }
+
+
+//--------------------------------------------------------------------------------------------------
+
+var orderedCount = function (text) {
+
+    //make a final array element
+  var arr=[];
+
+  //loop thru the input text
+  for (var i=0; i<text.length; ++i){
+
+    //make a varitable for the count
+     var k=0;
+
+     //loop thru final array element
+     for (var j=0; j<arr.length; ++j)
+
+        //if finalArray[j] at first spot [0] equals the text[i] its on 
+        if (arr[j][0]==text[i])
+            //add to count
+            k++;
+        
+        //if count is zero after check
+        if (k==0){
+            //loop thru text starting at input i
+        for (var j=i; j<text.length; ++j)
+            //if text[j] equals text [i]
+          if (text[j]==text[i])
+            //add one to count
+             k++;
+             //push an array of text[i] with count to final array
+          arr.push([text[i],k]);
+       }
+  }
+  //return final array
+  return arr;
+
+}
