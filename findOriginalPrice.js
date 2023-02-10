@@ -13,6 +13,10 @@
 
 
 function DiscoverOriginalPrice(discountedPrice, salePercentage) {
+
+    //initizliae OG price var as discountedPrice divied by the result of 1 minus the result of salesPercentage divived by 100
     let originalPrice = discountedPrice / (1 - salePercentage / 100);
+
+    //return og price to fixed(2) to only have 2 decicmal places
     return originalPrice.toFixed(2);
 }
