@@ -15,6 +15,9 @@ function divCon(x){
         //if the type of element is string
       if(typeof(x[i]) === 'string' ) {
           //add to the string value
+
+
+        // The parseFloat() function parses a string argument and returns a floating point number.
         strValue += parseFloat(x[i]);
         //else if its type is number
       } else if(typeof(x[i]) === 'number' ) {
