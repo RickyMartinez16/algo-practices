@@ -12,3 +12,7 @@
 //25 is the sale percentage and 100 is the original price
 
 
+function DiscoverOriginalPrice(discountedPrice, salePercentage) {
+    let originalPrice = discountedPrice / (1 - salePercentage / 100);
+    return originalPrice.toFixed(2);
+}
