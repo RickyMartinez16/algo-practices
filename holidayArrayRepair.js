@@ -21,11 +21,12 @@
 //the function should return a string "Not possible".
 
 function holidayCount(a1, a2) {
+    //make a map to filter just the numbers greater than 0
   let map1 = a1.filter((element) => element > 0);
-  console.log(parseInt(map1));
-
+    //make a map to filter just the numbers greater than 0
   let map2 = a2.filter((element) => element > 0);
 
+  //find the highest in each map
   let highest1 = 0;
   for (let i = 0; i < map1.length; i++) {
     if (map1[i] > highest1) {
@@ -33,6 +34,7 @@ function holidayCount(a1, a2) {
     }
   }
 
+  //find the highest in each map
   let highest2 = 0;
   for (let i = 0; i < map2.length; i++) {
     if (map1[i] > highest2) {
@@ -40,8 +42,10 @@ function holidayCount(a1, a2) {
     }
   }
 
+  //if neither exist return not poss
   if (!highest1 && !highest2) return "Not possible";
 
+  //check which is higher and return proper response
   if (highest1 > highest2) {
     return "Right";
   } else if (highest2 > highest1) {
