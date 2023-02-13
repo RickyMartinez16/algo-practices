@@ -34,6 +34,8 @@ function holidayCount(a1, a2) {
     }
   }
 
+  //can do TWO loops
+
   //find the highest in each map
   let highest2 = 0;
   for (let i = 0; i < map2.length; i++) {
