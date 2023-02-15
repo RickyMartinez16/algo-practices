@@ -4,4 +4,8 @@
 
 // If the n is already the perfect square (e.g. n = 144, n = 81, etc.), you need to just return n.
 
+
+
+//return math pow to return a number to the numver. 
+//for base number use Math.round to round math.square root of n to the nearest numner. and 2 as the exponent
 const nearestSq = n => Math.pow(Math.round(Math.sqrt(n)), 2);
