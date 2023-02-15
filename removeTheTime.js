@@ -13,6 +13,7 @@
 
 
 function shortenToDate(longDate) {
+    //use a regex to replace everything after the comma with nothing
     let result = longDate.replace(/,.*/, "");
     return result
     
