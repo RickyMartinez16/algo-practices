@@ -22,5 +22,6 @@ function shortenToDate(longDate) {
 
 
   function shortenToDate(longDate) {
+      //use .split to remove to split by the comma and [0] to just select the first element
     return longDate.split(",")[0];
   }
