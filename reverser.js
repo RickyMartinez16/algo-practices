@@ -12,9 +12,14 @@
 
 
 function reverse(n){
+    //keep count of the rverse count
     let rev = 0;
+
+    //while n exists
     while (n) {
+        //assign rev to rev times 10 plus n reaminder 10
         rev = rev * 10 + n % 10;
+        //change n 
         n = Math.floor(n/10);
     }
     return rev;
