@@ -9,8 +9,11 @@
 
 
 function numberToPower(number, power){
+    //keep track of total
     var total = 1;
+    //loop for as long as i is less than or equal to power to get amonut of powers
     for (var i = 1; i <= power; i++) { 
+        //total is total times number
       total = total * number;
     }
     return total;
