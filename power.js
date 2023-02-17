@@ -6,3 +6,12 @@
 // numberToPower(2,3)  // -> 8 ( = 2 * 2 * 2 )
 // numberToPower(10,6) // -> 1000000
 // Note: Math.pow and some other Math functions like eval() and ** are disabled.
+
+
+function numberToPower(number, power){
+    var total = 1;
+    for (var i = 1; i <= power; i++) { 
+      total = total * number;
+    }
+    return total;
+  }
