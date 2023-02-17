@@ -13,5 +13,6 @@
 
 
 function chromosomeCheck(sperm) {
+    //ternery. if sprm is XX return congrats daughters else return congrats son
     return sperm === "XX" ? "Congratulations! You're going to have a daughter." : "Congratulations! You're going to have a son."
   }
