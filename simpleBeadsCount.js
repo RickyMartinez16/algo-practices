@@ -14,3 +14,10 @@ function countRedBeads(n) {
     //return result of n times 2 then minus 2
     return (n * 2) - 2
   }
+
+
+//best
+
+function countRedBeads(n) {
+    return n < 2 ? 0 : 2 * n - 2;
+  }
