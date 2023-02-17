@@ -56,6 +56,8 @@ function Ship(draft,crew) {
     this.crew = crew;
    }
    
+   //ship prototype isworthit to create the method
    Ship.prototype.isWorthIt = function(){
+       //return true if this draft minus result of this.crew times 1.5 is greater than 20. else return false
    return this.draft-(this.crew*1.5) > 20;
    }
