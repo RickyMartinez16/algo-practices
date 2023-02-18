@@ -16,5 +16,6 @@ function numberToPower(number, power){
         //total is total times number
       total = total * number;
     }
+    //return final total
     return total;
   }
