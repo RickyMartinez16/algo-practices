@@ -2,12 +2,11 @@
 
 
 var findAverage = function (nums) {
-    //initial value
-    const initialValue = 0;
+    
     //reduce the input array to get one number
     const reduced = nums.reduce(
       (accumulator, currentValue) => accumulator + currentValue,
-        initialValue
+        0
     );
     
     //return reduced by length of input to get mean
