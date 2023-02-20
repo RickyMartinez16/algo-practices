@@ -6,3 +6,20 @@
 // "1plus2plus3plus4"  --> "10"
 // "1plus2plus3minus4" -->  "2"
 
+
+//partial working-----------------
+
+
+function calculate(str) {
+    console.log(str.split("plus"))
+    let splitPlus = str.split("plus")
+    let numbersMap = splitPlus.map((element) => Number(element))
+    console.log(numbersMap)
+    
+    const sum = numbersMap.reduce(
+      (accumulator, currentValue) => accumulator + currentValue,
+      0
+    );
+    
+    return String(sum)
+  }
