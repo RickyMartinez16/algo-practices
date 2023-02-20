@@ -22,6 +22,7 @@
 //solved-----------------------
 
 var searchInsert = function(nums, target) {
+    //check if the target is in the nums input if it is just return the index
     if(nums.indexOf(target) > 0){
         return nums.indexOf(target)
     } else {
