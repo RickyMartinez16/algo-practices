@@ -17,3 +17,19 @@
 
 // Input: nums = [1,3,5,6], target = 7
 // Output: 4
+
+
+//solved-----------------------
+
+var searchInsert = function(nums, target) {
+    if(nums.indexOf(target) > 0){
+        return nums.indexOf(target)
+    } else {
+        //put target in nums
+        //sort numbers
+        //find index of target
+        nums = [...nums, target]
+        let sortedNumbers = nums.sort((a, b) => a - b)
+        return sortedNumbers.indexOf(target)
+    }
+};
