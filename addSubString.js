@@ -23,3 +23,11 @@ function calculate(str) {
     
     return String(sum)
   }
+
+
+  //-----working
+
+  function calculate(str) {
+
+    return eval(str.replace(/plus/gi, '+').replace(/minus/gi, '-')).toString();
+  }
