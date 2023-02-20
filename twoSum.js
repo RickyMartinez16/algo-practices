@@ -21,11 +21,17 @@
 // Output: [0,1]
 
 var twoSum = function(nums, target) {
+    //make an answer array
     let answer = []
+
+    //loop thru input array
     for(let i = 0; i < nums.length; i++){
+        //if two elements next to each other sum up to the target
         if(nums[i] + nums[i + 1] == target){
+            //push the element indexes into the answer array
            answer.push(i, i+1) 
         }
     }
+    //return the answer array
     return answer
 };
