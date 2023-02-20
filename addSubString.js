@@ -29,5 +29,6 @@ function calculate(str) {
 
   function calculate(str) {
 
+    //eval() can evaluate a string operation. replace the plus with a + operator and a minus with a minus operator then convert to string
     return eval(str.replace(/plus/gi, '+').replace(/minus/gi, '-')).toString();
   }
