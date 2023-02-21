@@ -21,13 +21,21 @@
 // Output: [0,1]
 
 var twoSum = function(nums, target) {
+    //make an answer array
     let answer = []
 
+    //loop thru input nums
     for(let i = 0; i < nums.length; i++){
+        //make a j var to get the second number
         let j = i + 1
+        
+        //if the two numbers i and j equal the target
         if(nums[i] + nums[j] == target){
+            //push them into the answer array
             answer.push(i, j)
+            //else if thet dont 
         } else {
+            //loop thru again to find another element. as i moves up then k moves up
             for(let k = i + 1; k < nums.length; k++){
                 if(nums[i] + nums[k] == target ){
                     answer.push(i, k)
@@ -35,5 +43,6 @@ var twoSum = function(nums, target) {
             }
         }
     }
+    //slice the array to only get 2 indices
     return answer.slice(0,2)
 };
