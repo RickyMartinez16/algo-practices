@@ -46,3 +46,17 @@ var twoSum = function(nums, target) {
     //slice the array to only get 2 indices
     return answer.slice(0,2)
 };
+
+
+
+//tried this brute force first time couldnt get it but had the idea----------------------------
+
+var twoSum = function(nums, target) {
+    for (let i = 0; i < nums.length; i++) {
+        for (let j = i + 1; j < nums.length; j++) {
+            if (nums[i] + nums[j] == target) {
+                return [i, j]
+            }
+        }
+    }
+};
