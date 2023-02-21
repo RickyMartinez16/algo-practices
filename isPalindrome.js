@@ -24,14 +24,18 @@
 //solved--------------------
 
 var isPalindrome = function(x) {
+    //10 edge case?
     if(x == 10 ) return false
 
+    //trun input to string
     let string = String(x)
+    //split the string
     let split = string.split("")
    
     console.log(split.reverse().join(""))
     console.log(split.join(""))
     
+    //join the string to get number. if it is the same as the string reversed its true
     if(split.join("") == split.reverse().join("")){
         return true
     }
