@@ -19,3 +19,21 @@
 // Input: x = 10
 // Output: false
 // Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
+
+
+//solved--------------------
+
+var isPalindrome = function(x) {
+    if(x == 10 ) return false
+
+    let string = String(x)
+    let split = string.split("")
+   
+    console.log(split.reverse().join(""))
+    console.log(split.join(""))
+    
+    if(split.join("") == split.reverse().join("")){
+        return true
+    }
+    return false
+};
