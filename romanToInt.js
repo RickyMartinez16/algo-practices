@@ -35,6 +35,11 @@
 // Output: 1994
 // Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 
+
+//working not my solution ----------------------------------------
+
+//make an object with the symbols and values
+
 symbols = {
     "I": 1,
     "V": 5,
@@ -46,8 +51,12 @@ symbols = {
 };
 
 var romanToInt = function(s) {
+    //keep count var
     value = 0;
+
+    //loop thru input
     for(let i = 0; i < s.length; i+=1){
+        //check if symbols[s(input) and each element of input] is less than the next element of input the value subtracts the symbals value. else is adds the symbols value
         symbols[s[i]] < symbols[s[i+1]] ? value -= symbols[s[i]]: value += symbols[s[i]]
     }
     return value
