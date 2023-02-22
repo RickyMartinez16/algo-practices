@@ -49,3 +49,7 @@ var longestCommonPrefix = function (strs) {
 
     return strs[0];
 };
+
+
+
+//https://leet-codes.blogspot.com/2022/10/longest-common-prefix.html
