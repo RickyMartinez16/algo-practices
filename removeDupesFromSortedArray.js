@@ -11,6 +11,8 @@
 // Do not allocate extra space for another array. You must do this by modifying the input array in-place with O(1) extra memory.
 
 
+//i dont know what its asking to return? array? or just int?
+
 var removeDuplicates = function(nums) {
     //if the input array is empty reurn 0
     if(nums.length === 0) return 0
