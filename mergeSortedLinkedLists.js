@@ -56,3 +56,10 @@
     //return final list3
     return list3.next
 };
+
+
+// create new linked list pointer
+// while both linked lists are not empty
+  // once we reach end of a linked list, append the other 
+  // list because we know it is already sorted
+  //return final
