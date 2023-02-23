@@ -12,14 +12,22 @@
 
 
 var removeDuplicates = function(nums) {
+    //if the input array is empty reurn 0
     if(nums.length === 0) return 0
 
+    //let i = 0
     let i = 0
+    //loop thru nums array starting at second element
     for(let j = 1; j < nums.length; j++){
+        //compare the two elements. if they are not the same
         if(nums[i] !== nums[j]){
+            //increment i
             i++
+            //make nums[i] equal to nums;j
             nums[i] = nums[j]
         }
     }
+
+    //return i plus 1 for length
     return i + 1
 };
