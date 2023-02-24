@@ -35,12 +35,17 @@ function isValid(s){
     //check if last bracket is an opening bracket
     if(s[s.length - 1] == "(" || s[s.length - 1] =="{" || s[s.length - 1] =="[") return false
     
-
+    //make a stack
     let stack = [];
 
+    //loop thru input
     for(let i = 0; i < s.length; i++){
+        //if ith element is an opening bracket
         if(s[i] == "(" || s[i] == "{" || s[i] == "["){
+            //push it onto the stack
             stack.push(s[i])
+            //else if its a closing bracket check if pairs[last bracket on stack] does not equal this ith element
+            //assume it's closing bracket and check if it matches anything
         } else if (pairs[stack.pop()] !== s[i]){
             return false 
         }
