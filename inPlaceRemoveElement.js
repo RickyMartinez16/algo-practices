@@ -15,3 +15,29 @@
 //However, a small amount of extra storage space is allowed for auxiliary variables. 
 //The input is usually overwritten by the output as the algorithm executes. 
 //An in-place algorithm updates its input sequence only through replacement or swapping of elements.
+
+
+// This is how you solve all "in place" questions. 
+
+// I have been stuck on "in place" problems for too long..
+
+// if index[i] == val. zeroStartIdx ++, then you get your number!
+
+
+var removeElement = function(nums, val) {
+    //make a zero start index
+    var zeroStartIdx = 0;
+
+    //for loop thru array input
+    for(let i=0;i<nums.length;i++){
+        //if the nums[i] element doesnt equal the value
+        if(nums[i]!==val){
+            //change nums at the zero start index to nums[i]
+            nums[zeroStartIdx]=nums[i];
+            //increment the zero start index
+            zeroStartIdx++
+        }
+    }
+    //return zero start index
+    return zeroStartIdx; 
+};
