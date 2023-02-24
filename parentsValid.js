@@ -28,8 +28,11 @@ const pairs = {
 
 function isValid(s){
 
+    //check if input is odd
     if(s.length % 2 === 1) return false;
+    //check if first input is a closing brack
     if(s[0] === ")" || s[0] === "}" || s[0] === "]") return false;
+    //check if last bracket is an opening bracket
     if(s[s.length - 1] == "(" || s[s.length - 1] =="{" || s[s.length - 1] =="[") return false
     
 
