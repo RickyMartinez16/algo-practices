@@ -19,7 +19,7 @@
 // If no match is found, it's impossible to close the bracket so return false
 // Finally, if stack is empty, string is valid
 
-
+//make an pairs object to make the key values
 const pairs = {
     "(": ")",
     "{": "}",
