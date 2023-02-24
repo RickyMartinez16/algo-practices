@@ -29,6 +29,7 @@ const pairs = {
 function validParents(s){
     if(s[0] === ")" || "}" || "]") return false;
     if(s.length % 2 !== 0) return false;
+    if(s[s.length - 1] == "(" || "{" || "[") return false
 
     
 }
