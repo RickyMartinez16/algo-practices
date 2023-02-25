@@ -61,3 +61,43 @@ var romanToInt = function(s) {
     }
     return value
 };
+
+
+const I = 1
+const V = 5
+const X = 10
+const L = 50
+const C = 100
+const D = 500
+const M = 1000
+
+let pairs = {
+    "I": 1,
+    "V": 5,
+    "X": 10,
+    "L": 50,
+    "C": 100,
+    "D": 500,
+    "M": 1000
+}
+
+var romanToInt = function(s) {
+    if(s.length > 15){
+        return
+    }
+    //make sure only allowed letters are in the string
+    const allowedLetters = /([IVXLCDM])+/g
+    // console.log(allowedLetters.test(s))
+    let count = 0
+    for(let i = 0; i < s.length; i++){
+        let j = i + 1
+        if(pairs[s[i]] < pairs[s[j]]){
+            count -= pairs[s[i]]
+        } else {
+            count += pairs[s[i]]
+        }
+    }
+
+    // console.log(s[i] + s[j])
+    return count
+};
