@@ -88,12 +88,20 @@ var romanToInt = function(s) {
     //make sure only allowed letters are in the string
     const allowedLetters = /([IVXLCDM])+/g
     // console.log(allowedLetters.test(s))
+
+    //make a count var
     let count = 0
+    //loop thru input
     for(let i = 0; i < s.length; i++){
+        //make anther vr to comapre
         let j = i + 1
+
+        //if pairs value is less than next pairs value
         if(pairs[s[i]] < pairs[s[j]]){
+            //subtract current from count
             count -= pairs[s[i]]
         } else {
+            //else add tocount
             count += pairs[s[i]]
         }
     }
