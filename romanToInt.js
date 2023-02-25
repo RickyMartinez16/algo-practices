@@ -71,6 +71,8 @@ const C = 100
 const D = 500
 const M = 1000
 
+
+//make an object of pairs
 let pairs = {
     "I": 1,
     "V": 5,
