@@ -7,9 +7,9 @@ function occurrences(string){
 
     for(let i = 0; i < string.length; i++){
         if(map[string[i]]){
-            map[string]++
+            map[string[i]]++
         } else {
-            map[string] = 1
+            map[string[i]] = 1
         }
     }
     return map
