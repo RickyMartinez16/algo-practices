@@ -6,7 +6,17 @@ function oneNum(num){
     let stringInput = String(input)
     let splitInput = stringInput.split("")
     let mappedIput = splitInput.map((element) => Number(element))
-    return mappedIput
+
+    for(let i = 0; i < mappedIput.length; i++){
+        if(map[mappedIput[i]]){
+            map[mappedIput[i]]++
+        } else {
+            map[mappedIput[i]] = 1
+        }
+    }
+    return map
+
+    console.log(mappedIput)
 }
 
 console.log(oneNum(input))
