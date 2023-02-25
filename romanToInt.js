@@ -62,7 +62,7 @@ var romanToInt = function(s) {
     return value
 };
 
-
+//know what the letters value is
 const I = 1
 const V = 5
 const X = 10
