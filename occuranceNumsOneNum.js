@@ -22,6 +22,7 @@ function oneNum(num){
             map[mappedIput[i]] = 1
         }
     }
+    //return final map
     return map
 
     console.log(mappedIput)
