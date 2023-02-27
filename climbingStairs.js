@@ -20,6 +20,11 @@
 // 2. 1 step + 2 steps
 // 3. 2 steps + 1 step
 
+
+//working------------------------------
+
+//this is DYNAMIC PROGRAMING
+
 var climbStairs = function(n) {
     //mamke a base case array
     const memo = [1, 1, 2, 3]
@@ -31,3 +36,4 @@ var climbStairs = function(n) {
     //return nth 
     return memo[n]
 };
+
