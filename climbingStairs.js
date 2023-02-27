@@ -21,9 +21,13 @@
 // 3. 2 steps + 1 step
 
 var climbStairs = function(n) {
+    //mamke a base case array
     const memo = [1, 1, 2, 3]
+    //start a for loop at the next element space in base array
     for(let i = 4; i <= n; i++){
+        //the next base case aray element is the result of last 2 base cases
         memo[i] = memo[i-1] + memo[i-2]
     }
+    //return nth 
     return memo[n]
 };
