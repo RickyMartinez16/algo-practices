@@ -20,6 +20,8 @@
 //working-----------------------------------
 
 var mySqrt = function(x) {
+    //get the square
     let square = Math.sqrt(x);
+    //round down
     return Math.floor(square)
 };
