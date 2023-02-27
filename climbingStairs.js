@@ -20,3 +20,10 @@
 // 2. 1 step + 2 steps
 // 3. 2 steps + 1 step
 
+var climbStairs = function(n) {
+    const memo = [1, 1, 2, 3]
+    for(let i = 4; i <= n; i++){
+        memo[i] = memo[i-1] + memo[i-2]
+    }
+    return memo[n]
+};
