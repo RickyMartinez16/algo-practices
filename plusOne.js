@@ -26,3 +26,20 @@
 // Incrementing by one gives 9 + 1 = 10.
 // Thus, the result should be [1,0].
 
+
+
+
+//--------------working-------------
+
+var plusOne = function(digits) {
+    //join the digits array
+    //trun to number/
+    //add one
+    //split into new array
+
+    let digitsJoin = digits.join("")
+    let numberJoin = BigInt(digitsJoin);
+    numberJoin++
+    
+    return Array.from(String(numberJoin), Number)
+};
