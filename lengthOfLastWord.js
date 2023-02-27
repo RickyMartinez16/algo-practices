@@ -26,3 +26,13 @@
 
 
 
+
+//working mine--------------------------------------------\\
+
+var lengthOfLastWord = function(s) {
+    let justWordsMap = s.split(" ").filter((word) => word.length > 0)
+
+    return justWordsMap[justWordsMap.length - 1].length
+
+};
+
