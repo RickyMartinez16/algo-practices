@@ -39,3 +39,7 @@ var lengthOfLastWord = function(s) {
 };
 
 //trim method removes white sapce from front and back of string
+
+    let trimSplit = s.trim().split(" ")
+    
+    return trimSplit[trimSplit.length - 1].length
