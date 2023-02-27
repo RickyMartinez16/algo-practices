@@ -37,9 +37,13 @@ var plusOne = function(digits) {
     //add one
     //split into new array
 
+    //join the digits array to get one number string
     let digitsJoin = digits.join("")
+    //make the number string into a regular number. use big int for overflow for high test cases
     let numberJoin = BigInt(digitsJoin);
+    //add one to the number
     numberJoin++
     
+    //return an array of the numbers split by a comma
     return Array.from(String(numberJoin), Number)
 };
