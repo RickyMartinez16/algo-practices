@@ -38,3 +38,4 @@ var lengthOfLastWord = function(s) {
 
 };
 
+//trim method removes white sapce from front and back of string
