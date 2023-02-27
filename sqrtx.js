@@ -16,3 +16,10 @@
 // Output: 2
 // Explanation: The square root of 8 is 2.82842..., and since we round it down to the nearest integer, 2 is returned.
 
+
+//working-----------------------------------
+
+var mySqrt = function(x) {
+    let square = Math.sqrt(x);
+    return Math.floor(square)
+};
