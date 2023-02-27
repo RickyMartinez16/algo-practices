@@ -30,8 +30,10 @@
 //working mine--------------------------------------------\\
 
 var lengthOfLastWord = function(s) {
+    //split the words by spaces, filter the words to not include space characters
     let justWordsMap = s.split(" ").filter((word) => word.length > 0)
 
+    //get the last word in new array array length
     return justWordsMap[justWordsMap.length - 1].length
 
 };
