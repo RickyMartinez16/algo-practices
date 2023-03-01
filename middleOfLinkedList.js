@@ -32,11 +32,16 @@
  * @return {ListNode}
  */
  var middleNode = function(head) {
+     //make a fast var that will count two steps
     let fast = head
+    //slow will count just one
     let slow = head
 
+    //while the head and the next is not null
     while(fast != null && fast.next != null){
+        //add two for the fast list when its at the end the slow list will be in the middle
         fast = fast.next.next
+        //add just one to the slow list
         slow = slow.next
     }
 
