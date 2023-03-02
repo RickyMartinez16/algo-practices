@@ -19,16 +19,21 @@
 
 
 var singleNumber = function(nums) {
+    //make a map
     let map = {}
 
+    //loop thru input
     for(let i = 0; i < nums.length; i++){
+        //if number isnt in map add it to map
         if(!map[nums[i]]){
             map[nums[i]] = 1
         } else {
+            //else add one to the valeu
             map[nums[i]]++
         }
     }
 
+    //if map val is 1 thats the only one reutnr it
     if(map[nums] === 1){
         return map[nums]
     }
