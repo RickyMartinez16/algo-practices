@@ -53,9 +53,12 @@ var singleNumber = function(nums) {
 //better--------------
 
 function singleNumber(nums){
+    //if there is only one thing in the array return it
     if(nums.length === 1) return nums[0];
     
+    //loop thru input
     for(let i = 0; i < nums.length; i++){
+        //if the indexOf the ith element is the same as the last index of that element that means its the only one so return it
         if(nums.indexOf(nums[i]) === nums.lastIndexOf(nums[i])){
             return nums[i]
         }
