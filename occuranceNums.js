@@ -24,3 +24,20 @@ console.log(occuranceNums(input))
 
 
 //wokring but very slow---------------------------------------------------------
+
+var singleNumber = function(nums) {
+    let sortedNums = nums.sort((a, b) => a - b)
+    for(let i = 0; i < sortedNums.length; i += 2){
+        let j = i + 1
+        
+        console.log(sortedNums)
+
+        if( sortedNums[i] == sortedNums[j]){
+            continue
+        } else if(sortedNums[i] != sortedNums[j]) {
+            return sortedNums[i]
+        } else if (sortedNums[sortedNums.length - 1] === sortedNums[j]){
+            return sortedNums[j]
+        }
+    }
+};
