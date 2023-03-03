@@ -26,16 +26,23 @@ console.log(occuranceNums(input))
 //wokring but very slow---------------------------------------------------------
 
 var singleNumber = function(nums) {
+    //sort the input array low to big
     let sortedNums = nums.sort((a, b) => a - b)
+
+    //loop thru sorted array increment by 2
     for(let i = 0; i < sortedNums.length; i += 2){
+        //make a j var to compare
         let j = i + 1
         
         console.log(sortedNums)
-
+        //if the i and j are the same keep moving
         if( sortedNums[i] == sortedNums[j]){
             continue
+            //else if theyre not the same 
         } else if(sortedNums[i] != sortedNums[j]) {
+            //return the i
             return sortedNums[i]
+            //else if the last one is the same as j youve run out of js
         } else if (sortedNums[sortedNums.length - 1] === sortedNums[j]){
             return sortedNums[j]
         }
