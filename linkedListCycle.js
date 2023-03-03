@@ -41,11 +41,16 @@
  * @return {boolean}
  */
  var hasCycle = function(head) {
+     //make another list and it will be the faster one
     let fast = head
 
+    //while fast and fast next are both true
     while(fast && fast.next){
+        //head of the list becomes the next node
         head = head.next;
+        //the fast head becomes the next next node
         fast = fast.next.next
+        //if they ever are equal theres a cycle
         if(head === fast){
         return true
     }
