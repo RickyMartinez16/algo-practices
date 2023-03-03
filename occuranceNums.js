@@ -20,3 +20,7 @@ function occuranceNums(array){
 }
 
 console.log(occuranceNums(input))
+
+
+
+//wokring but very slow---------------------------------------------------------
