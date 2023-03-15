@@ -9,9 +9,8 @@
 // Output: [3,2,1]
 
 
-
-
 function postorderTraversal(root) {
+    //if there is no root in the tree return empty array
     if(!root) {
         return [];
     }
