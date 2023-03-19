@@ -50,11 +50,16 @@ function postorderTraversal(root) {
 
 var postorderTraversal = function(root) {
     
+    //create a stack
     const res = [];
+    //call the recursive function
     dfs(root, res);
+
+    //return the stack
     return res;
 };
 
+//the recursive function
 function dfs(root, res) {
     
     if(!root)
