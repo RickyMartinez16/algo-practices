@@ -106,5 +106,6 @@ var postorderTraversal = function(root) {
         if(root.right) stack.push(root.right);
     }
     
+    //return the res array
     return res;
 };
