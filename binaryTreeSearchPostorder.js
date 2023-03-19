@@ -91,7 +91,7 @@ var postorderTraversal = function(root) {
     //make an empty arrat
     const res = [];
     
-    //while the stack length is greater than 0
+    //while the stack length is greater than 0 / non negative
     while(stack.length) {
         
         //assign the root var to include the last val of the stack
