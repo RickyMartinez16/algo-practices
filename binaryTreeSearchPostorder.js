@@ -102,6 +102,7 @@ var postorderTraversal = function(root) {
         
         //if the root left exisits push the root left onto the stack
         if(root.left) stack.push(root.left);
+        //if the root right exisits push the root right onto the stack
         if(root.right) stack.push(root.right);
     }
     
