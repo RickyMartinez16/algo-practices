@@ -42,3 +42,28 @@ function postorderTraversal(root) {
     //return final
     return result;
 }
+
+
+
+
+//RECURSIVE SOLUTION ------------------------------------------
+
+var postorderTraversal = function(root) {
+    
+    const res = [];
+    dfs(root, res);
+    return res;
+};
+
+function dfs(root, res) {
+    
+    if(!root)
+        return null;
+    
+    // visit the left subtree
+    root.left = dfs(root.left, res);
+    // visit the right subtree
+    root.right = dfs(root.right, res);
+    // push the curent node's value to the stack
+    res.push(root.val);
+}
