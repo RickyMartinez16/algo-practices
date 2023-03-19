@@ -78,3 +78,24 @@ function dfs(root, res) {
 
 
 //ITERATIVE------------------------------------------------------------
+
+var postorderTraversal = function(root) {
+    
+    if(!root)
+        return [];
+    
+    const stack = [root];
+    const res = [];
+    
+    while(stack.length) {
+        
+        root = stack.pop();
+        
+        res.unshift(root.val);
+        
+        if(root.left) stack.push(root.left);
+        if(root.right) stack.push(root.right);
+    }
+    
+    return res;
+};
