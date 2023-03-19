@@ -62,7 +62,9 @@ var postorderTraversal = function(root) {
 //the recursive function
 function dfs(root, res) {
     
+    //if the root is empty
     if(!root)
+    //return null
         return null;
     
     // visit the left subtree
