@@ -74,3 +74,7 @@ function dfs(root, res) {
     // push the curent node's value to the stack
     res.push(root.val);
 }
+
+
+
+//ITERATIVE------------------------------------------------------------
