@@ -81,14 +81,20 @@ function dfs(root, res) {
 
 var postorderTraversal = function(root) {
     
+    //if the input is empty
     if(!root)
+        //return an empty array
         return [];
     
+    //create a stack with the root in it
     const stack = [root];
+    //make an empty arrat
     const res = [];
     
+    //while the stack length is greater than 0
     while(stack.length) {
         
+        //assign the root var to include the last val of the stack
         root = stack.pop();
         
         res.unshift(root.val);
