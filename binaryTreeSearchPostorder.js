@@ -97,8 +97,10 @@ var postorderTraversal = function(root) {
         //assign the root var to include the last val of the stack
         root = stack.pop();
         
+        //puts the root.val to the front of the res array
         res.unshift(root.val);
         
+        //if the root left exisits push the root left onto the stack
         if(root.left) stack.push(root.left);
         if(root.right) stack.push(root.right);
     }
