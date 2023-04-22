@@ -36,5 +36,6 @@ var sumOfMultiples = function(n) {
             sum += i
         }
     }
+    //return the sum
     return sum
 };
