@@ -1,4 +1,5 @@
-// Given a positive integer n, find the sum of all integers in the range [1, n] inclusive that are divisible by 3, 5, or 7.
+// Given a positive integer n, find the sum of all integers in the range [1, n] 
+//inclusive that are divisible by 3, 5, or 7.
 
 // Return an integer denoting the sum of all numbers in the given range satisfying the constraint.
 
@@ -19,3 +20,8 @@
 // Input: n = 9
 // Output: 30
 // Explanation: Numbers in the range [1, 9] that are divisible by 3, 5, or 7 are 3, 5, 6, 7, 9. The sum of these numbers is 30.
+
+
+
+
+
