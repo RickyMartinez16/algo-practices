@@ -27,9 +27,12 @@
 var sumOfMultiples = function(n) {
     //make a var to hold the sum
     let sum = 0;
-    
+
+    //loop to check all the nums from 1 to n
     for(let i = 1; i <= n; i++){
+        //check if each is divisble by 3, 5, 7 if they are they will have a remainder of 0
         if( i % 3 == 0 || i % 5 == 0 || i % 7 == 0 ) {
+            //if they are you can add the i to the sum
             sum += i
         }
     }
