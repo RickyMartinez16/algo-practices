@@ -35,3 +35,12 @@
 
 // Input: nums = [1], index = [0]
 // Output: [1]
+
+
+var createTargetArray = function(nums, index) {
+    let array = [];
+    for(let i = 0; i < nums.length; i++){
+        array.splice(index[i], 0, nums[i] )
+    }
+    return array
+};
