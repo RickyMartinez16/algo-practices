@@ -42,6 +42,7 @@ var createTargetArray = function(nums, index) {
     let array = [];
     //make a loop to loop thru both inputs
     for(let i = 0; i < nums.length; i++){
+        //splice to inset at a specific spot in the new array
         array.splice(index[i], 0, nums[i] )
     }
     return array
