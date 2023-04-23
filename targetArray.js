@@ -45,5 +45,6 @@ var createTargetArray = function(nums, index) {
         //splice to inset at a specific spot in the new array
         array.splice(index[i], 0, nums[i] )
     }
+    //return the final array
     return array
 };
