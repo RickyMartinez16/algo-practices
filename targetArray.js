@@ -40,6 +40,7 @@
 var createTargetArray = function(nums, index) {
     //make a new empty array
     let array = [];
+    //make a loop to loop thru both inputs
     for(let i = 0; i < nums.length; i++){
         array.splice(index[i], 0, nums[i] )
     }
