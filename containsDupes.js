@@ -68,6 +68,7 @@
 // Time complexity: O(n)
 // Space complexity: O(n)
 var containsDuplicate = function(nums) {
+    //make a new set with the numbers. set will remove dupes
     const s = new Set(nums); 
     return s.size !== nums.length
 };
