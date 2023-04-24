@@ -56,6 +56,7 @@ var minMovesToSeat = function(seats, students) {
 
     //loop thru the inputs
     for(let i = 0; i < studentsSorted.length; i++){
+        //if the students and the seat is the same number just mkaee the move 0 to not add anything
         if(studentsSorted[i] === seatsSorted[i]){
             move = 0
         } else {
