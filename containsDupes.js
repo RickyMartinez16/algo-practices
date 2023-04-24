@@ -70,5 +70,6 @@
 var containsDuplicate = function(nums) {
     //make a new set with the numbers. set will remove dupes
     const s = new Set(nums); 
+    //return true or false is the set size is the same number as the length of the input array
     return s.size !== nums.length
 };
