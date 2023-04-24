@@ -60,6 +60,7 @@ var minMovesToSeat = function(seats, students) {
         if(studentsSorted[i] === seatsSorted[i]){
             move = 0
         } else {
+            //else if theyre not the same find the absolute difference
             move = Math.abs(studentsSorted[i] - seatsSorted[i])
             moves+= move
         }
