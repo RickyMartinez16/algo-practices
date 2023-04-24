@@ -62,6 +62,7 @@ var minMovesToSeat = function(seats, students) {
         } else {
             //else if theyre not the same find the absolute difference
             move = Math.abs(studentsSorted[i] - seatsSorted[i])
+            //add the cumultive score to moves
             moves+= move
         }
     }
