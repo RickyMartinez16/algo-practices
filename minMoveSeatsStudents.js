@@ -41,3 +41,24 @@
 // - The third student is not moved.
 // - The fourth student is not moved.
 // In total, 1 + 3 + 0 + 0 = 4 moves were used.
+
+
+
+
+var minMovesToSeat = function(seats, students) {
+    let seatsSorted = seats.sort((a, b) => a - b);
+    let studentsSorted = students.sort((a, b) => a -b)
+
+    let moves = 0
+    let move = 0
+
+    for(let i = 0; i < studentsSorted.length; i++){
+        if(studentsSorted[i] === seatsSorted[i]){
+            move = 0
+        } else {
+            move = Math.abs(studentsSorted[i] - seatsSorted[i])
+            moves+= move
+        }
+    }
+    return moves
+};
