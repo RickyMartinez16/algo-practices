@@ -54,6 +54,7 @@ var minMovesToSeat = function(seats, students) {
     let moves = 0
     let move = 0
 
+    //loop thru the inputs
     for(let i = 0; i < studentsSorted.length; i++){
         if(studentsSorted[i] === seatsSorted[i]){
             move = 0
