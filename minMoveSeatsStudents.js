@@ -46,9 +46,11 @@
 
 
 var minMovesToSeat = function(seats, students) {
+    //sort both inputs from small to big
     let seatsSorted = seats.sort((a, b) => a - b);
     let studentsSorted = students.sort((a, b) => a -b)
 
+    //keep track of total moves and each move
     let moves = 0
     let move = 0
 
