@@ -29,6 +29,7 @@
 
     //loop thru sorted array
     for(i = 0; i < sortedArray.length; i ++){
+        //make a j var to check two vars
         j = i + 1;
         if(sortedArray[i] === sortedArray[j] || sortedArray.length - 1 === sortedArray.length - 2){
             return true
