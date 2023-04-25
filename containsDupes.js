@@ -17,7 +17,7 @@
 // Output: true
 
 
-
+//-------------not working------------------//
 /**
  * @param {number[]} nums
  * @return {boolean}
