@@ -53,7 +53,9 @@
  var containsDuplicate = function(nums) {
      //sort the inpit array
     nums.sort((a,b) => a-b);
-    for(let i = 0; i <= nums.length-1; i++){
+
+    //loop thru the sorted array 
+    for(let i = 0; i < nums.length; i++){
         if(nums[i] === nums[i+1]){
             return true
         }
