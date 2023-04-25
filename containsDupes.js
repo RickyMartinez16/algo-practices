@@ -36,6 +36,7 @@
         if(sortedArray[i] === sortedArray[j] || sortedArray.length - 1 === sortedArray.length - 2){
             return true
         } else {
+            //else return false
             return false
         }
     }
