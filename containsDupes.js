@@ -27,6 +27,7 @@
     let sortedArray = nums.sort((a, b) => a - b)
     console.log(sortedArray)
 
+    //loop thru sorted array
     for(i = 0; i < sortedArray.length; i ++){
         j = i + 1;
         if(sortedArray[i] === sortedArray[j] || sortedArray.length - 1 === sortedArray.length - 2){
