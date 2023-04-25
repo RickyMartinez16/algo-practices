@@ -31,6 +31,8 @@
     for(i = 0; i < sortedArray.length; i ++){
         //make a j var to check two vars
         j = i + 1;
+
+        //if the index i is equal to index j or if the last two are the ssame return true
         if(sortedArray[i] === sortedArray[j] || sortedArray.length - 1 === sortedArray.length - 2){
             return true
         } else {
