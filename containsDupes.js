@@ -56,10 +56,12 @@
 
     //loop thru the sorted array 
     for(let i = 0; i < nums.length; i++){
+        //if nums index i and index i plus one are the same return true
         if(nums[i] === nums[i+1]){
             return true
         }
     }
+    //else return false
     return false
 };
 
