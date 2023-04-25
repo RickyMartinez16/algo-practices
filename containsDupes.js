@@ -23,6 +23,7 @@
  * @return {boolean}
  */
  var containsDuplicate = function(nums) {
+     //sort the input array
     let sortedArray = nums.sort((a, b) => a - b)
     console.log(sortedArray)
 
