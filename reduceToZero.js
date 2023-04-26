@@ -42,7 +42,9 @@ var numberOfSteps = function(num) {
     while(num > 0){
         //check if the number is even
         if(num % 2 === 0){
+            //if it is then divide it by 2
             num = num / 2
+            //if it is not even then subtract one to make it even
         } else {
             num = num - 1
         }
