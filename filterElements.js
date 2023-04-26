@@ -53,7 +53,10 @@ var filter = function(arr, fn) {
 
     //loop thru the array input
     for (let i = 0; i < arr.length; i++) {
+
+        //check each array element against the filter funtion. if the filter functionreturns true on the element
       if (fn(arr[i], i)) {
+          //push it into the final array
         res.push(arr[i]);
       }
     }
