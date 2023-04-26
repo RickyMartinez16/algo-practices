@@ -40,7 +40,7 @@ var numberOfSteps = function(num) {
 
     //make a loop to constalty run if num is greater than 0
     while(num > 0){
-        //
+        //check if the number is even
         if(num % 2 === 0){
             num = num / 2
         } else {
