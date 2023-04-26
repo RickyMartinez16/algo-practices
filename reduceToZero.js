@@ -48,6 +48,7 @@ var numberOfSteps = function(num) {
         } else {
             num = num - 1
         }
+        //add one to the steps count if the loop has to run again
         steps++
     }
     return steps
