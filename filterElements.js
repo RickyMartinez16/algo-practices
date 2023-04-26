@@ -26,3 +26,21 @@
 // Output: [-2,0,1,2]
 // Explanation:
 // Falsey values such as 0 should be filtered out
+
+
+
+
+/**
+ * @param {number[]} arr
+ * @param {Function} fn
+ * @return {number[]}
+ */
+ var filter = function(arr, fn) {
+    let array = []
+    for(let i = 0; i < arr.length; i++){
+        if(fn(arr[i]) === true){
+            array.push(arr[i])
+        }
+    }
+    return array
+};
