@@ -37,7 +37,10 @@
 var numberOfSteps = function(num) {
     //make a var to keep count of how many steps
     let steps = 0
+
+    //make a loop to constalty run if num is greater than 0
     while(num > 0){
+        //
         if(num % 2 === 0){
             num = num / 2
         } else {
