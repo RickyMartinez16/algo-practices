@@ -48,6 +48,7 @@
 
 
 var filter = function(arr, fn) {
+    //make a final array var
     const res = [];
     for (let i = 0; i < arr.length; i++) {
       if (fn(arr[i], i)) {
