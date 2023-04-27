@@ -34,3 +34,15 @@ var sortSentence = function(s) {
     }
     return finalSentence.join(" ").replace(/\d+/g, '');
 };
+
+//-------------working----------------//
+
+var sortSentence = function(s) {
+
+    let sentenceSplit = s.split(" ").sort((a, b) => {
+        return a[a.length - 1] - b[b.length - 1]
+    })
+    return sentenceSplit.join(" ").replace(/\d+/g, '');
+};
+
+
