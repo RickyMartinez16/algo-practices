@@ -18,3 +18,19 @@
 // Input: s = "Myself2 Me1 I4 and3"
 // Output: "Me Myself and I"
 // Explanation: Sort the words in s to their original positions "Me1 Myself2 and3 I4", then remove the numbers.
+
+
+//-------------some pass some not-------------//
+
+var sortSentence = function(s) {
+    let finalSentence = []
+    let sentenceSplit = s.split(" ")
+    const regex = /\d+/;
+
+    for(let i = 0; i < sentenceSplit.length; i++){
+        let matchedNum = sentenceSplit[i].match(regex);
+        console.log(matchedNum)
+        finalSentence[i] = sentenceSplit[matchedNum - 1]
+    }
+    return finalSentence.join(" ").replace(/\d+/g, '');
+};
