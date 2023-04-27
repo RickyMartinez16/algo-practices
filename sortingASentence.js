@@ -43,6 +43,8 @@ var sortSentence = function(s) {
         //and checking the last item in each word becasue it is a number. so it's checking the two numbers
         return a[a.length - 1] - b[b.length - 1]
     })
+
+    //now that sentence split is ordered join the array with a spce in between and eliminate all the numbers using a regex
     return sentenceSplit.join(" ").replace(/\d+/g, '');
 };
 
