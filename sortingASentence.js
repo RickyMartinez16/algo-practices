@@ -38,8 +38,9 @@ var sortSentence = function(s) {
 //-------------working----------------//
 
 var sortSentence = function(s) {
-
+    //split the sentence by word. sort that by taking two words
     let sentenceSplit = s.split(" ").sort((a, b) => {
+        //and checking the last item in each word becasue it is a number. so it's checking the two numbers
         return a[a.length - 1] - b[b.length - 1]
     })
     return sentenceSplit.join(" ").replace(/\d+/g, '');
