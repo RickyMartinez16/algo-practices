@@ -16,3 +16,15 @@
 // Input: s = "abc", indices = [0,1,2]
 // Output: "abc"
 // Explanation: After shuffling, each character remains in its position.
+
+
+
+
+
+var restoreString = function(s, indices) {
+    let finalArray = [];
+    for(let i = 0; i < s.length; i++){
+        finalArray[indices[i]] = s[i]
+    }
+    return finalArray.join("")
+};
