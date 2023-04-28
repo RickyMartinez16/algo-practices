@@ -32,3 +32,5 @@ var createCounter = function (n) {
       return counter++;
     };
   };
+
+  //you are returning a function not a value
