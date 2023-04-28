@@ -22,9 +22,14 @@
 
 
 var restoreString = function(s, indices) {
+    //make a final array vairable to house the string
     let finalArray = [];
+
+    //loop thru string input 
     for(let i = 0; i < s.length; i++){
+        //the finalArray at index indices[i] will be the i letter of the string array
         finalArray[indices[i]] = s[i]
     }
+    //join the final array to make a string
     return finalArray.join("")
 };
