@@ -34,3 +34,11 @@ var createCounter = function (n) {
   };
 
   //you are returning a function not a value
+
+
+
+  function createCounter(n){
+    return function counter(){
+        return n++
+    }
+}
