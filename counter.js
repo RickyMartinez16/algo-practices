@@ -21,9 +21,14 @@
 // Output: [-2,-1,0,1,2]
 // Explanation: counter() initially returns -2. Then increases after each sebsequent call.
 
+//create a variable named createCounter which is a function. the function takes in a parameter (n int)
 var createCounter = function (n) {
+    //inside the create function make a variable to start th ecounter at number n 
     let counter = n;
+
+    //return a new function 
     return function () {
+        //the new function returns counter plus one every time its called
       return counter++;
     };
   };
