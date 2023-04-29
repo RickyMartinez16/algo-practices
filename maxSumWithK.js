@@ -49,6 +49,7 @@ var maximizeSum = function(nums, k) {
         //add it to the sum
         sum += m
 
+        //add m plus 1 back to the sorted array
         sortedArray.push(m + 1);
 
         count++
