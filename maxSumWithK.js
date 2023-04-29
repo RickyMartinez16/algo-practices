@@ -32,6 +32,7 @@
 
 
 var maximizeSum = function(nums, k) {
+    //sort the array from small to big
     let sortedArray = nums.sort((a, b) => a - b)
     let count = 0
     let sum = 0
