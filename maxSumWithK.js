@@ -46,6 +46,7 @@ var maximizeSum = function(nums, k) {
         //get the last item of the array
         let m = sortedArray.pop();
 
+        //add it to the sum
         sum += m
 
         sortedArray.push(m + 1);
