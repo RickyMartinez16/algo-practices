@@ -34,6 +34,8 @@
 var maximizeSum = function(nums, k) {
     //sort the array from small to big
     let sortedArray = nums.sort((a, b) => a - b)
+
+    //count number of times you run operation to keep it below k
     let count = 0
     let sum = 0
     while(count < k){
