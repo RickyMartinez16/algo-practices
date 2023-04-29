@@ -43,7 +43,7 @@ var maximizeSum = function(nums, k) {
 
     //while count is less than k
     while(count < k){
-        //get the last item of the array
+        //get the last item of the array. remove it from array
         let m = sortedArray.pop();
 
         //add it to the sum
