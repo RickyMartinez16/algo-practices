@@ -36,6 +36,7 @@ var numberOfMatches = function(teams) {
     let matches = 0;
 
     //while math.floor rounds down to nearest int. while teams / 2 rounded down is greater than 0
+    //need to round down when teams is odd
     while(Math.floor(teams/2) > 0){
         //check if teams is even. if so 
         if(teams % 2 === 0){
