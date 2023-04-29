@@ -55,5 +55,6 @@ var maximizeSum = function(nums, k) {
         //add one to count
         count++
     }
+    //return final sum
     return sum
 };
