@@ -37,6 +37,8 @@ var maximizeSum = function(nums, k) {
 
     //count number of times you run operation to keep it below k
     let count = 0
+
+    //keep track of final sum
     let sum = 0
     while(count < k){
     
