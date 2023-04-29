@@ -31,3 +31,19 @@
 
 
 
+var maximizeSum = function(nums, k) {
+    let sortedArray = nums.sort((a, b) => a - b)
+    let count = 0
+    let sum = 0
+    while(count < k){
+    
+        let m = sortedArray.pop();
+
+        sum += m
+
+        sortedArray.push(m + 1);
+
+        count++
+    }
+    return sum
+};
