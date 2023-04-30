@@ -41,6 +41,7 @@ var numberOfMatches = function(teams) {
         if(teams % 2 === 0){
             //assign teams to now equal teams / 2
             teams = teams / 2;
+            //add to the matches total
             matches += teams
         } else {
             matches += (teams - 1) / 2
