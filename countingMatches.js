@@ -34,6 +34,8 @@
 var numberOfMatches = function(teams) {
     //keep track of how many matches there will be
     let matches = 0;
+
+    //while math.floor rounds down to nearest int. while teams / 2 rounded down is greater than 0
     while(Math.floor(teams/2) > 0){
         if(teams % 2 === 0){
             teams = teams / 2;
