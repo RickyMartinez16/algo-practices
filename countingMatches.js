@@ -32,6 +32,7 @@
 
 
 var numberOfMatches = function(teams) {
+    //keep track of how many matches there will be
     let matches = 0;
     while(Math.floor(teams/2) > 0){
         if(teams % 2 === 0){
