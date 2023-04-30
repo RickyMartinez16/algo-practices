@@ -27,3 +27,20 @@
 // - 3rd Round: Teams = 4, Matches = 2, and 2 teams advance.
 // - 4th Round: Teams = 2, Matches = 1, and 1 team is declared the winner.
 // Total number of matches = 7 + 3 + 2 + 1 = 13.
+
+
+
+
+var numberOfMatches = function(teams) {
+    let matches = 0;
+    while(Math.floor(teams/2) > 0){
+        if(teams % 2 === 0){
+            teams = teams / 2;
+            matches += teams
+        } else {
+            matches += (teams - 1) / 2
+            teams = (teams - 1) / 2 + 1
+        }
+    }
+    return matches
+};
