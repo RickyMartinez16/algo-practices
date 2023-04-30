@@ -40,5 +40,6 @@ var countConsistentStrings = function(allowed, words) {
             array.push(words[i])
         }
     }
+    //return the legnth of the final array
     return array.length
 };
