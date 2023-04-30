@@ -39,6 +39,7 @@ var numberOfMatches = function(teams) {
     while(Math.floor(teams/2) > 0){
         //check if teams is even. if so 
         if(teams % 2 === 0){
+            //assign teams to now equal teams / 2
             teams = teams / 2;
             matches += teams
         } else {
