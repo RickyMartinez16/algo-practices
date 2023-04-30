@@ -44,7 +44,10 @@ var numberOfMatches = function(teams) {
             //add to the matches total
             matches += teams
         } else {
+            //if teams is odd
+            //add to matches total
             matches += (teams - 1) / 2
+            //assign to teams
             teams = (teams - 1) / 2 + 1
         }
     }
