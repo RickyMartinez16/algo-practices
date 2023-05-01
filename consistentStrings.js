@@ -20,3 +20,9 @@
 // Input: allowed = "cad", words = ["cc","acd","b","ba","bac","bad","ac","d"]
 // Output: 4
 // Explanation: Strings "cc", "acd", "ac", and "d" are consistent.
+
+
+
+//------------working-------------------//
+
+
