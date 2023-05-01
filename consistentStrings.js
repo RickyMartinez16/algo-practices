@@ -26,3 +26,13 @@
 //------------working-------------------//
 
 
+var countConsistentStrings = function(allowed, words) {
+    const regex = new RegExp(`^[${allowed}]+$`);
+    let array = [];
+    for(let i = 0; i < words.length; i++){
+        if(regex.test(words[i])){
+            array.push(words[i])
+        }
+    }
+    return array.length
+};
