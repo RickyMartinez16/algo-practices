@@ -28,6 +28,7 @@
 
 
 var arrayStringsAreEqual = function(word1, word2) {
+    //join the two words. check if theyre the same
     if(word1.join("") === word2.join("")){
         return true
     }
