@@ -35,6 +35,7 @@ var countConsistentStrings = function(allowed, words) {
 
     //loop thru the input words
     for(let i = 0; i < words.length; i++){
+        //if the word passes the regex test push it into the array
         if(regex.test(words[i])){
             array.push(words[i])
         }
