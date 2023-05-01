@@ -20,3 +20,8 @@
 
 // Input: word1  = ["abc", "d", "defg"], word2 = ["abcddefg"]
 // Output: true
+
+
+
+
+//---------------working----------------//
