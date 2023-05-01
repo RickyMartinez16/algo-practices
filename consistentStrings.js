@@ -27,6 +27,7 @@
 
 
 var countConsistentStrings = function(allowed, words) {
+    //make the regex to check for only the letters in the allowed variable. the regex checks for only the given letters
     const regex = new RegExp(`^[${allowed}]+$`);
     let array = [];
     for(let i = 0; i < words.length; i++){
