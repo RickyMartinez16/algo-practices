@@ -32,10 +32,14 @@
 
 
 var countKDifference = function(nums, k) {
+    //keep track of count
     let count = 0
 
+    //loop for first num
     for(let i = 0; i < nums.length; i++){
+        //inner loop for second num
         for(let j = i + 1; j < nums.length; j++ ){
+            //if i - j is k add to the count
             if(Math.abs(nums[i] - nums[j]) === k){
             count++
             }
