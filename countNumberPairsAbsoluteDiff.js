@@ -37,7 +37,7 @@ var countKDifference = function(nums, k) {
 
     //loop for first num
     for(let i = 0; i < nums.length; i++){
-        //inner loop for second num
+        //inner loop for second num. i + 1 ensures wont count nums twice
         for(let j = i + 1; j < nums.length; j++ ){
             //if i - j is k add to the count
             if(Math.abs(nums[i] - nums[j]) === k){
