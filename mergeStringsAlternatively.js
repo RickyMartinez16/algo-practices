@@ -39,8 +39,11 @@ var mergeAlternately = function(word1, word2) {
     //make a final array var to hold the final letters
     let finalArray = [];
 
+    //if word 1 is longer 
     if(word1Split.length > word2Split.length){
+        //loop thru the longer word
         for(let i = 0; i < word1Split.length; i++){
+            //push a letter from each
             finalArray.push(word1Split[i], word2Split[i])
         }
     } else {
