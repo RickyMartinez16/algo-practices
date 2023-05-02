@@ -32,6 +32,7 @@
 
 
 var mergeAlternately = function(word1, word2) {
+    //split the input words into array of indicual letters
     let word1Split = word1.split("");
     let word2Split = word2.split("");
 
