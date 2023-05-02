@@ -29,3 +29,22 @@
 // word1:  a   b   c   d
 // word2:    p   q 
 // merged: a p b q c   d
+
+
+var mergeAlternately = function(word1, word2) {
+    let word1Split = word1.split("");
+    let word2Split = word2.split("");
+
+    let finalArray = [];
+
+    if(word1Split.length > word2Split.length){
+        for(let i = 0; i < word1Split.length; i++){
+            finalArray.push(word1Split[i], word2Split[i])
+        }
+    } else {
+       for(let i = 0; i < word2Split.length; i++){
+            finalArray.push(word1Split[i], word2Split[i])
+        } 
+    }
+    return finalArray.join("")
+};
