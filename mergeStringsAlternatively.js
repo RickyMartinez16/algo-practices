@@ -52,5 +52,6 @@ var mergeAlternately = function(word1, word2) {
             finalArray.push(word1Split[i], word2Split[i])
         } 
     }
+    //join the final array to make it a word
     return finalArray.join("")
 };
