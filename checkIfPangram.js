@@ -17,7 +17,9 @@
 
 
 var checkIfPangram = function(sentence) {
+    //make a regex to check if each letter is used once
     const regex = /([a-z])(?!.*\1)/g;
+    
   const uniqueChars = sentence.toLowerCase().match(regex);
   return uniqueChars?.length === 26;
 };
