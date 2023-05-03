@@ -24,5 +24,6 @@ var reverseWords = function(s) {
         //push into the new array each word after it is split and then reversed and then joined again
         array.push(words[i].split("").reverse().join(""))
     }
+    //return a final joined sentence
     return array.join(" ")
 };
