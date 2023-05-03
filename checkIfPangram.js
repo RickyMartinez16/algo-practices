@@ -21,5 +21,6 @@ var checkIfPangram = function(sentence) {
     const regex = /([a-z])(?!.*\1)/g;
     //see how many there are
   const uniqueChars = sentence.toLowerCase().match(regex);
+  //if theres 26 it's pangram rerturn true
   return uniqueChars?.length === 26;
 };
