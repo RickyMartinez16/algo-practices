@@ -16,8 +16,12 @@
 var reverseWords = function(s) {
     //split the words
     let words = s.split(" ");
+    //make a final array
     let array = []
+
+    //loop thru the array of words
     for(let i = 0; i < words.length; i++){
+        //push into the new array each word after it is split and then reversed and then joined again
         array.push(words[i].split("").reverse().join(""))
     }
     return array.join(" ")
