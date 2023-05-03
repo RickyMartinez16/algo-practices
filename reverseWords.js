@@ -14,6 +14,7 @@
 
 
 var reverseWords = function(s) {
+    //split the words
     let words = s.split(" ");
     let array = []
     for(let i = 0; i < words.length; i++){
