@@ -13,3 +13,11 @@
 
 // Input: sentence = "leetcode"
 // Output: false
+
+
+
+var checkIfPangram = function(sentence) {
+    const regex = /([a-z])(?!.*\1)/g;
+  const uniqueChars = sentence.toLowerCase().match(regex);
+  return uniqueChars?.length === 26;
+};
