@@ -29,10 +29,14 @@
 
 
 var countAsterisks = function(s) {
+    //keep track of count
     let count = 0; 
+    //make a flag var to flag when we should count 
     let flag = true;
 
+    //loop thru the input string
     for(let i = 0; i < s.length; i++){
+        //if 
         if(s[i] == "|"){
             flag = !flag
         }
