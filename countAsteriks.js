@@ -50,5 +50,6 @@ var countAsterisks = function(s) {
             }
         }
     }
+    //return final count
     return count
 };
