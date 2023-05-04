@@ -26,3 +26,21 @@
 // Output: 5
 // Explanation: The considered characters are underlined: "yo|uar|e**|b|e***au|tifu|l". 
 //There are 5 asterisks considered. Therefore, we return 5.
+
+
+var countAsterisks = function(s) {
+    let count = 0; 
+    let flag = true;
+
+    for(let i = 0; i < s.length; i++){
+        if(s[i] == "|"){
+            flag = !flag
+        }
+        if(flag){
+            if(s[i] == "*"){
+                count++
+            }
+        }
+    }
+    return count
+};
