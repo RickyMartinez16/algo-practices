@@ -19,3 +19,16 @@
 // Output: 0
 // Explanation: Arrival time of the train was 13:00 hours. It is delayed by 11 hours. 
 //Now it will reach at 13+11=24 (Which is denoted by 00:00 in 24 hours format so return 0).
+
+
+
+
+
+var findDelayedArrivalTime = function(arrivalTime, delayedTime) {
+    
+    if(arrivalTime + delayedTime >= 24){
+        return arrivalTime + delayedTime - 24
+    } else {
+        return arrivalTime + delayedTime
+    }
+};
