@@ -41,6 +41,7 @@ var countAsterisks = function(s) {
             //flip flag bool
             flag = !flag
         }
+        //if flag bool is true
         if(flag){
             if(s[i] == "*"){
                 count++
