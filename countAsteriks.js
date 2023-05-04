@@ -36,8 +36,9 @@ var countAsterisks = function(s) {
 
     //loop thru the input string
     for(let i = 0; i < s.length; i++){
-        //if 
+        //if the ith letter is a bar
         if(s[i] == "|"){
+            //flip flag bool
             flag = !flag
         }
         if(flag){
