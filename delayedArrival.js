@@ -26,9 +26,12 @@
 
 var findDelayedArrivalTime = function(arrivalTime, delayedTime) {
     
+    //if the arrival time plus the delayed time is equal to or greater than 24
     if(arrivalTime + delayedTime >= 24){
+        //add them and subtract 24
         return arrivalTime + delayedTime - 24
     } else {
+        //if not just return the sum
         return arrivalTime + delayedTime
     }
 };
