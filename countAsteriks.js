@@ -43,7 +43,9 @@ var countAsterisks = function(s) {
         }
         //if flag bool is true
         if(flag){
+            //check if the ith letter is a star. if it is 
             if(s[i] == "*"){
+                //add one to count
                 count++
             }
         }
