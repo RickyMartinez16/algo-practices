@@ -30,3 +30,4 @@ var buildArray = function(nums) {
     }
     return final
 };
+
