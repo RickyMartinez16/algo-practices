@@ -20,8 +20,9 @@
 
 
 var shuffle = function(nums, n) {
+    //slice the front half of the array
     let array1 = nums.slice(0, n);
-    
+    //slice the back half of the array
     let array2 = nums.slice(n, nums.length)
     
 
