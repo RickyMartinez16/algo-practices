@@ -25,9 +25,9 @@ var shuffle = function(nums, n) {
     //slice the back half of the array
     let array2 = nums.slice(n, nums.length)
     
-
     let final = []
 
+    //loop to push iteams into final aray
     for(let i = 0; i < nums.length; i++){
         final.push(array1[i], array2[i])
         if(final.length == nums.length)break
