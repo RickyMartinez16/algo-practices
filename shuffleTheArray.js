@@ -29,7 +29,9 @@ var shuffle = function(nums, n) {
 
     //loop to push iteams into final aray
     for(let i = 0; i < nums.length; i++){
+        //push items from each two arrays into final
         final.push(array1[i], array2[i])
+        //if it reached same length break the loop
         if(final.length == nums.length)break
     }
     return final
