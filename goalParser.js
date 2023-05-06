@@ -52,6 +52,7 @@ var interpret = function(command) {
         //check each letter. if its a G add it to result string
         if (command[i] === "G") {
             result += "G";
+            //if its a ( followed by a ) add an o to the rsult string
         } else if (command[i] === "(" && command[i + 1] === ")") {
             result += "o";
             i++; // skip next character
