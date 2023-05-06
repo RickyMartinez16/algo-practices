@@ -30,7 +30,9 @@
 //failing//
 
 var interpret = function(command) {
+    //replace with o
     command = command.replace(/\(\)/g, "o");
+    //replace with al
     command = command.replace(/(al)/g, "al");
 
     return command;
