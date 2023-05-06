@@ -49,6 +49,7 @@ var interpret = function(command) {
 
     //looop thru input string
     for (let i = 0; i < command.length; i++) {
+        //check each letter. if its a G add it to result string
         if (command[i] === "G") {
             result += "G";
         } else if (command[i] === "(" && command[i + 1] === ")") {
