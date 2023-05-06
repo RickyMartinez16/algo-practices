@@ -40,7 +40,7 @@ var maximumWealth = function(accounts) {
     for(let i = 0; i < accounts.length; i++){
         //loop thru each element in each array
         for(let j = 0; j < accounts[i].length; j++){
-           //reduce each array to one number aka wealth
+           //reduce each array to one number aka the wealth
             wealth = accounts[i].reduce(
             (accumulator, currentValue) => accumulator + currentValue, 0)
             //if the reduced wealth is greater than or equal to the greatest at the time
