@@ -44,7 +44,10 @@ var interpret = function(command) {
 
 
 var interpret = function(command) {
+    //string result
     let result = "";
+
+    //looop thru input string
     for (let i = 0; i < command.length; i++) {
         if (command[i] === "G") {
             result += "G";
