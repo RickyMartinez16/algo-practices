@@ -33,6 +33,7 @@ var leftRigthDifference = function(nums) {
     let right = [];
     //keep track of final sum
     let final = []
+    //keep track of what to add to each side
     let startL = 0
     let startR = 0
     for(let i = 0; i < nums.length; i++){
