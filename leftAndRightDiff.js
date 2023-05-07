@@ -45,7 +45,10 @@ var leftRigthDifference = function(nums) {
             left.push(startL);
             //add the next number to the start
             startL+=nums[i]
+
+            //same for right
             right.push(startR)
+            //but go reverse
             startR+=nums[nums.length - 1 - i]
         }
     }
