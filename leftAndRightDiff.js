@@ -52,6 +52,7 @@ var leftRigthDifference = function(nums) {
             startR+=nums[nums.length - 1 - i]
         }
     }
+    //reverse the right array to get in correct order for final sum
     right = right.reverse()
     for(let j = 0; j < nums.length; j++){
         final.push(Math.abs(left[j] - right[j]))
