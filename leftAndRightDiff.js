@@ -22,3 +22,27 @@
 // Output: [0]
 // Explanation: The array leftSum is [0] and the array rightSum is [0].
 // The array answer is [|0 - 0|] = [0].
+
+
+
+
+var leftRigthDifference = function(nums) {
+    let left = [];
+    let right = [];
+    let final = []
+    let startL = 0
+    let startR = 0
+    for(let i = 0; i < nums.length; i++){
+        if(left.length < nums.length){
+            left.push(startL);
+            startL+=nums[i]
+            right.push(startR)
+            startR+=nums[nums.length - 1 - i]
+        }
+    }
+    right = right.reverse()
+    for(let j = 0; j < nums.length; j++){
+        final.push(Math.abs(left[j] - right[j]))
+    }
+    return final
+};
