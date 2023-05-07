@@ -36,6 +36,8 @@ var leftRigthDifference = function(nums) {
     //keep track of what to add to each side
     let startL = 0
     let startR = 0
+
+    //start a loop to push into each side array
     for(let i = 0; i < nums.length; i++){
         if(left.length < nums.length){
             left.push(startL);
