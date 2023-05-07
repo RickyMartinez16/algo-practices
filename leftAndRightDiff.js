@@ -29,7 +29,7 @@
 var leftRigthDifference = function(nums) {
     //keep track of left sum
     let left = [];
-    
+    //keep track of right sum
     let right = [];
     let final = []
     let startL = 0
