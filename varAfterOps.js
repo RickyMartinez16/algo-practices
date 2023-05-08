@@ -36,3 +36,17 @@
 // ++X: X is incremented by 1, X = 1 + 1 = 2.
 // --X: X is decremented by 1, X = 2 - 1 = 1.
 // X--: X is decremented by 1, X = 1 - 1 = 0.
+
+
+
+var finalValueAfterOperations = function(operations) {
+    let final = 0;
+    for(let i = 0; i < operations.length; i++){
+        if(operations[i] === "--X" || operations[i] === "X--"){
+            final-= 1
+        } else {
+            final+= 1
+        }
+    }
+    return final
+};
