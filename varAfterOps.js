@@ -44,9 +44,11 @@ var finalValueAfterOperations = function(operations) {
     let final = 0;
     //loop thru operations input
     for(let i = 0; i < operations.length; i++){
+        //if its minus then minus from final
         if(operations[i] === "--X" || operations[i] === "X--"){
             final-= 1
         } else {
+            //if not then add one to final
             final+= 1
         }
     }
