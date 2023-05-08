@@ -33,6 +33,8 @@
 var createCounter = function(init) {
     //make var to keep track of counter
     let count = init;
+
+    //return an object containing 3 functions
     return {
         increment: function(){
             
