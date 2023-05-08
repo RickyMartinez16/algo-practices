@@ -27,3 +27,21 @@
 // counter.decrement(); // 1
 // counter.reset(); // 0
 // counter.reset(); // 0
+
+
+
+var createCounter = function(init) {
+    let count = init;
+    return {
+        increment: function(){
+            
+            return count+=1
+        },
+        decrement: function(){
+           return  count-=1
+        },
+        reset: function(){
+            return count = init
+        }
+    }
+};
