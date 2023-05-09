@@ -17,6 +17,7 @@
 
 
 var numJewelsInStones = function(jewels, stones) {
+    //split the jewels string into an array
     let jewelsArray = jewels.split("");
 
     let count = 0;
