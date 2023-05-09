@@ -29,6 +29,7 @@
 
 
 var kidsWithCandies = function(candies, extraCandies) {
+    //find the largest number in the array
     let greatest = Math.max(...candies)
     
 
