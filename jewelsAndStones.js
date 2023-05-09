@@ -13,3 +13,21 @@
 
 // Input: jewels = "z", stones = "ZZ"
 // Output: 0
+
+
+
+var numJewelsInStones = function(jewels, stones) {
+    let jewelsArray = jewels.split("");
+
+    let count = 0;
+
+    jewelsArray.forEach((element) => {
+        const regex = new RegExp(element, 'g');
+
+        const matches = stones.match(regex);
+
+        count += matches ? matches.length : 0;
+    })
+
+    return count
+};
