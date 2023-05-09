@@ -20,6 +20,7 @@ var numJewelsInStones = function(jewels, stones) {
     //split the jewels string into an array
     let jewelsArray = jewels.split("");
 
+    //keep track of the count 
     let count = 0;
 
     jewelsArray.forEach((element) => {
