@@ -23,7 +23,9 @@ var numJewelsInStones = function(jewels, stones) {
     //keep track of the count 
     let count = 0;
 
+    //loop thru the jewels array and for each element 
     jewelsArray.forEach((element) => {
+        //make a regex of the elemment
         const regex = new RegExp(element, 'g');
 
         const matches = stones.match(regex);
