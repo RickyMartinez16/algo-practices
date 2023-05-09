@@ -28,3 +28,22 @@
 // Output: [true,false,true]
 
 
+var kidsWithCandies = function(candies, extraCandies) {
+    let greatest = Math.max(...candies)
+    
+
+    let array = []
+
+    for(let i = 0; i < candies.length; i++){
+        if(candies[i] + extraCandies >= greatest){
+            // console.log(candies)
+            // console.log(candies[i] + extraCandies )
+            
+            array.push(true)
+        } else {
+            array.push(false)
+        }
+    }
+
+    return array
+};
