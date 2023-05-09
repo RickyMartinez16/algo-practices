@@ -37,8 +37,6 @@ var kidsWithCandies = function(candies, extraCandies) {
 
     for(let i = 0; i < candies.length; i++){
         if(candies[i] + extraCandies >= greatest){
-            // console.log(candies)
-            // console.log(candies[i] + extraCandies )
             
             array.push(true)
         } else {
