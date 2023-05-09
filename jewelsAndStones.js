@@ -28,6 +28,7 @@ var numJewelsInStones = function(jewels, stones) {
         //make a regex of the elemment
         const regex = new RegExp(element, 'g');
 
+        //make a matches array by checking how many times the regex returns a match of the regex from the stonees string
         const matches = stones.match(regex);
 
         count += matches ? matches.length : 0;
