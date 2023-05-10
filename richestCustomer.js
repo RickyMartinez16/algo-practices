@@ -42,9 +42,7 @@ var maximumWealth = function(accounts) {
         for(let j = 0; j < accounts[i].length; j++){
            //reduce each array to one number aka wealth
             wealth = accounts[i].reduce(
-            (accumulator, currentValue) => accumulator + currentValue,
-            0
-            )
+            (accumulator, currentValue) => accumulator + currentValue, 0)
             //if the reduced wealth is greater than or equal to the greatest at the time
             if(wealth >= greatest){
                 //it becomes the new greaest
