@@ -27,3 +27,25 @@
 
 // Input: accounts = [[2,8,7],[7,1,3],[1,9,5]]
 // Output: 17
+
+
+
+var maximumWealth = function(accounts) {
+    let wealth = 0; 
+    let greatest = 0
+
+    for(let i = 0; i < accounts.length; i++){
+        for(let j = 0; j < accounts[i].length; j++){
+           
+            wealth = accounts[i].reduce(
+            (accumulator, currentValue) => accumulator + currentValue,
+            0
+            )
+            if(wealth >= greatest){
+                greatest = wealth
+                
+            }
+        }
+    }
+    return greatest
+};
