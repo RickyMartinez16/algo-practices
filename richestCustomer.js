@@ -36,6 +36,7 @@ var maximumWealth = function(accounts) {
     //keep track of what the greatest is
     let greatest = 0
 
+    //loop thru the input of arrays
     for(let i = 0; i < accounts.length; i++){
         for(let j = 0; j < accounts[i].length; j++){
            
