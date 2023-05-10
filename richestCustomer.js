@@ -31,6 +31,7 @@
 
 
 var maximumWealth = function(accounts) {
+    //keep track of each customers wealth
     let wealth = 0; 
     let greatest = 0
 
