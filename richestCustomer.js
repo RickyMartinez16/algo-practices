@@ -53,5 +53,6 @@ var maximumWealth = function(accounts) {
             }
         }
     }
+    //return greatest
     return greatest
 };
