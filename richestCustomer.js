@@ -33,6 +33,7 @@
 var maximumWealth = function(accounts) {
     //keep track of each customers wealth
     let wealth = 0; 
+    //keep track of what the greatest is
     let greatest = 0
 
     for(let i = 0; i < accounts.length; i++){
