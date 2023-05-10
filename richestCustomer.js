@@ -38,6 +38,7 @@ var maximumWealth = function(accounts) {
 
     //loop thru the input of arrays
     for(let i = 0; i < accounts.length; i++){
+        //loop thru each element in each array
         for(let j = 0; j < accounts[i].length; j++){
            
             wealth = accounts[i].reduce(
