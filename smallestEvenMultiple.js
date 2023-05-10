@@ -14,9 +14,12 @@
 
 
 var smallestEvenMultiple = function(n) {
+    //if n is even
     if(n % 2 === 0){
+        //return n
         return n
     } else {
+        //if not just multiply it by 2
         return n * 2
     }
 };
