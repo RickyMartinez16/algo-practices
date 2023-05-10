@@ -45,7 +45,9 @@ var maximumWealth = function(accounts) {
             (accumulator, currentValue) => accumulator + currentValue,
             0
             )
+            //if the reduced wealth is greater than or equal to the greatest at the time
             if(wealth >= greatest){
+                //it becomes the new greaest
                 greatest = wealth
                 
             }
