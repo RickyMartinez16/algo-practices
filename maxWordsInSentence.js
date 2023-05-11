@@ -21,3 +21,15 @@
 // Output: 3
 // Explanation: It is possible that multiple sentences contain the same number of words. 
 // In this example, the second and third sentences (underlined) have the same number of words.
+
+
+var mostWordsFound = function(sentences) {
+    
+    let array = []
+
+    for(let i = 0; i < sentences.length; i++){
+        console.log(sentences[i].split(" ").length)
+        array.push(sentences[i].split(" ").length)
+    }
+    return Math.max(...array)
+}
