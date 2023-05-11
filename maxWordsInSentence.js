@@ -35,3 +35,18 @@ var mostWordsFound = function(sentences) {
     //return max number in array
     return Math.max(...array)
 }
+
+
+//slightly better memory
+
+var mostWordsFound = function(sentences) {
+
+    let highest = 0
+
+    for(let i = 0; i < sentences.length; i++){
+        if(sentences[i].split(" ").length > highest){
+            highest = sentences[i].split(" ").length
+        }
+    }
+    return highest
+}
