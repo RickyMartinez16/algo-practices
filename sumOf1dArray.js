@@ -22,7 +22,9 @@
 
 
 var runningSum = function(nums) {
+    //keep track of sums
     let count = 0;
+    //final array to push into
     let array = []
 
     for(let i = 0; i < nums.length; i++){
