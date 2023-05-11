@@ -29,8 +29,9 @@ var mostWordsFound = function(sentences) {
 
     //loop thru inpit
     for(let i = 0; i < sentences.length; i++){
-        
+        //push counts into array
         array.push(sentences[i].split(" ").length)
     }
+    //return max number in array
     return Math.max(...array)
 }
