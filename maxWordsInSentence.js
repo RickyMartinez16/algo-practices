@@ -24,11 +24,12 @@
 
 
 var mostWordsFound = function(sentences) {
-    
+    //push the counts into array
     let array = []
 
+    //loop thru inpit
     for(let i = 0; i < sentences.length; i++){
-        console.log(sentences[i].split(" ").length)
+        
         array.push(sentences[i].split(" ").length)
     }
     return Math.max(...array)
