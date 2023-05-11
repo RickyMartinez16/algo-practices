@@ -18,3 +18,16 @@
 
 // Input: nums = [3,1,2,10,1]
 // Output: [3,4,6,16,17]
+
+
+
+var runningSum = function(nums) {
+    let count = 0;
+    let array = []
+
+    for(let i = 0; i < nums.length; i++){
+        count+= nums[i]
+        array.push(count)
+    }
+    return array
+};
