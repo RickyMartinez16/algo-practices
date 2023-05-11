@@ -27,8 +27,11 @@ var runningSum = function(nums) {
     //final array to push into
     let array = []
 
+    //loop thru input
     for(let i = 0; i < nums.length; i++){
+        //change the sums
         count+= nums[i]
+        //add each sum to final array
         array.push(count)
     }
     return array
