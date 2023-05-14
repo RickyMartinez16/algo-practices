@@ -25,6 +25,8 @@
 var countMatches = function(items, ruleKey, ruleValue) {
     //keep track of the count
     let count = 0
+
+    //loop thru input array
    for(let i = 0; i < items.length; i++){
            if(ruleKey === "type" && items[i][0] === ruleValue){
                count++
