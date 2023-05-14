@@ -28,6 +28,7 @@ var countMatches = function(items, ruleKey, ruleValue) {
 
     //loop thru input array
    for(let i = 0; i < items.length; i++){
+       //check if the rule key is each type. and if italso matches that space in the array
            if(ruleKey === "type" && items[i][0] === ruleValue){
                count++
            } else if (ruleKey === "color" && items[i][1] === ruleValue){
