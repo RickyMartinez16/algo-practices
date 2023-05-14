@@ -54,6 +54,6 @@ var differenceOfSum = function (nums) {
 var differenceOfSum = function(nums) {
     //simple redeuce element sum
     const elementSum = nums.reduce((prev, curr) => prev + curr);
-    const sum2 = nums.join('').split('').reduce((prev, curr) => parseInt(prev) + parseInt(curr));
-  return sum1 - sum2;
+    const digitSum = nums.join('').split('').reduce((prev, curr) => parseInt(prev) + parseInt(curr));
+  return Math.abs(elementSum - digitSum)
 };
