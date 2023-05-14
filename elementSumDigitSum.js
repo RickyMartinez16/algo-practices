@@ -54,6 +54,7 @@ var differenceOfSum = function (nums) {
 var differenceOfSum = function(nums) {
     //simple redeuce element sum
     const elementSum = nums.reduce((prev, curr) => prev + curr);
+    //join the input array. join makes it a string. split the string to get indivisual digits. then reduce them. use parseInt to make strings numbers
     const digitSum = nums.join('').split('').reduce((prev, curr) => parseInt(prev) + parseInt(curr));
   return Math.abs(elementSum - digitSum)
 };
