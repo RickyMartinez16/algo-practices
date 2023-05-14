@@ -20,3 +20,18 @@
 // Input: items = [["phone","blue","pixel"],["computer","silver","phone"],["phone","gold","iphone"]], ruleKey = "type", ruleValue = "phone"
 // Output: 2
 // Explanation: There are only two items matching the given rule, which are ["phone","blue","pixel"] and ["phone","gold","iphone"]. Note that the item ["computer","silver","phone"] does not match.
+
+
+var countMatches = function(items, ruleKey, ruleValue) {
+    let count = 0
+   for(let i = 0; i < items.length; i++){
+           if(ruleKey === "type" && items[i][0] === ruleValue){
+               count++
+           } else if (ruleKey === "color" && items[i][1] === ruleValue){
+               count++
+           } else if(ruleKey === "name" && items[i][2] === ruleValue){
+               count++
+           }   
+   } 
+   return count
+};
