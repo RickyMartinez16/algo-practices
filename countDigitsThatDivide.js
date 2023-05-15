@@ -23,6 +23,7 @@
 
 
 var countDigits = function(num) {
+    //split the numbers intro an array. convert them into strings so theyt can be split. numbers cannot be split
     let split = String(num).split("")
     let count = 0
     for(let i = 0; i < split.length; i++){
