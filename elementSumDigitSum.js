@@ -46,5 +46,6 @@ var differenceOfSum = function (nums) {
       digitSum += Number(digitArray[j]);
     }
   }
+  //return absolute number
   return Math.abs(digitSum - elementSum);
 };
