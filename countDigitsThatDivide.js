@@ -27,6 +27,8 @@ var countDigits = function(num) {
     let split = String(num).split("")
     //keep track of count
     let count = 0
+
+    //loop thru split 
     for(let i = 0; i < split.length; i++){
         if(num % Number(split[i]) == 0){
             count++
