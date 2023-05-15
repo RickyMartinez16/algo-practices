@@ -24,3 +24,21 @@
 // The element sum of nums is 1 + 2 + 3 + 4 = 10.
 // The digit sum of nums is 1 + 2 + 3 + 4 = 10.
 // The absolute difference between the element sum and digit sum is |10 - 10| = 0.
+
+
+
+var differenceOfSum = function(nums) {
+    const elementSum = nums.reduce(
+  (accumulator, currentValue) => accumulator + currentValue,
+  0
+);
+    let digitSum = 0
+   for(let i = 0; i < nums.length; i++){
+       let digitArray = String(nums[i]).split("")
+
+       for(let j = 0; j < digitArray.length; j++){
+           digitSum += Number(digitArray[j])
+       }
+   } 
+   return Math.abs(digitSum - elementSum) 
+};
