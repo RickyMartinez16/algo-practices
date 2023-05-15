@@ -19,3 +19,16 @@
 // Input: num = 1248
 // Output: 4
 // Explanation: 1248 is divisible by all of its digits, hence the answer is 4.
+
+
+
+var countDigits = function(num) {
+    let split = String(num).split("")
+    let count = 0
+    for(let i = 0; i < split.length; i++){
+        if(num % Number(split[i]) == 0){
+            count++
+        }
+    }
+    return count
+};
