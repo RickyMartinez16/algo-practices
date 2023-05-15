@@ -42,6 +42,7 @@ var differenceOfSum = function (nums) {
 
     //loop thru the array of digits
     for (let j = 0; j < digitArray.length; j++) {
+        //find the digit sum
       digitSum += Number(digitArray[j]);
     }
   }
