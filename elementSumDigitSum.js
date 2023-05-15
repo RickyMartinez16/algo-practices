@@ -35,6 +35,7 @@ var differenceOfSum = function (nums) {
   );
   //keep track of the diigt sum
   let digitSum = 0;
+  //loop thru the input
   for (let i = 0; i < nums.length; i++) {
     let digitArray = String(nums[i]).split("");
 
