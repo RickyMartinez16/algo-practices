@@ -28,6 +28,7 @@
 
 
 var differenceOfSum = function (nums) {
+    //find the element sum
   const elementSum = nums.reduce(
     (accumulator, currentValue) => accumulator + currentValue,
     0
