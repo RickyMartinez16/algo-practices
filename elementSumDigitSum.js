@@ -33,6 +33,7 @@ var differenceOfSum = function (nums) {
     (accumulator, currentValue) => accumulator + currentValue,
     0
   );
+  //keep track of the diigt sum
   let digitSum = 0;
   for (let i = 0; i < nums.length; i++) {
     let digitArray = String(nums[i]).split("");
