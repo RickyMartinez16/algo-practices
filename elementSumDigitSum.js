@@ -37,8 +37,10 @@ var differenceOfSum = function (nums) {
   let digitSum = 0;
   //loop thru the input
   for (let i = 0; i < nums.length; i++) {
+      //make an array of each digits
     let digitArray = String(nums[i]).split("");
 
+    //loop thru the array of digits
     for (let j = 0; j < digitArray.length; j++) {
       digitSum += Number(digitArray[j]);
     }
