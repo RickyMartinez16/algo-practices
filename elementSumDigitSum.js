@@ -27,18 +27,18 @@
 
 
 
-var differenceOfSum = function(nums) {
-    const elementSum = nums.reduce(
-  (accumulator, currentValue) => accumulator + currentValue,
-  0
-);
-    let digitSum = 0
-   for(let i = 0; i < nums.length; i++){
-       let digitArray = String(nums[i]).split("")
+var differenceOfSum = function (nums) {
+  const elementSum = nums.reduce(
+    (accumulator, currentValue) => accumulator + currentValue,
+    0
+  );
+  let digitSum = 0;
+  for (let i = 0; i < nums.length; i++) {
+    let digitArray = String(nums[i]).split("");
 
-       for(let j = 0; j < digitArray.length; j++){
-           digitSum += Number(digitArray[j])
-       }
-   } 
-   return Math.abs(digitSum - elementSum) 
+    for (let j = 0; j < digitArray.length; j++) {
+      digitSum += Number(digitArray[j]);
+    }
+  }
+  return Math.abs(digitSum - elementSum);
 };
