@@ -30,7 +30,9 @@ var countDigits = function(num) {
 
     //loop thru split 
     for(let i = 0; i < split.length; i++){
+        //if the input number is divivisle by each numnber
         if(num % Number(split[i]) == 0){
+            //add do the count
             count++
         }
     }
