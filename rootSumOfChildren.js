@@ -23,6 +23,7 @@
 
 
 var checkTree = function(root) {
+    //if the root left value plus the root right value is equal to the root value
     if(root.left.val + root.right.val === root.val){
         return true
     }
