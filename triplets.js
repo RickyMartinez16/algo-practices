@@ -1,4 +1,5 @@
-// You are given a 0-indexed, strictly increasing integer array nums and a positive integer diff. A triplet (i, j, k) is an arithmetic triplet if the following conditions are met:
+// You are given a 0-indexed, strictly increasing integer array nums and a positive integer diff. 
+//A triplet (i, j, k) is an arithmetic triplet if the following conditions are met:
 
 // i < j < k,
 // nums[j] - nums[i] == diff, and
@@ -21,3 +22,5 @@
 // Explanation:
 // (0, 2, 4) is an arithmetic triplet because both 8 - 6 == 2 and 6 - 4 == 2.
 // (1, 3, 5) is an arithmetic triplet because both 9 - 7 == 2 and 7 - 5 == 2.
+
+
