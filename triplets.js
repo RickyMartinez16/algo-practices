@@ -30,6 +30,7 @@ var arithmeticTriplets = function(nums, diff) {
     for(let i = 0; i < nums.length; i++){
         //start loop for j starting at 1
         for(let j = 1; j < nums.length; j++){
+            //start loop for k starting a 2
             for(let k = 2; k < nums.length; k++){
                 if(nums[j] - nums[i] === diff && nums[k] - nums[j] === diff){
                     count++
