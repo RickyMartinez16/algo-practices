@@ -19,3 +19,12 @@
 // Output: false
 // Explanation: The values of the root, its left child, and its right child are 5, 3, and 1, respectively.
 // 5 is not equal to 3 + 1, so we return false.
+
+
+
+var checkTree = function(root) {
+    if(root.left.val + root.right.val === root.val){
+        return true
+    }
+    return false
+};
