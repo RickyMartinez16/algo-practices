@@ -24,3 +24,16 @@
 // (1, 3, 5) is an arithmetic triplet because both 9 - 7 == 2 and 7 - 5 == 2.
 
 
+var arithmeticTriplets = function(nums, diff) {
+    let count = 0;
+    for(let i = 0; i < nums.length; i++){
+        for(let j = 1; j < nums.length; j++){
+            for(let k = 2; k < nums.length; k++){
+                if(nums[j] - nums[i] === diff && nums[k] - nums[j] === diff){
+                    count++
+                }
+            }
+        }
+    }
+    return count
+};
