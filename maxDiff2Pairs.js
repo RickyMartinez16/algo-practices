@@ -19,3 +19,12 @@
 // Output: 64
 // Explanation: We can choose indices 3 and 6 for the first pair (9, 8) and indices 1 and 5 for the second pair (2, 4).
 // The product difference is (9 * 8) - (2 * 4) = 64.
+
+
+
+
+var maxProductDifference = function(nums) {
+    let sortedNums = nums.sort((a, b) => a - b)
+
+    return (sortedNums[sortedNums.length - 1] * sortedNums[sortedNums.length -2]) - (sortedNums[0] * sortedNums[1])
+};
