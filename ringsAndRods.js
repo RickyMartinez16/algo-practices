@@ -45,6 +45,7 @@ var countPoints = function(rings) {
     //keep track of the count
     let count = 0;
 
+    //loop thru each of the rods to get one number
     for(let rod of rods){
         if(rings.includes(`R${rod}`) && rings.includes(`G${rod}`) && rings.includes(`B${rod}`)){
             count++
