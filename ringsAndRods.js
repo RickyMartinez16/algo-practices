@@ -39,8 +39,10 @@
 
 
 var countPoints = function(rings) {
+    //number the rods string
     let rods = "0123456789"
 
+    //keep track of the count
     let count = 0;
 
     for(let rod of rods){
