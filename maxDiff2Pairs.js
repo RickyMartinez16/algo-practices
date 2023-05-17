@@ -28,5 +28,6 @@ var maxProductDifference = function(nums) {
     //sort the input from small to big
     let sortedNums = nums.sort((a, b) => a - b)
 
+    //given forumla. two biggest and two smallest
     return (sortedNums[sortedNums.length - 1] * sortedNums[sortedNums.length -2]) - (sortedNums[0] * sortedNums[1])
 };
