@@ -40,5 +40,6 @@ var flipAndInvertImage = function(image) {
     for(let k = 0; k < image.length; k++){
         image[k] = image[k].reverse()
     }
+    //return final image
     return image
 };
