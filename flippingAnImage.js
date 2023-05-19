@@ -36,6 +36,7 @@ var flipAndInvertImage = function(image) {
             }
         }
     }
+    //once the 1s and 0s are all inverted go thru and reverse the order of each array
     for(let k = 0; k < image.length; k++){
         image[k] = image[k].reverse()
     }
