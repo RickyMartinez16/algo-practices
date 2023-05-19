@@ -49,6 +49,7 @@ var countPoints = function(rings) {
     for(let rod of rods){
         //if rings input includes each letter R G and B with the same rod number add one to the count
         if(rings.includes(`R${rod}`) && rings.includes(`G${rod}`) && rings.includes(`B${rod}`)){
+            //add one to the count
             count++
         }
     }
