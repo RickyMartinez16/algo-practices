@@ -24,7 +24,9 @@
 
 
 var flipAndInvertImage = function(image) {
+    //loop thru the image array of arrays.
     for(let i = 0; i < image.length; i++){
+        //loop thru each individual array in the big array
         for(let j = 0; j < image[i].length; j++){
             if(image[i][j] === 1){
             image[i][j] = 0
