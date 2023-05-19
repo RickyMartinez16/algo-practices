@@ -20,3 +20,21 @@
 // Output: [[1,1,0,0],[0,1,1,0],[0,0,0,1],[1,0,1,0]]
 // Explanation: First reverse each row: [[0,0,1,1],[1,0,0,1],[1,1,1,0],[0,1,0,1]].
 // Then invert the image: [[1,1,0,0],[0,1,1,0],[0,0,0,1],[1,0,1,0]]
+
+
+
+var flipAndInvertImage = function(image) {
+    for(let i = 0; i < image.length; i++){
+        for(let j = 0; j < image[i].length; j++){
+            if(image[i][j] === 1){
+            image[i][j] = 0
+        } else if(image[i][j] === 0){
+            image[i][j] = 1
+            }
+        }
+    }
+    for(let k = 0; k < image.length; k++){
+        image[k] = image[k].reverse()
+    }
+    return image
+};
