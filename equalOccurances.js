@@ -35,6 +35,7 @@ var areOccurrencesEqual = function(s) {
     //just get the values of the map
     let values = Object.values(map);
     
+    //check if every value is equal to the first value
     let allEqual = values.every(val => val === values[0]);
     return allEqual
 };
