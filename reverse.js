@@ -12,3 +12,8 @@
 
 // Input: s = ["H","a","n","n","a","h"]
 // Output: ["h","a","n","n","a","H"]
+
+
+var reverseString = function(s) {
+    return s.reverse()
+};
