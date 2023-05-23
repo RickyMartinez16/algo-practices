@@ -20,6 +20,7 @@ var areOccurrencesEqual = function(s) {
     //create a map
     let map = {}
 
+    //loop thru the input 
     for(let i = 0; i < s.length; i++){
       if(!map[s[i]]){
         map[s[i]] = 1
