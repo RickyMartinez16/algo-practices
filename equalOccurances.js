@@ -30,9 +30,9 @@ var areOccurrencesEqual = function(s) {
           //if it already exists then just add one to it
         map[s[i]]++
       }
-      
     }
     
+    //just get the values of the map
     let values = Object.values(map);
     
     let allEqual = values.every(val => val === values[0]);
