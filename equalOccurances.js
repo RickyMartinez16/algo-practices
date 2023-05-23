@@ -22,6 +22,7 @@ var areOccurrencesEqual = function(s) {
 
     //loop thru the input 
     for(let i = 0; i < s.length; i++){
+        //if the key does not exist in the map
       if(!map[s[i]]){
         map[s[i]] = 1
       } else {
