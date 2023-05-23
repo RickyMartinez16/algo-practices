@@ -17,6 +17,7 @@
 // 'a' occurs 3 times while 'b' occurs 2 times, which is not the same number of times.
 
 var areOccurrencesEqual = function(s) {
+    //create a map
     let map = {}
 
     for(let i = 0; i < s.length; i++){
