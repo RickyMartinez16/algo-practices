@@ -27,6 +27,7 @@ var areOccurrencesEqual = function(s) {
           //create the key and set the value at 1
         map[s[i]] = 1
       } else {
+          //if it already exists then just add one to it
         map[s[i]]++
       }
       
