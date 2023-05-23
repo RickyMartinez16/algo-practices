@@ -27,9 +27,9 @@ var areOccurrencesEqual = function(s) {
       }
       
     }
-    console.log(map)
+    
     let values = Object.values(map);
-    console.log(values)
+    
     let allEqual = values.every(val => val === values[0]);
     return allEqual
 };
