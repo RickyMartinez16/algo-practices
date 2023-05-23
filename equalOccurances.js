@@ -37,5 +37,7 @@ var areOccurrencesEqual = function(s) {
     
     //check if every value is equal to the first value
     let allEqual = values.every(val => val === values[0]);
+
+    //return if theyre all true or false
     return allEqual
 };
