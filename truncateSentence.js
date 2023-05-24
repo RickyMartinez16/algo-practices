@@ -28,6 +28,7 @@
 
 
 var truncateSentence = function(s, k) {
+    //split the input sentence inato an array
     let split = s.split(" ")
 
     return split.slice(0, k).join(" ")
