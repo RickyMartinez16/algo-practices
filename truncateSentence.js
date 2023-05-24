@@ -27,3 +27,8 @@
 // Output: "chopper is not a tanuki"
 
 
+var truncateSentence = function(s, k) {
+    let split = s.split(" ")
+
+    return split.slice(0, k).join(" ")
+};
