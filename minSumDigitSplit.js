@@ -22,6 +22,7 @@
 var subtractProductAndSum = function(n) {
     //turn the input into a string, then split the string an an array of strings
     let splitNum = String(n).split("")
+    //make an array of strings by mapping over the splitNums array and turning each string into a Number
     let nums = splitNum.map(string => Number(string))
     
     const sum = nums.reduce(
