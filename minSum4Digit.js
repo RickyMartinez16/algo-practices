@@ -19,3 +19,9 @@
 // The minimum sum can be obtained by the pair [4, 9]: 4 + 9 = 13.
 
 
+var minimumSum = function(num) {
+    let numbs = String(num).split("").sort()
+    console.log(numbs)
+
+    return parseInt(numbs[0] + numbs[2]) + parseInt(numbs[1] + numbs[3])
+};
