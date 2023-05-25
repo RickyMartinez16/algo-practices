@@ -20,8 +20,8 @@
 
 
 var minimumSum = function(num) {
+    //
     let numbs = String(num).split("").sort()
-    console.log(numbs)
 
     return parseInt(numbs[0] + numbs[2]) + parseInt(numbs[1] + numbs[3])
 };
