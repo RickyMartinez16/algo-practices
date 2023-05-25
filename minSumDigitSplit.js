@@ -37,5 +37,6 @@ var subtractProductAndSum = function(n) {
       1
     );
 
+    //return the difference
     return product - sum
 };
