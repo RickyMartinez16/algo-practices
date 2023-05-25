@@ -17,3 +17,20 @@
 // Product of digits = 4 * 4 * 2 * 1 = 32 
 // Sum of digits = 4 + 4 + 2 + 1 = 11 
 // Result = 32 - 11 = 21
+
+
+var subtractProductAndSum = function(n) {
+    let splitNum = String(n).split("")
+    let nums = splitNum.map(string => Number(string))
+    
+    const sum = nums.reduce(
+      (accumulator, currentValue) => accumulator + currentValue,
+      0
+    );
+    const product = nums.reduce(
+      (accumulator, currentValue) => accumulator * currentValue,
+      1
+    );
+
+    return product - sum
+};
