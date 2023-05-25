@@ -25,6 +25,7 @@ var subtractProductAndSum = function(n) {
     //make an array of strings by mapping over the splitNums array and turning each string into a Number
     let nums = splitNum.map(string => Number(string))
     
+    //redeuce the sum of the nums
     const sum = nums.reduce(
       (accumulator, currentValue) => accumulator + currentValue,
       0
