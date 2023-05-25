@@ -30,6 +30,8 @@ var subtractProductAndSum = function(n) {
       (accumulator, currentValue) => accumulator + currentValue,
       0
     );
+
+    //redude the product of nums
     const product = nums.reduce(
       (accumulator, currentValue) => accumulator * currentValue,
       1
