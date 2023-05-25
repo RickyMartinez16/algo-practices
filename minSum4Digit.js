@@ -20,7 +20,7 @@
 
 
 var minimumSum = function(num) {
-    //
+    //get the numbs in an array of string form
     let numbs = String(num).split("").sort()
 
     return parseInt(numbs[0] + numbs[2]) + parseInt(numbs[1] + numbs[3])
