@@ -33,9 +33,9 @@ var decodeMessage = function (key, message) {
     //split the input message
     let result = message.split('')
 
-    //loop thru the uniqwue letters array
+    //loop thru the unique letters array
     for (let i = 0; i < uniqueLetters.length; i++) {
-        
+
         letterMap.set(uniqueLetters[i], String.fromCharCode(97 + i))
     }
 
