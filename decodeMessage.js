@@ -47,6 +47,6 @@ var decodeMessage = function (key, message) {
             result[i] = letterMap.get(result[i])
         }
     }
-    //
+    //join the final result
     return result.join('')
 };
