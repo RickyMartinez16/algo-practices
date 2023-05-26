@@ -39,7 +39,7 @@ var decodeMessage = function (key, message) {
         letterMap.set(uniqueLetters[i], String.fromCharCode(97 + i))
     }
 
-    //loop thru
+    //loop thru the result split
     for (let i = 0; i < result.length; i++) {
         if (result[i] !== ' ') {
             result[i] = letterMap.get(result[i])
