@@ -35,10 +35,11 @@ var decodeMessage = function (key, message) {
 
     //loop thru the unique letters array
     for (let i = 0; i < uniqueLetters.length; i++) {
-
+        //set the key as the ith unique letter and the letter from char code at 97 + i
         letterMap.set(uniqueLetters[i], String.fromCharCode(97 + i))
     }
 
+    //loop thru
     for (let i = 0; i < result.length; i++) {
         if (result[i] !== ' ') {
             result[i] = letterMap.get(result[i])
