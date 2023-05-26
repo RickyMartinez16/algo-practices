@@ -28,6 +28,7 @@
 var decodeMessage = function (key, message) {
     //find the unique letters in the key. split the input key and then join it. make a new set out of the split to get unique letters. make it into an array. array of unique letters
     let uniqueLetters = Array.from(new Set(key.split(' ').join('')))
+    //make a new map
     let letterMap = new Map()
     let result = message.split('')
 
