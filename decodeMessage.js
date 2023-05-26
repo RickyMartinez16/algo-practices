@@ -30,6 +30,7 @@ var decodeMessage = function (key, message) {
     let uniqueLetters = Array.from(new Set(key.split(' ').join('')))
     //make a new map
     let letterMap = new Map()
+    //split the input message
     let result = message.split('')
 
     for (let i = 0; i < uniqueLetters.length; i++) {
