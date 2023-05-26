@@ -41,10 +41,12 @@ var decodeMessage = function (key, message) {
 
     //loop thru the result split
     for (let i = 0; i < result.length; i++) {
+        //if the ith letter in the result is not a space
         if (result[i] !== ' ') {
+            //the new ith spot in the result will be the value from the letter map with the key of result[i]
             result[i] = letterMap.get(result[i])
         }
     }
-
+    //
     return result.join('')
 };
