@@ -31,6 +31,7 @@
 var map = function(arr, fn) {
     //keep track of final array
     let final = []
+    //loop thru the input
       for(let i = 0; i < arr.length; i++){
         final.push(fn(arr[i], i))
       }
