@@ -27,6 +27,7 @@
 
 
 var smallerNumbersThanCurrent = function(nums) {
+    //final array
     let array = [];
     let count = 0
 
