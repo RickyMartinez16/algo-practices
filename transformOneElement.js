@@ -29,6 +29,7 @@
 
 
 var map = function(arr, fn) {
+    //keep track of final array
     let final = []
       for(let i = 0; i < arr.length; i++){
         final.push(fn(arr[i], i))
