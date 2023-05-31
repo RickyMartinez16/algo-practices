@@ -35,6 +35,7 @@ var smallerNumbersThanCurrent = function(nums) {
     for(let i = 0; i < nums.length; i++){
         //loop thru input comparing to i
       for(let j = 0; j < nums.length; j++){
+          //compare the two numbers
         if(nums[i] > nums[j]){
           count++
         }
