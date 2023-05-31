@@ -33,6 +33,7 @@ var map = function(arr, fn) {
     let final = []
     //loop thru the input
       for(let i = 0; i < arr.length; i++){
+          //push into the final array the result of the input function and each number in the input array
         final.push(fn(arr[i], i))
       }
       return final
