@@ -26,8 +26,9 @@
 
 
 var balancedStringSplit = function(s) {
-    //keep track the matches
+    //keep track the final number of matches
     let matches = 0;
+    //keep the L and R balance
     let balance = 0;
 
     for(let i = 0; i < s.length; i++){
