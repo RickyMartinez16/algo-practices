@@ -61,6 +61,7 @@ const stack = [];
 //push the first letter into the stack
 stack.push(s[0]);
 
+//loop thru the rest of the input strings
 for (let i = 1; i < s.length; i++) {
 
     const top = stack[stack.length - 1];
