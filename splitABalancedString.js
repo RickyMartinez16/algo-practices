@@ -64,15 +64,21 @@ stack.push(s[0]);
 //loop thru the rest of the input strings
 for (let i = 1; i < s.length; i++) {
 
+    //the top is the top of the stack
     const top = stack[stack.length - 1];
 
+    //if the top of the stack is not undefined and if the top of the stack is not matching the ith element of S
     if (top !== undefined && top !== s[i]) {
+        //pop last one off the stack
         stack.pop()
     } else {
+        //else push the ith to the stack
         stack.push(s[i]);
     }
 
+    //if the stack is at 0 you know you have a match
     if (stack.length === 0) {
+        //add one to matches
         matches += 1;
     }
 }
