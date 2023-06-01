@@ -26,6 +26,7 @@
 
 
 var balancedStringSplit = function(s) {
+    //keep track the matches
     let matches = 0;
     let balance = 0;
 
