@@ -42,7 +42,9 @@ var balancedStringSplit = function(s) {
           //add one to the balance
         balance += 1
       }
+      //if the balance is ever at 0 then the sides are equal
       if(balance === 0){
+          //so add one to the matches count
         matches++
       }
     }
