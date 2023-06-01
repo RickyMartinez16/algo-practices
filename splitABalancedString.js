@@ -55,6 +55,7 @@ var balancedStringSplit = function(s) {
 
 //keep track of final matches
 let matches = 0;
+//create a stack
 const stack = [];
 
 stack.push(s[0]);
