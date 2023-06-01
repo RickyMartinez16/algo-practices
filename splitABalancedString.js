@@ -31,6 +31,7 @@ var balancedStringSplit = function(s) {
     //keep the L and R balance
     let balance = 0;
 
+    //loop thru the input string
     for(let i = 0; i < s.length; i++){
       if(s[i] === "R"){
         balance -= 1
