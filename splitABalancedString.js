@@ -37,7 +37,9 @@ var balancedStringSplit = function(s) {
       if(s[i] === "R"){
           //take away one from the balance
         balance -= 1
+        //if the ith letter is an L
       } else if (s[i] === "L"){
+          //add one to the balance
         balance += 1
       }
       if(balance === 0){
