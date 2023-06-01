@@ -58,6 +58,7 @@ let matches = 0;
 //create a stack
 const stack = [];
 
+//push the first letter into the stack
 stack.push(s[0]);
 
 for (let i = 1; i < s.length; i++) {
