@@ -31,6 +31,6 @@ var truncateSentence = function(s, k) {
     //split the input sentence inato an array
     let split = s.split(" ")
 
-    //slice the array to just get from the beginning 0 to the kth element and the join them
+    //slice the array to just get from the beginning 0 to the kth element and the join them to get the sentence you want
     return split.slice(0, k).join(" ")
 };
