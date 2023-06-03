@@ -22,6 +22,7 @@
 
 
 var findNumbers = function(nums) {
+    //make an array of string representations of the numbers array
     let strings = nums.map(num => String(num))
     let count = 0
 
