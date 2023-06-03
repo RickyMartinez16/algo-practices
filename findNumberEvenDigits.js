@@ -19,3 +19,16 @@
 // Output: 1 
 // Explanation: 
 // Only 1771 contains an even number of digits.
+
+
+var findNumbers = function(nums) {
+    let strings = nums.map(num => String(num))
+    let count = 0
+
+    for(let i = 0; i < strings.length; i++){
+      if(strings[i].length % 2 === 0){
+        count++
+      }
+    }
+    return count
+};
