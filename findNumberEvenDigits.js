@@ -35,5 +35,6 @@ var findNumbers = function(nums) {
         count++
       }
     }
+    //return final count
     return count
 };
