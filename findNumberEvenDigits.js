@@ -27,6 +27,7 @@ var findNumbers = function(nums) {
     //keep track of count
     let count = 0
 
+    //loop thrur new array
     for(let i = 0; i < strings.length; i++){
       if(strings[i].length % 2 === 0){
         count++
