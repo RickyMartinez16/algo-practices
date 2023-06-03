@@ -24,6 +24,7 @@
 var findNumbers = function(nums) {
     //make an array of string representations of the numbers array
     let strings = nums.map(num => String(num))
+    //keep track of count
     let count = 0
 
     for(let i = 0; i < strings.length; i++){
