@@ -29,7 +29,7 @@ var findNumbers = function(nums) {
 
     //loop thrur new array
     for(let i = 0; i < strings.length; i++){
-        //if the length of the ith number is divisible by 2 its even amount
+        //if the length of the ith number is divisible by 2 its an even amount
       if(strings[i].length % 2 === 0){
           //add to the count
         count++
