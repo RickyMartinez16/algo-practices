@@ -26,5 +26,6 @@ function isSameAfterReversals(num) {
     if(num == 0) return true
     //if the number is divisble by 10 that means it will have leading zeros so it wont be the same
     if(num % 10 == 0) return false
+    //if it doesnt have any trailing zeros or is zero it will be true
     return true
   }
