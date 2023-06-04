@@ -20,3 +20,9 @@
 // Input: num = 0
 // Output: true
 // Explanation: Reverse num to get 0, then reverse 0 to get 0, which equals num.
+
+function isSameAfterReversals(num) {
+    if(num == 0) return true
+    if(num % 10 == 0) return false
+    return true
+  }
