@@ -21,7 +21,9 @@
 
 
 var generateTheString = function(n) {
+    //make an array
     let array = []
+    //check if the input is odd or even
       if(n % 2 === 0){
         while(array.length < n - 1){
           array.push("p")
