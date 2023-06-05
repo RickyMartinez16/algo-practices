@@ -37,6 +37,7 @@ var diagonalSum = function (mat) {
         sum = sum + mat[i][i]
         //if i does no equal length - i
         if (i !== (n - i)) {
+            //then add the n - ith element of the ith array
             sum = sum + mat[i][n - i]
         }
     }
