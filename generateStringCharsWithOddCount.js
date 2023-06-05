@@ -32,7 +32,9 @@ var generateTheString = function(n) {
         //then add the last element once
         array.push("z")
       } else {
+          //if input is odd
         while(array.length < n){
+            //just push an odd number of letters in 
           array.push("p")
         }
       }
