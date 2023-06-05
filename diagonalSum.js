@@ -27,6 +27,7 @@
 
 
 var diagonalSum = function (mat) {
+    //keep track of the sum
     let sum = 0
     let n = mat.length - 1
     for (let i = 0; i <= n; i++) {
