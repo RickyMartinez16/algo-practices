@@ -25,9 +25,11 @@ var generateTheString = function(n) {
     let array = []
     //check if the input is odd or even
       if(n % 2 === 0){
+          //if its even fill an array with all the spots except the last one
         while(array.length < n - 1){
           array.push("p")
         }
+        //then add the last element once
         array.push("z")
       } else {
         while(array.length < n){
