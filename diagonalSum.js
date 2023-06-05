@@ -31,6 +31,7 @@ var diagonalSum = function (mat) {
     let sum = 0
     //make a var for n to know how far to travel in array
     let n = mat.length - 1
+    //loop 
     for (let i = 0; i <= n; i++) {
         sum = sum + mat[i][i]
         if (i !== (n - i)) {
