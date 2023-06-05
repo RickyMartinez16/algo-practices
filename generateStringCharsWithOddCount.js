@@ -38,5 +38,6 @@ var generateTheString = function(n) {
           array.push("p")
         }
       }
+      //join the array
       return array.join("")
   };
