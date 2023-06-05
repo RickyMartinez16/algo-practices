@@ -18,3 +18,19 @@
 
 // Input: n = 7
 // Output: "holasss"
+
+
+var generateTheString = function(n) {
+    let array = []
+      if(n % 2 === 0){
+        while(array.length < n - 1){
+          array.push("p")
+        }
+        array.push("z")
+      } else {
+        while(array.length < n){
+          array.push("p")
+        }
+      }
+      return array.join("")
+  };
