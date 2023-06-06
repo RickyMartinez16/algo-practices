@@ -32,3 +32,12 @@
 // 1 <= cityAi.length, cityBi.length <= 10
 // cityAi != cityBi
 // All strings consist of lowercase and uppercase English letters and the space character.
+
+
+//-----------not working-----------//
+
+var destCity = function(paths) {
+    for(let i = 0; i < paths.length; i++){
+      return paths[paths.length - 1][1]
+    }
+};
