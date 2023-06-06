@@ -51,5 +51,6 @@ var destCity = function(paths) {
     //make an array of all the destinations 
     const destinations =  paths.map(a => a[1]);
     
+                                //take each destination, check the arrivals array. if the index of d is -1 that means its not in the arrivals array
     return destinations.filter(d => arrivals.indexOf(d) === -1).join('');
 };
