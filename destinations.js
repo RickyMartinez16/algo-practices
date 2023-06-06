@@ -46,7 +46,9 @@ var destCity = function(paths) {
 // Filter paths to arrivals and destinations, then filter to the destination not found in arrivals.
 
 var destCity = function(paths) {
+    //make an array of all the arrivals (first city in each array)
     const arrivals = paths.map(a => a[0]);
+    //make an array of all the destinations 
     const destinations =  paths.map(a => a[1]);
     
     return destinations.filter(d => arrivals.indexOf(d) === -1).join('');
