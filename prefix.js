@@ -16,3 +16,12 @@
 // Input: words = ["leetcode","win","loops","success"], pref = "code"
 // Output: 0
 // Explanation: There are no strings that contain "code" as a prefix.
+
+
+
+var prefixCount = function(words, pref) {
+
+    const regex = new RegExp(`^${pref}`);
+
+    return words.filter(word => regex.test(word)).length
+};
