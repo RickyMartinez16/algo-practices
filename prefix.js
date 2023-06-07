@@ -24,6 +24,6 @@ var prefixCount = function(words, pref) {
     //make a regex of the prefix
     const regex = new RegExp(`^${pref}`);
 
-    //filter thru the words array and create an array of words that have the given prefix
+    //filter thru the words array and create an array of words that have the given prefix. return the length of filtered array
     return words.filter(word => regex.test(word)).length
 };
