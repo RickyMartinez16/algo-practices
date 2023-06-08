@@ -49,7 +49,7 @@ var findGCD = function(nums) {
         return a;
   }
 
-    //   In the above code, on each iteration, the smaller integer is subtracted from the larger integer. 
+    //In the above code, on each iteration, the smaller integer is subtracted from the larger integer. 
     //And the result is assigned to a variable holding the larger integer. The while loop continues iteration 
     //until both the integers become equal.
   
