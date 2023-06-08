@@ -28,3 +28,23 @@
 // The smallest number in nums is 3.
 // The largest number in nums is 3.
 // The greatest common divisor of 3 and 3 is 3.
+
+
+var findGCD = function(nums) {
+
+    function gcd(a, b) {
+        while(a != b){
+            if(a > b) {
+                a -= b;
+            }
+            else {
+                b -= a;
+            }
+        }
+        return a;
+  }
+  
+      const sort = nums.sort((a, b) => a - b)
+      
+      return gcd(sort[0], sort[sort.length-1])
+  };
