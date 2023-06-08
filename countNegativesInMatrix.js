@@ -19,6 +19,7 @@ var countNegatives = function(grid) {
     for(let i = 0; i < grid.length; i++){
         //loop thru each element in each array
       for(let j = 0; j < grid[i].length; j++){
+          //if the element is negative
         if(grid[i][j] < 0){
           count++
         }
