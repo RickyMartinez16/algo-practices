@@ -32,6 +32,11 @@
 
 var findGCD = function(nums) {
 
+
+    // Start iteration from given two numbers 20 and 30, we subtract the smaller number (20) from the larger number (30), which leaves us with 10.
+    // Then, we are going to subtract the smaller number (10) from the larger number (20), which leaves us with 10.
+    // Since the two numbers are now equal, we take 10 as Greatest Common Divisor (GCD) for 20 and 30.
+
     function gcd(a, b) {
         while(a != b){
             if(a > b) {
