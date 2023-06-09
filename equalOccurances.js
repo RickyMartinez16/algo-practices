@@ -4,7 +4,7 @@
 
  
 
-// Example 1:
+// Example ONE:
 
 // Input: s = "abacbc"
 // Output: true
