@@ -20,3 +20,13 @@
 // Output: true
 // Explanation: s is an empty string "" after removing non-alphanumeric characters.
 // Since an empty string reads the same forward and backward, it is a palindrome.
+
+var isPalindrome = function(s) {
+    let split = s.split("")
+ 
+    let string = split.reverse("").join("").toLowerCase()
+ 
+     const finalString = string.replace(/[^a-zA-Z0-9]/g, "");
+ 
+     return finalString == finalString.split("").reverse("").join("")
+ };
