@@ -22,6 +22,7 @@
 // Since an empty string reads the same forward and backward, it is a palindrome.
 
 var isPalindrome = function(s) {
+    //split the input
     let split = s.split("")
  
     let string = split.reverse("").join("").toLowerCase()
