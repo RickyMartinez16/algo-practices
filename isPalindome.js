@@ -31,5 +31,6 @@ var isPalindrome = function(s) {
     //get the final string by removing all non alpha numeric
      const finalString = string.replace(/[^a-zA-Z0-9]/g, "");
  
+     //return true or flase is final string is the same as final string split then and then reversed and then joined again
      return finalString == finalString.split("").reverse("").join("")
  };
