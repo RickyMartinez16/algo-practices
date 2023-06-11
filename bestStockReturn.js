@@ -36,5 +36,6 @@ var maxProfit = function(prices) {
       }
     }
   
+    //retirn max maxprofit
     return maxProfit;
   };
