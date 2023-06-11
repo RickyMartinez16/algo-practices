@@ -30,6 +30,7 @@ var maxProfit = function(prices) {
         //if the ith price is smaller than the min price
       if (prices[i] < minPrice) {
         minPrice = prices[i]; // Update the minimum price if a smaller price is found
+        //else if only runs if if is not met
       } else if (prices[i] - minPrice > maxProfit) {
         maxProfit = prices[i] - minPrice; // Update the maximum profit if a higher profit is found
       }
