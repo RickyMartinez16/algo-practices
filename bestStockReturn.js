@@ -20,6 +20,7 @@
 
 
 var maxProfit = function(prices) {
+    //set the min price to infinity
     let minPrice = Infinity;
     let maxProfit = 0;
   
