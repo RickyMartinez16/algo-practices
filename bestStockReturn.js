@@ -27,6 +27,7 @@ var maxProfit = function(prices) {
   
     //loop thru in the input array of prices
     for (let i = 0; i < prices.length; i++) {
+        //if the ith price is smaller than the min price
       if (prices[i] < minPrice) {
         minPrice = prices[i]; // Update the minimum price if a smaller price is found
       } else if (prices[i] - minPrice > maxProfit) {
