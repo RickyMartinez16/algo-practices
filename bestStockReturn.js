@@ -22,6 +22,7 @@
 var maxProfit = function(prices) {
     //set the min price to infinity
     let minPrice = Infinity;
+    //set the max profit to 0
     let maxProfit = 0;
   
     for (let i = 0; i < prices.length; i++) {
