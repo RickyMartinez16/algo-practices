@@ -12,7 +12,7 @@
 // Example 2:
 
 // Input: s = "aaabb"
-// Output: false
+// Output: False
 // Explanation: The characters that appear in s are 'a' and 'b'.
 // 'a' occurs 3 times while 'b' occurs 2 times, which is not the same number of times.
 
