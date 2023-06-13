@@ -31,6 +31,7 @@ var sumOfUnique = function(nums) {
       map[num] = (map[num] || 0) + 1
     })
  
+    //get the unqiue array by filtering the nums input
     const uniqueArray = nums.filter((num) => map[num] === 1)
  
     const sum = uniqueArray.reduce(
