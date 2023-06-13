@@ -38,7 +38,7 @@ var sumOfUnique = function(nums) {
  
     //reduce the unique array to one number
     const sum = uniqueArray.reduce(
-     (accumulator, currentValue) => accumulator + currentValue,
+     (acc, curr) => acc + curr,
      0
    );
  
