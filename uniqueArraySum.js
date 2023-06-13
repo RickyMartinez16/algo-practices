@@ -25,6 +25,7 @@ var sumOfUnique = function(nums) {
     //make a cap to keep track of occurances
     let map = {}
  
+    //loop thru the nums input array
     nums.forEach((num) => {
       map[num] = (map[num] || 0) + 1
     })
