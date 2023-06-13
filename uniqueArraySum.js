@@ -30,8 +30,6 @@ var sumOfUnique = function(nums) {
  
     const uniqueArray = nums.filter((num) => map[num] === 1)
  
-  
- 
     const sum = uniqueArray.reduce(
      (accumulator, currentValue) => accumulator + currentValue,
      0
