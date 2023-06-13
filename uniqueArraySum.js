@@ -22,6 +22,7 @@
 
 
 var sumOfUnique = function(nums) {
+    //make a cap to keep track of occurances
     let map = {}
  
     nums.forEach((num) => {
