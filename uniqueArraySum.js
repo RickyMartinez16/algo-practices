@@ -19,3 +19,23 @@
 // Input: nums = [1,2,3,4,5]
 // Output: 15
 // Explanation: The unique elements are [1,2,3,4,5], and the sum is 15.
+
+
+var sumOfUnique = function(nums) {
+    let map = {}
+ 
+    nums.forEach((num) => {
+      map[num] = (map[num] || 0) + 1
+    })
+ 
+    const uniqueArray = nums.filter((num) => map[num] === 1)
+ 
+  
+ 
+    const sum = uniqueArray.reduce(
+     (accumulator, currentValue) => accumulator + currentValue,
+     0
+   );
+ 
+   return sum
+ };
