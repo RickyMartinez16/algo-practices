@@ -40,5 +40,6 @@ var sumOfUnique = function(nums) {
      0
    );
  
+   //return the final sum
    return sum
  };
