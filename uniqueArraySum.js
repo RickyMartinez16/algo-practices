@@ -27,6 +27,7 @@ var sumOfUnique = function(nums) {
  
     //loop thru the nums input array. for each number
     nums.forEach((num) => {
+        //map[num] is the key in the map. assign the value to whatever it already is, or 0, then add 1 to it
       map[num] = (map[num] || 0) + 1
     })
  
