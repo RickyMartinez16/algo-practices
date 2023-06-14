@@ -27,6 +27,7 @@
 
 
 var targetIndices = function(nums, target) {
+    //sort the input array
     let sorted = nums.sort((a, b) => a - b)
 
     let list = []
