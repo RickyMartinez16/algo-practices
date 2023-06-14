@@ -37,6 +37,7 @@ var targetIndices = function(nums, target) {
     for(let i = 0; i < sorted.length; i++){
         //if the ith element of the sorted array equals the target
         if(sorted[i] === target){
+            //push it into the list
             list.push(i)
         }
     }
