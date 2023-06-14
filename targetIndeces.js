@@ -33,6 +33,7 @@ var targetIndices = function(nums, target) {
     //make a list to keep track of indeces
     let list = []
 
+    //loop thru the sorted list
     for(let i = 0; i < sorted.length; i++){
         if(sorted[i] === target){
             list.push(i)
