@@ -41,6 +41,6 @@ var targetIndices = function(nums, target) {
             list.push(i)
         }
     }
-
+    //return the list
     return list
 };
