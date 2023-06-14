@@ -30,6 +30,7 @@ var targetIndices = function(nums, target) {
     //sort the input array
     let sorted = nums.sort((a, b) => a - b)
 
+    //make a list to keep track of indeces
     let list = []
 
     for(let i = 0; i < sorted.length; i++){
