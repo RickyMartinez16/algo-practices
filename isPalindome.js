@@ -28,7 +28,7 @@ var isPalindrome = function(s) {
     //get the string by reversing the split and then joining it to remove it from array then turn it to lowercase
     let string = split.reverse("").join("").toLowerCase()
  
-    //get the final string by removing all non alpha numeric
+    //get the final string by removing all non alpha numeric with a regex
      const finalString = string.replace(/[^a-zA-Z0-9]/g, "");
  
      //return true or flase is final string is the same as final string split then and then reversed and then joined again
