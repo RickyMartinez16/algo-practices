@@ -19,7 +19,9 @@
 
 
 var search = function(nums, target) {
+    //make the left side
     let leftSide = 0;
+    //make the right side
     let rightSide = nums.length - 1;
 
     while (leftSide <= rightSide) {
