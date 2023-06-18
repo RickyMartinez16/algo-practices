@@ -26,6 +26,7 @@ var search = function(nums, target) {
 
     //while the left side is less than or eqaul to thr right side
     while (leftSide <= rightSide) {
+        //create a mid point to find the middle of the section youre searching
         let midPoint = Math.floor((leftSide + rightSide) / 2);
 
         if (nums[midPoint] === target) {
