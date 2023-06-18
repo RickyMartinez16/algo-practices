@@ -24,6 +24,7 @@ var search = function(nums, target) {
     //make the right side
     let rightSide = nums.length - 1;
 
+    //while the left side is less than or eqaul to thr right side
     while (leftSide <= rightSide) {
         let midPoint = Math.floor((leftSide + rightSide) / 2);
 
