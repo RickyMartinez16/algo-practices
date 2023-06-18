@@ -29,6 +29,7 @@ var search = function(nums, target) {
         //create a mid point to find the middle of the section youre searching
         let midPoint = Math.floor((leftSide + rightSide) / 2);
 
+        //if the middle number in the input nums is the target
         if (nums[midPoint] === target) {
             return midPoint;
         } else if (nums[midPoint] < target) {
