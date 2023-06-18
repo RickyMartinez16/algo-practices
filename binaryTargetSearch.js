@@ -16,3 +16,23 @@
 // Input: nums = [-1,0,3,5,9,12], target = 2
 // Output: -1
 // Explanation: 2 does not exist in nums so return -1
+
+
+var search = function(nums, target) {
+    let leftSide = 0;
+    let rightSide = nums.length - 1;
+
+    while (leftSide <= rightSide) {
+        let midPoint = Math.floor((leftSide + rightSide) / 2);
+
+        if (nums[midPoint] === target) {
+            return midPoint;
+        } else if (nums[midPoint] < target) {
+            leftSide = midPoint + 1;
+        } else {
+            rightSide = midPoint - 1;
+        }
+    }
+
+    return -1;
+};
