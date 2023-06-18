@@ -31,6 +31,7 @@ var search = function(nums, target) {
 
         //if the middle number in the input nums is the target
         if (nums[midPoint] === target) {
+            //simply return the midPoint index
             return midPoint;
         } else if (nums[midPoint] < target) {
             leftSide = midPoint + 1;
