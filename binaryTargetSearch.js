@@ -37,6 +37,7 @@ var search = function(nums, target) {
         } else if (nums[midPoint] < target) {
             //make the left side the midpoint plus 1
             leftSide = midPoint + 1;
+            //else you need to move the right side to the left
         } else {
             rightSide = midPoint - 1;
         }
