@@ -42,6 +42,6 @@ var search = function(nums, target) {
             rightSide = midPoint - 1;
         }
     }
-    //if it completes loop reutnr - 1
+    //if it completes loop return - 1
     return -1;
 };
