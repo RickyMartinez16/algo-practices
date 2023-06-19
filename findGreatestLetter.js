@@ -53,3 +53,6 @@ var nextGreatestLetter = function(letters, target) {
     
     return letters[left];
   };
+
+//   We continue this process until left becomes greater than right, indicating that we have found the correct index.
+// Finally, we return letters[left], which is the smallest character greater than the target.
