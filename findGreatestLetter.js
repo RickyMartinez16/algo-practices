@@ -32,6 +32,7 @@ var nextGreatestLetter = function(letters, target) {
     
     //check if the target letter is greater than or equal to the last letter in the array. 
     if (target >= letters[right]) {
+        //if true there are no possible letters greater. return letters[0]
       return letters[0];
     }
     
