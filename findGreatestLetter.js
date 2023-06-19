@@ -46,6 +46,7 @@ var nextGreatestLetter = function(letters, target) {
           //the left side of the array is now mid + 1
         left = mid + 1;
       } else {
+          //if not the right side of the array is now mid - 1
         right = mid - 1;
       }
     }
