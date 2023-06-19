@@ -41,7 +41,9 @@ var nextGreatestLetter = function(letters, target) {
         //let the mid index equal mathFloor right plus left divived by 2
       let mid = Math.floor((left + right) / 2);
       
+      //check if the middle letter is less than or equal to the target letter. if true
       if (letters[mid] <= target) {
+          //the left side of the array is now mid + 1
         left = mid + 1;
       } else {
         right = mid - 1;
