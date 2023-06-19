@@ -21,3 +21,26 @@
 // Input: letters = ["x","x","y","y"], target = "z"
 // Output: "x"
 // Explanation: There are no characters in letters that is lexicographically greater than 'z' so we return letters[0].
+
+
+
+var nextGreatestLetter = function(letters, target) {
+    let left = 0;
+    let right = letters.length - 1;
+    
+    if (target >= letters[right]) {
+      return letters[0];
+    }
+    
+    while (left <= right) {
+      let mid = Math.floor((left + right) / 2);
+      
+      if (letters[mid] <= target) {
+        left = mid + 1;
+      } else {
+        right = mid - 1;
+      }
+    }
+    
+    return letters[left];
+  };
