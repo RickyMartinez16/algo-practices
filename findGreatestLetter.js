@@ -36,6 +36,7 @@ var nextGreatestLetter = function(letters, target) {
       return letters[0];
     }
     
+    //while the left index is less than or equal to the right index
     while (left <= right) {
       let mid = Math.floor((left + right) / 2);
       
