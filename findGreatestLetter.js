@@ -25,6 +25,7 @@
 
 
 var nextGreatestLetter = function(letters, target) {
+    //the left side of the letters array
     let left = 0;
     let right = letters.length - 1;
     
