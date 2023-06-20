@@ -23,6 +23,7 @@ var moveZeroes = function(nums) {
         if(nums[i] === 0){
             //use the splice method to remove that single element
             nums.splice(i, 1);
+            //decrement i by 1 to account for the element you just took out
             i--;
             zeroCount++
         }
