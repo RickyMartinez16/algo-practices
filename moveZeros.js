@@ -21,6 +21,7 @@ var moveZeroes = function(nums) {
     for(let i = 0; i < nums.length; i++){
         //if the ith element in the nums array is 0
         if(nums[i] === 0){
+            //use the splice method to remove that single element
             nums.splice(i, 1);
             i--;
             zeroCount++
