@@ -29,6 +29,7 @@ var moveZeroes = function(nums) {
             zeroCount++
         }
     }
+    //run another loop
     for(let i = 0; i < zeroCount; i++){
         nums.push(0)
     }
