@@ -31,7 +31,7 @@ var moveZeroes = function(nums) {
     }
     //run another loop. run it the length of the amount of zeros
     for(let i = 0; i < zeroCount; i++){
-        //push that amount of zeros into the nums array
+        //push that amount of zeros into the nums array. they will be at the end
         nums.push(0)
     }
     return nums
