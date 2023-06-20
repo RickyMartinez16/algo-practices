@@ -25,6 +25,7 @@ var moveZeroes = function(nums) {
             nums.splice(i, 1);
             //decrement i by 1 to account for the element you just took out
             i--;
+            //add one to the zero count
             zeroCount++
         }
     }
