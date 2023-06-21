@@ -23,7 +23,7 @@ var canMakeArithmeticProgression = function(arr) {
     //sort the input array
     arr = arr.sort((a,b) => a -b)
 
-    
+    //find the difference yourel ooking for
     let commonDiff = arr[1] - arr[0]
 
     for(let i = 1; i < arr.length; i++){
