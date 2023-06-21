@@ -34,5 +34,6 @@ var canMakeArithmeticProgression = function(arr) {
             return false
         }
     }
+    //if the loop succeeds its true
     return true
 };
