@@ -28,6 +28,7 @@ var canMakeArithmeticProgression = function(arr) {
 
     //loop thru array
     for(let i = 1; i < arr.length; i++){
+        //if every two elements dont have the same common diff
         if(arr[i] - arr[i - 1] != commonDiff){
             return false
         }
