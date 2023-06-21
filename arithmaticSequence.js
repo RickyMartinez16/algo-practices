@@ -17,6 +17,7 @@
 
 
 var canMakeArithmeticProgression = function(arr) {
+    //if the array is less than 3 return true
     if(arr.length < 3) return true
 
     arr = arr.sort((a,b) => a -b)
