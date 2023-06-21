@@ -20,6 +20,7 @@ var canMakeArithmeticProgression = function(arr) {
     //if the array is less than 3 return true
     if(arr.length < 3) return true
 
+    //sort the input array
     arr = arr.sort((a,b) => a -b)
 
     let commonDiff = arr[1] - arr[0]
