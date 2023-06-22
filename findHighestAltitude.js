@@ -19,7 +19,6 @@
 
 
 var largestAltitude = function(gain) {
-    let highest = 0;
 
     let array = [0]
 
