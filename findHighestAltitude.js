@@ -16,3 +16,15 @@
 // Input: gain = [-4,-3,-2,-1,4,3,2]
 // Output: 0
 // Explanation: The altitudes are [0,-4,-7,-9,-10,-6,-3,-1]. The highest is 0.
+
+
+var largestAltitude = function(gain) {
+    let highest = 0;
+
+    let array = [0]
+
+    for(let i = 0; i < gain.length; i++){
+        array.push(gain[i] + array[i])
+    }
+    return Math.max(...array)
+};
