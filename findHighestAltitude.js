@@ -23,6 +23,7 @@ var largestAltitude = function(gain) {
     //make an array with a starting 0
     let array = [0]
 
+    //loop thru the gain array
     for(let i = 0; i < gain.length; i++){
         array.push(gain[i] + array[i])
     }
