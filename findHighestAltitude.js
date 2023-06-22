@@ -20,7 +20,7 @@
 
 var largestAltitude = function(gain) {
 
-    //make an array with a starting 0
+    //make an array with a starting 0 at the 0 index
     let array = [0]
 
     //loop thru the gain array
