@@ -24,6 +24,7 @@ function strStr(haystack, needle) {
     }
     //if the needle length is longer than the haystack length it cannot be in there
     if (needle.length > haystack.length) {
+        //return -1
         return -1;
     }
 
