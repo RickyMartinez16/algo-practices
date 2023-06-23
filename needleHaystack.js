@@ -37,5 +37,6 @@ function strStr(haystack, needle) {
         }
     }
 
+    //return -1 if for loop completes it means it fails
     return -1;
 }
