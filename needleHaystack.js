@@ -30,7 +30,9 @@ function strStr(haystack, needle) {
 
     //loop thru the haystack the difference of haystack minus needle
     for (let i = 0; i <= haystack.length - needle.length; i++) {
+        //if the haystack has substring starting with i and going to needle.length (check the lengtho f the substring to equal the needle) if its thesame as needle
         if (haystack.substring(i, i + needle.length) === needle) {
+            //return the index it started with
             return i;
         }
     }
