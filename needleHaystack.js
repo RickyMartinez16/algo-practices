@@ -28,6 +28,7 @@ function strStr(haystack, needle) {
         return -1;
     }
 
+    //loop thru the haystack the difference of haystack minus needle
     for (let i = 0; i <= haystack.length - needle.length; i++) {
         if (haystack.substring(i, i + needle.length) === needle) {
             return i;
