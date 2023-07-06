@@ -20,6 +20,7 @@ var reverseVowels = function(s) {
     //array of what the vowels are
     let vowels = ["a", "e", "i", "o", "u"];
 
+    //split the input to check each letter
     let stringSplit = s.split("")
 
     for(let i = 0; i < stringSplit.length; i++){
