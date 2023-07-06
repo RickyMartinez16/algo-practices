@@ -12,3 +12,25 @@
 
 // Input: s = "leetcode"
 // Output: "leotcede"
+
+
+var reverseVowels = function(s) {
+    let finalArray = []
+    let vowels = ["a", "e", "i", "o", "u"];
+
+    let stringSplit = s.split("")
+
+    for(let i = 0; i < stringSplit.length; i++){
+        if(vowels.includes(stringSplit[i].toLowerCase())){
+            finalArray.push(stringSplit[i])
+        }
+    }
+
+    for(let i = 0; i < stringSplit.length; i++){
+        if(vowels.includes(stringSplit[i].toLowerCase())){
+           stringSplit[i] = finalArray.pop()
+        }
+    }
+
+    return stringSplit.join("")
+};
