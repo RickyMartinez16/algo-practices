@@ -23,6 +23,7 @@ var reverseVowels = function(s) {
     //split the input to check each letter
     let stringSplit = s.split("")
 
+    //loop thru the array of input letters
     for(let i = 0; i < stringSplit.length; i++){
         if(vowels.includes(stringSplit[i].toLowerCase())){
             finalArray.push(stringSplit[i])
