@@ -15,6 +15,7 @@
 
 
 var reverseVowels = function(s) {
+    //make an array to keep track of the vowels
     let finalArray = []
     let vowels = ["a", "e", "i", "o", "u"];
 
