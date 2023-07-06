@@ -17,6 +17,7 @@
 var reverseVowels = function(s) {
     //make an array to keep track of the vowels
     let finalArray = []
+    //array of what the vowels are
     let vowels = ["a", "e", "i", "o", "u"];
 
     let stringSplit = s.split("")
