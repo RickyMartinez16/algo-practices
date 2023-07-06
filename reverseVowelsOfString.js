@@ -32,6 +32,7 @@ var reverseVowels = function(s) {
         }
     }
 
+    //loop thru the split string
     for(let i = 0; i < stringSplit.length; i++){
         if(vowels.includes(stringSplit[i].toLowerCase())){
            stringSplit[i] = finalArray.pop()
