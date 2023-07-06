@@ -41,5 +41,6 @@ var reverseVowels = function(s) {
         }
     }
 
+    //join the split string
     return stringSplit.join("")
 };
