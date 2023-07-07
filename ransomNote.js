@@ -49,6 +49,7 @@ var canConstruct = function(ransomNote, magazine) {
             //if it is then add one to the value
             magazineChars[char]++;
         } else {
+            //if not then add the key and start the value at 1
             magazineChars[char] = 1;
         }
     }
