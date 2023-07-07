@@ -23,6 +23,7 @@
 var canConstruct = function(ransomNote, magazine) {
     //make a map of the ransom characters
     let ransomChars = {};
+    //make a map of the magazine characters
     let magazineChars = {};
 
     // Count the occurrences of each character in the ransom note
