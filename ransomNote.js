@@ -17,3 +17,37 @@
 
 // Input: ransomNote = "aa", magazine = "aab"
 // Output: true
+
+
+
+var canConstruct = function(ransomNote, magazine) {
+    let ransomChars = {};
+    let magazineChars = {};
+
+    // Count the occurrences of each character in the ransom note
+    for (let char of ransomNote) {
+        if (char in ransomChars) {
+            ransomChars[char]++;
+        } else {
+            ransomChars[char] = 1;
+        }
+    }
+
+    // Count the occurrences of each character in the magazine
+    for (let char of magazine) {
+        if (char in magazineChars) {
+            magazineChars[char]++;
+        } else {
+            magazineChars[char] = 1;
+        }
+    }
+
+    // Check if the ransom note can be constructed
+    for (let char in ransomChars) {
+        if (!(char in magazineChars) || ransomChars[char] > magazineChars[char]) {
+            return false;
+        }
+    }
+
+    return true;
+};
