@@ -58,6 +58,7 @@ var canConstruct = function(ransomNote, magazine) {
 
     //loop thru the ransom chars map
     for (let char in ransomChars) {
+        //if char is not in magazine char map or random chars char value is greater than magazine chars map chat value
         if (!(char in magazineChars) || ransomChars[char] > magazineChars[char]) {
             return false;
         }
