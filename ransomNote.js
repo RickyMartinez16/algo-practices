@@ -55,6 +55,8 @@ var canConstruct = function(ransomNote, magazine) {
     }
 
     // Check if the ransom note can be constructed
+
+    //loop thru the ransom chars map
     for (let char in ransomChars) {
         if (!(char in magazineChars) || ransomChars[char] > magazineChars[char]) {
             return false;
