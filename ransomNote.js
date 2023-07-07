@@ -21,6 +21,7 @@
 
 
 var canConstruct = function(ransomNote, magazine) {
+    //make a map of the ransom characters
     let ransomChars = {};
     let magazineChars = {};
 
