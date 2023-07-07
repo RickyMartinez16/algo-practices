@@ -30,9 +30,12 @@ var canConstruct = function(ransomNote, magazine) {
 
     //loop thru the ransome note. each letter is called char
     for (let char of ransomNote) {
+        //check if each char is in ransomChars map
         if (char in ransomChars) {
+            //if it is then add one to the value
             ransomChars[char]++;
         } else {
+            //if not then add the key and value as 1
             ransomChars[char] = 1;
         }
     }
