@@ -41,6 +41,8 @@ var canConstruct = function(ransomNote, magazine) {
     }
 
     // Count the occurrences of each character in the magazine
+
+    //loop thru the characters in magainze
     for (let char of magazine) {
         if (char in magazineChars) {
             magazineChars[char]++;
