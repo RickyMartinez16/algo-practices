@@ -44,6 +44,7 @@ var canConstruct = function(ransomNote, magazine) {
 
     //loop thru the characters in magainze
     for (let char of magazine) {
+        //check if the character is in the magazine char map
         if (char in magazineChars) {
             magazineChars[char]++;
         } else {
