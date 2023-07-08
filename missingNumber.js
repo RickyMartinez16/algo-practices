@@ -39,7 +39,9 @@ var missingNumber = function (nums) {
     }
   }
 
+  //if the range is only 2 
   if (range == 2) {
+      //do same as above loop
     for (let i = 0; i < 3; i++) {
       if (!nums.includes(i)) {
         return i;
