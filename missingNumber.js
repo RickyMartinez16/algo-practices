@@ -24,3 +24,28 @@
 
 
 
+var missingNumber = function(nums) {
+    range = nums.length
+
+        if(range == 1){
+        for(let i = 0; i < 2; i++){
+            if(!nums.includes(i)){
+            return i
+            }
+        }
+    }
+
+    if(range == 2){
+        for(let i = 0; i < 3; i++){
+            if(!nums.includes(i)){
+            return i
+            }
+        }
+    }
+
+    for(let i = 0; i < range + 1; i++){
+        if(!nums.includes(i)){
+            return i
+        }
+    }
+};
