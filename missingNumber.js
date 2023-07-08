@@ -32,6 +32,7 @@ var missingNumber = function (nums) {
   if (range == 1) {
       //loop thru it to see what it includes
     for (let i = 0; i < 2; i++) {
+        //if it doesn't inlucde i then return i
       if (!nums.includes(i)) {
         return i;
       }
