@@ -53,6 +53,7 @@ var missingNumber = function (nums) {
   for (let i = 0; i < range + 1; i++) {
       //check if the nums does not inlude i
     if (!nums.includes(i)) {
+        //if it does not then return i
       return i;
     }
   }
