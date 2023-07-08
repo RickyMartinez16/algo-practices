@@ -28,7 +28,9 @@ var missingNumber = function (nums) {
     //find the range of nums
   range = nums.length;
 
+  //if theres only 1 number in the array 
   if (range == 1) {
+      //loop thru it to see what it includes
     for (let i = 0; i < 2; i++) {
       if (!nums.includes(i)) {
         return i;
