@@ -49,6 +49,7 @@ var missingNumber = function (nums) {
     }
   }
 
+  //loop to run as many times as the range plus 1 to account for it being the last number missing
   for (let i = 0; i < range + 1; i++) {
     if (!nums.includes(i)) {
       return i;
