@@ -25,6 +25,7 @@
 
 
 var missingNumber = function (nums) {
+    //find the range of nums
   range = nums.length;
 
   if (range == 1) {
