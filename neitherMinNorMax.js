@@ -33,6 +33,6 @@ var findNonMinOrMax = function(nums) {
         return -1
     }
 
-    //otherwise just return the 1st index of the sorted array
+    //otherwise just return the 1st index of the sorted array. it will not be lowest or highest for sure
     return sorted[1]
 };
