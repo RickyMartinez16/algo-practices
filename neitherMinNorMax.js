@@ -27,6 +27,7 @@ var findNonMinOrMax = function(nums) {
     //sort the input array
     let sorted = nums.sort((a, b) => a - b)
 
+    //if the length of the input is less than 3
     if(nums.length < 3){
         return -1
     }
