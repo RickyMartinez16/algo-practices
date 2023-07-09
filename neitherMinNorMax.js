@@ -21,3 +21,14 @@
 // Input: nums = [2,1,3]
 // Output: 2
 // Explanation: Since 2 is neither the maximum nor the minimum value in nums, it is the only valid answer. 
+
+
+var findNonMinOrMax = function(nums) {
+    let sorted = nums.sort((a, b) => a - b)
+
+    if(nums.length < 3){
+        return -1
+    }
+
+    return sorted[1]
+};
