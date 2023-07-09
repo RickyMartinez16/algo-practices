@@ -29,6 +29,7 @@ var findNonMinOrMax = function(nums) {
 
     //if the length of the input is less than 3
     if(nums.length < 3){
+        //return -1 because there is no correct answer
         return -1
     }
 
