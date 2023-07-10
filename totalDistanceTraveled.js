@@ -32,6 +32,7 @@
 var distanceTraveled = function(mainTank, additionalTank) {
     //keep track of the distance traveled
     let distance = 0
+    //keep track of loops
     let count = 0
 
     if(mainTank < 5) return mainTank * 10
