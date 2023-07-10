@@ -53,8 +53,10 @@ var distanceTraveled = function(mainTank, additionalTank) {
             mainTank++;
             //sub 1 from additioanl tank
             additionalTank--
+            //reset count to 0
             count = 0
         }
     }
+    //return the final distance
     return distance
 };
