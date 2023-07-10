@@ -51,6 +51,7 @@ var distanceTraveled = function(mainTank, additionalTank) {
         if(count == 5 && additionalTank > 0){
             //add 1 back to main tank
             mainTank++;
+            //sub 1 from additioanl tank
             additionalTank--
             count = 0
         }
