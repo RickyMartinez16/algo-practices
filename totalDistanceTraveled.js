@@ -45,6 +45,7 @@ var distanceTraveled = function(mainTank, additionalTank) {
         distance += 10;
         //subtract 1 from the maintank
         mainTank --;
+        //add 1 to the count
         count++
         if(count == 5 && additionalTank > 0){
             mainTank++;
