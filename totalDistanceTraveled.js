@@ -35,6 +35,7 @@ var distanceTraveled = function(mainTank, additionalTank) {
     //keep track of loops
     let count = 0
 
+    //quick check if the main tank is less than 5. it will never run 5 times so will never pull from additioanl tank
     if(mainTank < 5) return mainTank * 10
 
 
