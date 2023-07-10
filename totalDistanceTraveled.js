@@ -47,8 +47,9 @@ var distanceTraveled = function(mainTank, additionalTank) {
         mainTank --;
         //add 1 to the count
         count++
-        //check if the count is equal to 5. if so
+        //check if the count is equal to 5 and the additioanl Tank still has gas. if so
         if(count == 5 && additionalTank > 0){
+            //add 1 back to main tank
             mainTank++;
             additionalTank--
             count = 0
