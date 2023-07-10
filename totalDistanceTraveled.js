@@ -30,7 +30,7 @@
 
 
 var distanceTraveled = function(mainTank, additionalTank) {
-
+    //keep track of the distance traveled
     let distance = 0
     let count = 0
 
