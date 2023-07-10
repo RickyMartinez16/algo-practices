@@ -26,3 +26,26 @@
 // Explanation: 
 // After spending 1 litre of fuel, the main tank becomes empty.
 // Total distance traveled is 10km.
+
+
+
+var distanceTraveled = function(mainTank, additionalTank) {
+
+    let distance = 0
+    let count = 0
+
+    if(mainTank < 5) return mainTank * 10
+
+
+    while(mainTank > 0 ){
+        distance += 10;
+        mainTank --;
+        count++
+        if(count == 5 && additionalTank > 0){
+            mainTank++;
+            additionalTank--
+            count = 0
+        }
+    }
+    return distance
+};
