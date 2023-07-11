@@ -38,6 +38,7 @@ var isFascinating = function(n) {
         //if the final number includes a zero its false
         if(finalNum.includes(0)){
             return false
+            //if the final number doesnt includes every number starting from 1 its false
         } else if(!finalNum.includes(i)){
             return false
         }
