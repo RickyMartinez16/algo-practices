@@ -20,4 +20,5 @@
 
 // Input: n = 100
 // Output: false
-// Explanation: We concatenate the numbers n = 100 and 2 * n = 200 and 3 * n = 300. The resulting number is 100200300. This number does not satisfy any of the conditions.
+// Explanation: We concatenate the numbers n = 100 and 2 * n = 200 and 3 * n = 300. 
+//The resulting number is 100200300. This number does not satisfy any of the conditions.
