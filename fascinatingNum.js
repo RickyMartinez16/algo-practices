@@ -33,7 +33,7 @@ var isFascinating = function(n) {
     //join the array so its just one big number
     let finalNum = finalArray.join("")
 
-    //loop thru the big num
+    //loop thru the big num starting at 1
     for(let i = 1; i < finalNum.length; i++){
         if(finalNum.includes(0)){
             return false
