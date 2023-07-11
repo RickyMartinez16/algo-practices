@@ -27,6 +27,7 @@
 
 var isFascinating = function(n) {
     
+    //but all 3 nums into an array
     let finalArray = [n, n * 2, n * 3]
 
     let finalNum = finalArray.join("")
