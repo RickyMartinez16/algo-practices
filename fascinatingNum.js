@@ -43,5 +43,6 @@ var isFascinating = function(n) {
             return false
         }
     }
+    //if loop completes successfuly its true
     return true
 };
