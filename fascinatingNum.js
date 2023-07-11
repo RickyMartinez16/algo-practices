@@ -35,6 +35,7 @@ var isFascinating = function(n) {
 
     //loop thru the big num starting at 1
     for(let i = 1; i < finalNum.length; i++){
+        //if the final number includes a zero its false
         if(finalNum.includes(0)){
             return false
         } else if(!finalNum.includes(i)){
