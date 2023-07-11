@@ -22,3 +22,21 @@
 // Output: false
 // Explanation: We concatenate the numbers n = 100 and 2 * n = 200 and 3 * n = 300. 
 //The resulting number is 100200300. This number does not satisfy any of the conditions.
+
+
+
+var isFascinating = function(n) {
+    
+    let finalArray = [n, n * 2, n * 3]
+
+    let finalNum = finalArray.join("")
+
+    for(let i = 1; i < finalNum.length; i++){
+        if(finalNum.includes(0)){
+            return false
+        } else if(!finalNum.includes(i)){
+            return false
+        }
+    }
+    return true
+};
