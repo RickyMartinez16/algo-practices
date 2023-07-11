@@ -30,6 +30,7 @@ var isFascinating = function(n) {
     //but all 3 nums into an array
     let finalArray = [n, n * 2, n * 3]
 
+    //join the array so its just one big number
     let finalNum = finalArray.join("")
 
     for(let i = 1; i < finalNum.length; i++){
