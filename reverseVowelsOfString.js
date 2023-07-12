@@ -4,7 +4,7 @@
 
  
 
-// Example 1:
+// Example One:
 
 // Input: s = "hello"
 // Output: "holle"
