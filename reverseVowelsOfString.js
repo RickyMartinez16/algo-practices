@@ -27,7 +27,7 @@ var reverseVowels = function(s) {
     for(let i = 0; i < stringSplit.length; i++){
         //check if the vowels array includes the letter youre checking (ith letter) from the input string (change to lwoercase)
         if(vowels.includes(stringSplit[i].toLowerCase())){
-            //if it exists in the vowels array then push it into the final array
+            //if it exists in the vowels array then push it into the final array. push makes copy doesnt remove from OG
             finalArray.push(stringSplit[i])
         }
     }
