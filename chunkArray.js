@@ -39,6 +39,7 @@ var chunk = function(arr, size) {
     //if the size more than the length then push them all into the array
     if(size > arr.length) return [arr]
 
+    //make a final array to store final answer
     let finalArray = []
     let subArray = []
     for(let i = 0; i < arr.length; i++){
