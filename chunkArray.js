@@ -36,6 +36,7 @@ var chunk = function(arr, size) {
 
     //if the array is empty return empty array
     if(arr.length === 0) return []
+    //if the size more than the length then push them all into the array
     if(size > arr.length) return [arr]
 
     let finalArray = []
