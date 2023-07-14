@@ -41,6 +41,7 @@ var chunk = function(arr, size) {
 
     //make a final array to store final answer
     let finalArray = []
+    //make sub array
     let subArray = []
     for(let i = 0; i < arr.length; i++){
         subArray.push(arr[i])
