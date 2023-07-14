@@ -28,3 +28,27 @@
 // Input: arr = [], size = 1
 // Output: []
 // Explanation: There are no elements to be chunked so an empty array is returned.
+
+
+
+var chunk = function(arr, size) {
+    if(arr.length === 0) return []
+    if(size > arr.length) return [arr]
+
+    let finalArray = []
+    let subArray = []
+    for(let i = 0; i < arr.length; i++){
+        subArray.push(arr[i])
+        if(subArray.length === size){
+            finalArray.push(subArray)
+            subArray = []
+        } else if(subArray.length < size && i === arr.length - 1){
+            finalArray.push(subArray)
+        }
+        
+        // if(subArray.length === size){
+        //     finalArray.push(subArray)
+        // }
+    }
+    return finalArray
+};
