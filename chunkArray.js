@@ -43,6 +43,8 @@ var chunk = function(arr, size) {
     let finalArray = []
     //make sub array
     let subArray = []
+
+    
     for(let i = 0; i < arr.length; i++){
         subArray.push(arr[i])
         if(subArray.length === size){
