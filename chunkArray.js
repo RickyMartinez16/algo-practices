@@ -50,6 +50,7 @@ var chunk = function(arr, size) {
         subArray.push(arr[i])
         //if the sub array size is the same as the input size
         if(subArray.length === size){
+            //push the sub array into the final array
             finalArray.push(subArray)
             subArray = []
         } else if(subArray.length < size && i === arr.length - 1){
