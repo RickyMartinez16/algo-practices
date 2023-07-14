@@ -52,6 +52,7 @@ var chunk = function(arr, size) {
         if(subArray.length === size){
             //push the sub array into the final array
             finalArray.push(subArray)
+            //reset the final array
             subArray = []
         } else if(subArray.length < size && i === arr.length - 1){
             finalArray.push(subArray)
