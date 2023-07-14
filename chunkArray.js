@@ -33,6 +33,8 @@
 
 var chunk = function(arr, size) {
     //edge cases
+
+    //if the array is empty return empty array
     if(arr.length === 0) return []
     if(size > arr.length) return [arr]
 
