@@ -44,7 +44,7 @@ var chunk = function(arr, size) {
     //make sub array
     let subArray = []
 
-    
+    //loop thru the array
     for(let i = 0; i < arr.length; i++){
         subArray.push(arr[i])
         if(subArray.length === size){
