@@ -23,7 +23,7 @@
 
 
 Array.prototype.last = function() {
-    //if this(array) is a length of 0
+    //if this(array) is a length of 0 aka its empty
     if(this.length === 0){
         return -1
     } else {
