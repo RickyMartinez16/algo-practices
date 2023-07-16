@@ -28,7 +28,7 @@ Array.prototype.last = function() {
         //return -1
         return -1
     } else {
-        //else just return this.length -1
+        //else just return this.length -1 which is the last element
         return this[this.length - 1]
     }
  };
