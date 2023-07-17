@@ -59,10 +59,6 @@ var chunk = function(arr, size) {
             //push the subarray into the final array
             finalArray.push(subArray)
         }
-        
-        // if(subArray.length === size){
-        //     finalArray.push(subArray)
-        // }
     }
     return finalArray
 };
