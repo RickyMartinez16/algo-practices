@@ -13,3 +13,30 @@
 
 // Input: nums = [2,2,1,1,1,2,2]
 // Output: 2
+
+
+var majorityElement = function(nums) {
+    let map = {}
+
+    for(let i = 0; i < nums.length; i++){
+        
+        if(map[nums[i]]){
+            map[nums[i]]++
+        } else {
+            map[nums[i]] = 1
+        }
+    }
+
+    // Find the number with the highest value (most occurrences)
+    let maxOccurrences = 0;
+    let numberWithMaxOccurrences = null;
+    for (let num in map) {
+        if (map[num] > maxOccurrences) {
+            maxOccurrences = map[num];
+            numberWithMaxOccurrences = num;
+        }
+    }
+
+    // Return the number with the highest value
+    return numberWithMaxOccurrences;
+};
