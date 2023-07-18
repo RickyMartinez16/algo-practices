@@ -42,7 +42,9 @@ var majorityElement = function(nums) {
 
     //looop thru the map/ check each num in nums
     for (let num in map) {
+        //if that key's value is more than our current max
         if (map[num] > maxOccurrences) {
+            //set max to that keys value
             maxOccurrences = map[num];
             numberWithMaxOccurrences = num;
         }
