@@ -46,6 +46,7 @@ var majorityElement = function(nums) {
         if (map[num] > maxOccurrences) {
             //set max to that keys value
             maxOccurrences = map[num];
+            //change the max to eqaul that key
             numberWithMaxOccurrences = num;
         }
     }
