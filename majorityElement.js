@@ -24,6 +24,7 @@ var majorityElement = function(nums) {
         
         //if the key already exsists in the map
         if(map[nums[i]]){
+            //add one to the value
             map[nums[i]]++
         } else {
             map[nums[i]] = 1
