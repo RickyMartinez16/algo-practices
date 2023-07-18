@@ -34,6 +34,8 @@ var majorityElement = function(nums) {
     }
 
     // Find the number with the highest value (most occurrences)
+
+    //start the max occurances at 0
     let maxOccurrences = 0;
     let numberWithMaxOccurrences = null;
     for (let num in map) {
