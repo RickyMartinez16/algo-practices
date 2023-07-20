@@ -5,7 +5,7 @@
 
  
 
-// Example 1:
+// Example ONE:
 
 // Input: nums = [3,2,3]
 // Output: 3
