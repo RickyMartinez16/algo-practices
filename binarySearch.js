@@ -43,6 +43,7 @@ var search = function(nums, target) {
             //else if the midpoint element is less than the target
         } else if(nums[midPoint] < target) {
             //you know the midpoint is to the left of the target. so move the left side closer to the right to squeeze the search
+            //make the left side the current midpoint plus one. it cant be anything to the left
             leftSide = midPoint + 1
         } else {
             //else you know the midpoint is greater than the target so you need to move the right side closer to squeeze
