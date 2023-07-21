@@ -26,6 +26,7 @@
 
 
 var search = function(nums, target) {
+    //set the left side at 0
     let leftSide = 0
     let rightSide = nums.length - 1
 
