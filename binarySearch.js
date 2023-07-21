@@ -46,6 +46,7 @@ var search = function(nums, target) {
             leftSide = midPoint + 1
         } else {
             //else you know the midpoint is greater than the target so you need to move the right side closer to squeeze
+            //move the right side to the current midpoint minus one
             rightSide = midPoint - 1
         }
     }
