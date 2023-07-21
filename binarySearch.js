@@ -36,6 +36,7 @@ var search = function(nums, target) {
     while(leftSide <= rightSide){
         //set a midpoint
         const midPoint = Math.floor((rightSide + leftSide) / 2)
+        //if the nums[mid] is the target lucky guess
         if(nums[midPoint] === target){
             return midPoint
         } else if(nums[midPoint] < target) {
