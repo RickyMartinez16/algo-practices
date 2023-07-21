@@ -34,6 +34,7 @@ var search = function(nums, target) {
 
     //while the left side is less than or equal to the right side
     while(leftSide <= rightSide){
+        //set a midpoint
         const midPoint = Math.floor((rightSide + leftSide) / 2)
         if(nums[midPoint] === target){
             return midPoint
