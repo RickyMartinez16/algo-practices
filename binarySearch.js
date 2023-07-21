@@ -38,6 +38,7 @@ var search = function(nums, target) {
         const midPoint = Math.floor((rightSide + leftSide) / 2)
         //if the nums[mid] is the target lucky guess
         if(nums[midPoint] === target){
+            //just reutrn the index
             return midPoint
         } else if(nums[midPoint] < target) {
             leftSide = midPoint + 1
