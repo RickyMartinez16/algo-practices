@@ -23,3 +23,22 @@
 // -104 < nums[i], target < 104
 // All the integers in nums are unique.
 // nums is sorted in ascending order.
+
+
+var search = function(nums, target) {
+    let leftSide = 0
+    let rightSide = nums.length - 1
+
+
+    while(leftSide <= rightSide){
+        const midPoint = Math.floor((rightSide + leftSide) / 2)
+        if(nums[midPoint] === target){
+            return midPoint
+        } else if(nums[midPoint] < target) {
+            leftSide = midPoint + 1
+        } else {
+            rightSide = midPoint - 1
+        }
+    }
+    return -1
+};
