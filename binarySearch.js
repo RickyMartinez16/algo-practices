@@ -28,6 +28,7 @@
 var search = function(nums, target) {
     //set the left side at 0
     let leftSide = 0
+    //start the right side at the end of the array
     let rightSide = nums.length - 1
 
 
