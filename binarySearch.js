@@ -40,6 +40,7 @@ var search = function(nums, target) {
         if(nums[midPoint] === target){
             //just reutrn the index
             return midPoint
+            //else if the midpoint element is less than the target
         } else if(nums[midPoint] < target) {
             leftSide = midPoint + 1
         } else {
