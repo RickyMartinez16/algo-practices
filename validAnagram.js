@@ -22,5 +22,6 @@ var isAnagram = function(s, t) {
     let sortedT = t.split("").sort()
     
     //use the JSON.stringfy method to compare the contents of the array
+    //cant just === to comapre sortedS and sortedT
     return JSON.stringify(sortedS) === JSON.stringify(sortedT)
 };
