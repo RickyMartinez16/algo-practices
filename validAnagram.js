@@ -18,7 +18,7 @@
 var isAnagram = function(s, t) {
     //split the input s string. then sort it
     let sortedS = s.split("").sort()
-    //split the input t string.
+    //split the input t string. then sort it
     let sortedT = t.split("").sort()
     
     return JSON.stringify(sortedS) === JSON.stringify(sortedT)
