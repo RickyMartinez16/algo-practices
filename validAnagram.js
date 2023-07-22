@@ -15,3 +15,9 @@
 // Output: false
 
 
+var isAnagram = function(s, t) {
+    let sortedS = s.split("").sort()
+    let sortedT = t.split("").sort()
+    
+    return JSON.stringify(sortedS) === JSON.stringify(sortedT)
+};
