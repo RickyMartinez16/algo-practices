@@ -16,7 +16,7 @@
 
 
 var isAnagram = function(s, t) {
-    //split the input s string
+    //split the input s string. then sort it
     let sortedS = s.split("").sort()
     let sortedT = t.split("").sort()
     
