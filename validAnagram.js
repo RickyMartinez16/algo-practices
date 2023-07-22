@@ -23,6 +23,7 @@ var isAnagram = function(s, t) {
     
     //use the JSON.stringfy method to compare the contents of the array
     //cant just === to comapre sortedS and sortedT
-    // the === operator checks for strict equality between two variables, which means it checks if both variables are referring to the exact same object in memory.
+    // the === operator checks for strict equality between two variables, 
+    // which means it checks if both variables are referring to the exact same object in memory.
     return JSON.stringify(sortedS) === JSON.stringify(sortedT)
 };
