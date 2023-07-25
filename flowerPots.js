@@ -18,6 +18,9 @@
 
 
 var canPlaceFlowers = function(flowerbed, n) {
+    //edge cases
+
+    //if n is 0 return true
     if (n === 0) return true;
 
     if (n === 1 && flowerbed[0] === 0 && flowerbed[1] === 0) return true;
