@@ -24,7 +24,7 @@ var canPlaceFlowers = function(flowerbed, n) {
     if (n === 0) return true;
 
     //if n is 1 and the first two spots are empty returen true
-    if (n === 1 && flowerbed[0] === 0 && flowerbed[1] === 0) return true;
+    // if (n === 1 && flowerbed[0] === 0 && flowerbed[1] === 0) return true;
 
     //keep track of how many plants potted
     let count = n;
