@@ -39,6 +39,7 @@ var canPlaceFlowers = function(flowerbed, n) {
             const next = i === flowerbed.length - 1 ? 0 : flowerbed[i + 1];
             //if prev and next are 0
             if (prev === 0 && next === 0) {
+                //sub 1 from count
                 count--;
                 flowerbed[i] = 1;
                 if (count === 0) {
