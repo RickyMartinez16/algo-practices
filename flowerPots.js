@@ -41,6 +41,7 @@ var canPlaceFlowers = function(flowerbed, n) {
             if (prev === 0 && next === 0) {
                 //sub 1 from count
                 count--;
+                //change the ith element to 1
                 flowerbed[i] = 1;
                 if (count === 0) {
                     return true;
