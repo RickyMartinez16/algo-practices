@@ -15,3 +15,27 @@
 
 // Input: flowerbed = [1,0,0,0,1], n = 2
 // Output: false
+
+
+var canPlaceFlowers = function(flowerbed, n) {
+    if (n === 0) return true;
+
+    if (n === 1 && flowerbed[0] === 0 && flowerbed[1] === 0) return true;
+
+    let count = n;
+    for (let i = 0; i < flowerbed.length; i++) {
+        if (flowerbed[i] === 0) {
+            const prev = i === 0 ? 0 : flowerbed[i - 1];
+            const next = i === flowerbed.length - 1 ? 0 : flowerbed[i + 1];
+            if (prev === 0 && next === 0) {
+                count--;
+                flowerbed[i] = 1;
+                if (count === 0) {
+                    return true;
+                }
+            }
+        }
+    }
+    return false;
+    
+};
