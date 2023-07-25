@@ -29,7 +29,7 @@ var canPlaceFlowers = function(flowerbed, n) {
     //keep track of how many plants potted
     let count = n;
 
-    
+    //loop thru the flower bed
     for (let i = 0; i < flowerbed.length; i++) {
         if (flowerbed[i] === 0) {
             const prev = i === 0 ? 0 : flowerbed[i - 1];
