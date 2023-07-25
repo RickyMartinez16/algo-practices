@@ -39,6 +39,7 @@ var canPlaceFlowers = function(flowerbed, n) {
             const prev = i === 0 ? 0 : flowerbed[i - 1];
             //make a next variable. the next var checks if i is the same as the last pot in the flowerbed
             // if it is keep it zero from the first if check
+            // if it isnt the last pot then make the next var hold the value of the next pot
             const next = i === flowerbed.length - 1 ? 0 : flowerbed[i + 1];
             //if prev and next are 0
             if (prev === 0 && next === 0) {
