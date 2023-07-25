@@ -37,5 +37,4 @@ var canPlaceFlowers = function(flowerbed, n) {
         }
     }
     return false;
-    
 };
