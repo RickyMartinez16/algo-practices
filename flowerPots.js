@@ -35,6 +35,7 @@ var canPlaceFlowers = function(flowerbed, n) {
         if (flowerbed[i] === 0) {
             //make a prev variable. the prev variable checks if i is 0, ie the first spot in the flowerbed
             // if the pot is the first pot leave it at zero becuase htat was the initial if check
+            // if it isnt the first flowerpot in the bed then make the prev whatever the previous pot was
             const prev = i === 0 ? 0 : flowerbed[i - 1];
             //make a next variable. the next var checks if i is the same as fllowerbed - 1 if it is make it 0 if not make it flowerbed + 1
             const next = i === flowerbed.length - 1 ? 0 : flowerbed[i + 1];
