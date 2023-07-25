@@ -56,3 +56,15 @@ var canPlaceFlowers = function(flowerbed, n) {
     }
     return false;
 };
+
+
+
+function canPlaceFlowers(flowerbed, n) {
+    return flowerbed.reduce((count, plot, index) => {
+      if (plot === 0 && flowerbed[index - 1] !== 1 && flowerbed[index + 1] !== 1) {
+        flowerbed[index] = 1;
+        return count - 1;
+      }
+      return count;
+    }, n) <= 0;
+  }
