@@ -38,5 +38,6 @@ var isSubsequence = function(s, t) {
           }
       }
   }
+  //return false if completes the loop
   return false
 };
