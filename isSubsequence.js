@@ -19,6 +19,7 @@
 var isSubsequence = function(s, t) {
 
     //edge case
+    //if the s input is empty return true
     if(s.length === 0) return true
     
   let sIndex = 0;
