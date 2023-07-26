@@ -30,6 +30,7 @@ var isSubsequence = function(s, t) {
       if(s[sIndex] === t[tIndex]){
           //that means theyre the same letter. so add one to the sIndex to check then next letter. 
           //if theyre not the same letter the t index will incremet checking the next letter. the s will stay the same
+          // this is how to check the sequence as well not just includes()
           sIndex++
           if(sIndex === s.length){
               return true
