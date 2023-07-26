@@ -26,6 +26,7 @@ var isSubsequence = function(s, t) {
   let sIndex = 0;
   //loop thru the t input string
   for(let tIndex = 0; tIndex < t.length; tIndex++){
+      //if the sIndex letter of the s input is the same letter as the tindex of the t input
       if(s[sIndex] === t[tIndex]){
           sIndex++
           if(sIndex === s.length){
