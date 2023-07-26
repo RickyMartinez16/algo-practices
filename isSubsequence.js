@@ -17,6 +17,7 @@
 
 
 var isSubsequence = function(s, t) {
+
     if(s.length === 0) return true
     
   let sIndex = 0;
