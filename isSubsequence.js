@@ -29,6 +29,7 @@ var isSubsequence = function(s, t) {
       //if the sIndex letter of the s input is the same letter as the tindex of the t input
       if(s[sIndex] === t[tIndex]){
           //that means theyre the same letter. so add one to the sIndex to check then next letter. 
+          //if theyre not the same letter the t index will incremet checking the next letter. the s will stay the same
           sIndex++
           if(sIndex === s.length){
               return true
