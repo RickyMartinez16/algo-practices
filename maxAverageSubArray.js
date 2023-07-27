@@ -27,7 +27,9 @@ var findMaxAverage = function(nums, k) {
     
     //max is the greatest sum we find so far from the first loop
     let max = sum;
+    //loop thru the rest of the elemnts in the array after the first k
     for (let i = k; i < nums.length; i++) {
+
       sum = sum - nums[i - k] + nums[i];
       max = Math.max(max, sum);
     }
