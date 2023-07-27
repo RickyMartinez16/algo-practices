@@ -32,6 +32,7 @@ var findMaxAverage = function(nums, k) {
         //each iteration of the loop we remove the nums[i - k] contribution to the sum while adding the current nums[i] element
         //this is the "sliding window" method. the subarray length stays the same but the sum is updated
       sum = sum - nums[i - k] + nums[i];
+      //after we have the new sum after the window slides, find the bigger number between the previous max and the new sum
       max = Math.max(max, sum);
     }
     
