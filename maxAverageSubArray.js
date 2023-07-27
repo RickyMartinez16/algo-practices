@@ -15,11 +15,11 @@
 // Input: nums = [5], k = 1
 // Output: 5.00000
 
-Constraints:
+// Constraints:
 
-n == nums.length
-1 <= k <= n <= 105
--104 <= nums[i] <= 104
+// n == nums.length
+// 1 <= k <= n <= 105
+// -104 <= nums[i] <= 104
 
 var findMaxAverage = function(nums, k) {
     //initialize sum for first k elements of nums input
