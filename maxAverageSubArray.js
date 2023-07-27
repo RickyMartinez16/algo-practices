@@ -37,6 +37,7 @@ var findMaxAverage = function(nums, k) {
       max = Math.max(max, sum);
     }
     
+    //divide max subarray reduction by k
     return max / k;
   };
 
