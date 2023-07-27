@@ -29,7 +29,8 @@ var findMaxAverage = function(nums, k) {
     let max = sum;
     //loop thru the rest of the elemnts in the array after the first k
     for (let i = k; i < nums.length; i++) {
-
+        //each iteration of the loop we remove the nums[i - k] contribution to the sum while adding the current nums[i] element
+        //this is the "sliding window" method. the subarray length stays the same but the sum is updated
       sum = sum - nums[i - k] + nums[i];
       max = Math.max(max, sum);
     }
