@@ -26,6 +26,7 @@ var generate = function(numRows) {
         for(let j = 1; j < i; j++){
             final[i][j] = final[i - 1][j - 1] + final[i - 1][j]
         }
+        //the last number in each row will always be 1
         final[i][i] = 1
     }
     return final
