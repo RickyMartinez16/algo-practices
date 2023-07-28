@@ -25,7 +25,7 @@ var generate = function(numRows) {
         final[i][0] = 1
         //start an inner loop that starts at j and will run as long as j is less than i
         for(let j = 1; j < i; j++){
-            //the sum of the other values in the row is the spot above to the left and above to the right
+            //the sum of the other values in the row is the spot above to the left (final[i-1][j-1]) and above to the right final[i-1][j]
             final[i][j] = final[i - 1][j - 1] + final[i - 1][j]
         }
         //the last number in each row will always be 1
