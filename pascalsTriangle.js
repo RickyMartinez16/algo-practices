@@ -21,6 +21,7 @@ var generate = function(numRows) {
     for(let i = 0; i < numRows; i++){
         //initialize an empty row (array)
         final[i] = []
+        
         final[i][0] = 1
         for(let j = 1; j < i; j++){
             final[i][j] = final[i - 1][j - 1] + final[i - 1][j]
