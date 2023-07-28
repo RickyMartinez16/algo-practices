@@ -17,6 +17,7 @@
 var generate = function(numRows) {
     //house the final triangle
     let final = []
+    //start an initial loop to account for all of the rows needed
     for(let i = 0; i < numRows; i++){
         final[i] = []
         final[i][0] = 1
