@@ -12,3 +12,17 @@
 
 // Input: numRows = 1
 // Output: [[1]]
+
+
+var generate = function(numRows) {
+    let final = []
+    for(let i = 0; i < numRows; i++){
+        final[i] = []
+        final[i][0] = 1
+        for(let j = 1; j < i; j++){
+            final[i][j] = final[i - 1][j - 1] + final[i - 1][j]
+        }
+        final[i][i] = 1
+    }
+    return final
+};
