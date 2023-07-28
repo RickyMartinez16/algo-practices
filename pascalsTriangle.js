@@ -19,6 +19,7 @@ var generate = function(numRows) {
     let final = []
     //start an initial loop to account for all of the rows needed
     for(let i = 0; i < numRows; i++){
+        //initialize an empty row (array)
         final[i] = []
         final[i][0] = 1
         for(let j = 1; j < i; j++){
