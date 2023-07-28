@@ -23,6 +23,7 @@ var generate = function(numRows) {
         final[i] = []
         //the first number in each row will always be 1
         final[i][0] = 1
+        //start an inner loop that starts at j and will run as long as j is less than i
         for(let j = 1; j < i; j++){
             final[i][j] = final[i - 1][j - 1] + final[i - 1][j]
         }
