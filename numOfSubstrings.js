@@ -28,3 +28,6 @@
 // Input: patterns = ["a","a","a"], word = "ab"
 // Output: 3
 // Explanation: Each of the patterns appears as a substring in word "ab".
+
+
+
