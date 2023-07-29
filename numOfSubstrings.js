@@ -43,5 +43,6 @@ var numOfStrings = function(patterns, word) {
             count++
         }
     }
+    //return final count
     return count
 };
