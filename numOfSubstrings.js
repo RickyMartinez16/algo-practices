@@ -39,7 +39,7 @@ var numOfStrings = function(patterns, word) {
     for(let i = 0; i < patterns.length; i++){
         //check if the word includes each string from the patterns array
         if(word.includes(patterns[i])){
-            //if it does add it to the count
+            //if it does add it to the count by 1
             count++
         }
     }
