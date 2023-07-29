@@ -37,6 +37,7 @@ var numOfStrings = function(patterns, word) {
 
     //loop thru the substrings patterns array
     for(let i = 0; i < patterns.length; i++){
+        //check if the word includes each string from the patterns array
         if(word.includes(patterns[i])){
             count++
         }
