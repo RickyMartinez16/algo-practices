@@ -27,6 +27,6 @@
 
 
 var maximum69Number  = function(num) {
-    //turn this entire string into a Number (turn the input number into a string)(replace the first instance of 6 with a 9)
+    //turn this entire string into a Number but the parenths will run first (turn the input number into a string)(replace the first instance of 6 with a 9)
     return Number(num.toString().replace("6", "9"))
   };
