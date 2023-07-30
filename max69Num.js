@@ -24,3 +24,8 @@
 // Input: num = 9999
 // Output: 9999
 // Explanation: It is better not to apply any change.
+
+
+var maximum69Number  = function(num) {
+    return Number(num.toString().replace("6", "9"))
+  };
