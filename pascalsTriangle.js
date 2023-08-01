@@ -31,6 +31,6 @@ var generate = function(numRows) {
         //the last number in each row will always be 1
         final[i][i] = 1
     }
-    //return the final pascal
+    //return the final pascal array
     return final
 };
