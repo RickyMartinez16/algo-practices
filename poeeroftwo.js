@@ -20,8 +20,6 @@
 // Output: false
 
 
-
-
 var isPowerOfTwo = function(n) {
     //edge case
 
