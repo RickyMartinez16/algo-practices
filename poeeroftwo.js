@@ -20,6 +20,8 @@
 // Output: false
 
 
+
+
 var isPowerOfTwo = function(n) {
     //edge case
 
@@ -35,6 +37,7 @@ var isPowerOfTwo = function(n) {
         //return 0
             return 0;
         //assign n to n divived by 2
+        //loop will run again
         n = n/2;
     }
     //return 1
