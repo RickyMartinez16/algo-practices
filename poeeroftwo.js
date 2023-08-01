@@ -21,6 +21,7 @@
 
 
 var isPowerOfTwo = function(n) {
+    //check if n equals 0
     if (n == 0)
         return 0;
     while (n != 1) {
