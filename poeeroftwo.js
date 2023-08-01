@@ -34,6 +34,7 @@ var isPowerOfTwo = function(n) {
         if (n%2 != 0)
         //return 0
             return 0;
+        //assign n to n divived by 2
         n = n/2;
     }
     return 1;
