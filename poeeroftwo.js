@@ -23,6 +23,7 @@
 var isPowerOfTwo = function(n) {
     //check if n equals 0
     if (n == 0)
+    //if it does return 0
         return 0;
     while (n != 1) {
         if (n%2 != 0)
