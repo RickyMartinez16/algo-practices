@@ -21,6 +21,8 @@
 
 
 var isPowerOfTwo = function(n) {
+    //edge case
+
     //check if n equals 0
     if (n == 0)
     //if it does return 0
