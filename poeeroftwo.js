@@ -32,6 +32,7 @@ var isPowerOfTwo = function(n) {
     while (n != 1) {
         //if the remainder of n divided by 2 does not equal 0
         if (n%2 != 0)
+        //return 0
             return 0;
         n = n/2;
     }
