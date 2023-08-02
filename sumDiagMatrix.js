@@ -33,6 +33,7 @@ var diagonalSum = function(mat) {
     //last row/colum
     let length = mat.length - 1
 
+    //loop thru the matrix
     for(let i = 0; i <= length; i++){
       count += mat[i][i]
       if(i !== (length - i)){
