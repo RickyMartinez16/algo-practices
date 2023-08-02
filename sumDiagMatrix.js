@@ -40,6 +40,7 @@ var diagonalSum = function(mat) {
       count += mat[i][i]
       //check if current row is not the same as row length - i
       if(i !== (length - i)){
+          //if it is not then add row [i] and coulum [length - i] to the sum
         count += mat[i][length - i]
       }
     }
