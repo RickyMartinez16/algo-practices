@@ -25,3 +25,17 @@
 
 // Input: mat = [[5]]
 // Output: 5
+
+
+var diagonalSum = function(mat) {
+    let count = 0;
+    let length = mat.length - 1
+
+    for(let i = 0; i <= length; i++){
+      count += mat[i][i]
+      if(i !== (length - i)){
+        count += mat[i][length - i]
+      }
+    }
+    return count
+};
