@@ -38,6 +38,7 @@ var diagonalSum = function(mat) {
         //count will add all [i][i] because thats the first diag
         //all the main diag will be [i][i]
       count += mat[i][i]
+      //check if current row is not the same as row length - i
       if(i !== (length - i)){
         count += mat[i][length - i]
       }
