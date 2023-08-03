@@ -21,6 +21,7 @@
 // 0 <= num <= 231 - 1
 
 
+//recursive solution
 var addDigits = function(num) {
     if(num < 10) return num
     let stringNum = String(num)
