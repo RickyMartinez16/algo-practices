@@ -19,3 +19,18 @@
 // Constraints:
 
 // 0 <= num <= 231 - 1
+
+
+var addDigits = function(num) {
+    if(num < 10) return num
+    let stringNum = String(num)
+
+    let splitStringNum = stringNum.split("")
+
+    let sum = 0
+
+    for(let i = 0; i < splitStringNum.length; i++){
+        sum += parseInt(splitStringNum[i])  
+    }
+    return addDigits(sum)
+};
