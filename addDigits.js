@@ -40,5 +40,6 @@ var addDigits = function(num) {
         sum += parseInt(splitStringNum[i])  
     }
     //resursive function call again to run the function again
+    //it will check if its a single digit
     return addDigits(sum)
 };
