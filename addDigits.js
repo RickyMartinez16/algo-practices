@@ -25,6 +25,7 @@
 var addDigits = function(num) {
     //check if the input num is single digit
     if(num < 10) return num
+    //if not turn the input num into a string
     let stringNum = String(num)
 
     let splitStringNum = stringNum.split("")
