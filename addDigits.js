@@ -31,6 +31,7 @@ var addDigits = function(num) {
     //make an array of each number of the input
     let splitStringNum = stringNum.split("")
 
+    //start the sum at 0
     let sum = 0
 
     for(let i = 0; i < splitStringNum.length; i++){
