@@ -28,6 +28,7 @@ var addDigits = function(num) {
     //if not turn the input num into a string
     let stringNum = String(num)
 
+    //make an array of each number of the input
     let splitStringNum = stringNum.split("")
 
     let sum = 0
