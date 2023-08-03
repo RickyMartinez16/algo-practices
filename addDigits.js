@@ -36,6 +36,7 @@ var addDigits = function(num) {
 
     //start a for loop the length of the array of strings 
     for(let i = 0; i < splitStringNum.length; i++){
+        //the sum equals the total of all the numbers after parse int ing them 
         sum += parseInt(splitStringNum[i])  
     }
     return addDigits(sum)
