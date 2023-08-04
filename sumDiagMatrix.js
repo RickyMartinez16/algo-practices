@@ -46,6 +46,6 @@ var diagonalSum = function(mat) {
         sum += mat[i][length - i]
       }
     }
-    //return final count / sum
+    //return final sum
     return sum
 };
