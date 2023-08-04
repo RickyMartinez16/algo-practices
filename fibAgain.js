@@ -34,6 +34,7 @@ var fib = function(n) {
 
     //loop starting at index 2 and running the length of n + 1
     for(let i = 2; i < n + 1 ; i++){
+        //make the next index in the fib array the sum of i - 1 and i - 2
         fib[i] = fib[i - 1] + fib[i - 2]
     }
     return fib[fib.length - 1]
