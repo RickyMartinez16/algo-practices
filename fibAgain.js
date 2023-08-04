@@ -32,6 +32,7 @@ var fib = function(n) {
     //make the fib sequence array
     let fib = [0, 1]
 
+    //loop starting at index 2 and running the length of n + 1
     for(let i = 2; i < n + 1 ; i++){
         fib[i] = fib[i - 1] + fib[i - 2]
     }
