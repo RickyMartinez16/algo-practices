@@ -47,5 +47,5 @@ var diagonalSum = function(mat) {
       }
     }
     //return final count / sum
-    return count
+    return sum
 };
