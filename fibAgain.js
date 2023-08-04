@@ -24,6 +24,8 @@
 
 
 var fib = function(n) {
+    //edge case
+
     //if n is 0 return 0
     if(n === 0) return 0
     let fib = [0, 1]
