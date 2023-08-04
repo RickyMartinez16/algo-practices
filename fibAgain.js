@@ -37,5 +37,6 @@ var fib = function(n) {
         //make the next index in the fib array the sum of i - 1 and i - 2
         fib[i] = fib[i - 1] + fib[i - 2]
     }
+    //return the last eleemnt in the new fib array
     return fib[fib.length - 1]
 };
