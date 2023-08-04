@@ -24,6 +24,7 @@
 
 
 var fib = function(n) {
+    //if n is 0 return 0
     if(n === 0) return 0
     let fib = [0, 1]
 
