@@ -43,7 +43,7 @@ var diagonalSum = function(mat) {
       if(i !== (length - i)){
           //if it is not then add row [i] and coulum [length - i] to the sum
           //this represents the secondary diagonal
-        count += mat[i][length - i]
+        sum += mat[i][length - i]
       }
     }
     //return final count / sum
