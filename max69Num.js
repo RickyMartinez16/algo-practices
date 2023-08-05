@@ -13,6 +13,8 @@
 // Changing the third digit results in 9699.
 // Changing the fourth digit results in 9666.
 // The maximum number is 9969.
+
+
 // Example 2:
 
 // Input: num = 9996
