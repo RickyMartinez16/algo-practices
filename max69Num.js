@@ -20,7 +20,7 @@
 // Input: num = 9996
 // Output: 9999
 // Explanation: Changing the last digit 6 to 9 results in the maximum number.
-// Example 3:
+// Example THREE:
 
 // Input: num = 9999
 // Output: 9999
