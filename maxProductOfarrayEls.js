@@ -23,5 +23,6 @@ var maxProduct = function(nums) {
     //sort the input array from small to big
     let sort = nums.sort((a, b) => a - b)
 
+    //return the highest numbers minus 1 times the second highest number minus 1
     return (sort[sort.length - 1] - 1) * (sort[sort.length - 2] - 1)
 };
