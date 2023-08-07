@@ -17,3 +17,10 @@
 
 // Input: nums = [3,7]
 // Output: 12
+
+
+var maxProduct = function(nums) {
+    let sort = nums.sort((a, b) => a - b)
+
+    return (sort[sort.length - 1] - 1) * (sort[sort.length - 2] - 1)
+};
