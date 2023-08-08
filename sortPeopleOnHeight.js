@@ -44,6 +44,7 @@ var sortPeople = function(names, heights) {
   //sort thru the people array and sort them by height largest to smallest
   people.sort((a, b) => b.height - a.height)
 
+  //declare a variable
   const sortedNames = people.map(person => person.name)
 
   return sortedNames
