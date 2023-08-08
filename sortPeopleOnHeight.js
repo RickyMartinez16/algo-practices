@@ -37,6 +37,7 @@ var sortPeople = function(names, heights) {
   for(let i = 0; i < names.length; i++){
       //make an object of each persons name and their corresponding height
       //push each person entry into the people array
+      //so you have an array of objects
     people.push({name: names[i], height: heights[i]})
   }
 
