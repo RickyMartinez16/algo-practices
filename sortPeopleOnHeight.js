@@ -47,7 +47,8 @@ var sortPeople = function(names, heights) {
   //declare a variable
   //map over the people array and make a new array of sorted names
   //This is an arrow function used as an argument to the map() function. 
-  //It takes one argument, person, which represents each element (object) in the people array. The arrow function then returns the name property of the person object.
+  //It takes one argument, person, which represents each element (object) in the people array. 
+  //The arrow function then returns the name property of the person object.
   const sortedNames = people.map(person => person.name)
 
   return sortedNames
