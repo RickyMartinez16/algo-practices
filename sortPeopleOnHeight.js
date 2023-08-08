@@ -45,6 +45,7 @@ var sortPeople = function(names, heights) {
   people.sort((a, b) => b.height - a.height)
 
   //declare a variable
+  //map over the people array and make a new array of sorted names
   const sortedNames = people.map(person => person.name)
 
   return sortedNames
