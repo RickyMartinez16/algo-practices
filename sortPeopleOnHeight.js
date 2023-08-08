@@ -33,6 +33,7 @@ var sortPeople = function(names, heights) {
     //make an array of all the people
     let people = []
 
+    //loop thru the names input array
   for(let i = 0; i < names.length; i++){
     people.push({name: names[i], height: heights[i]})
   }
