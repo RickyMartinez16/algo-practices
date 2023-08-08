@@ -30,6 +30,7 @@
 
 
 var sortPeople = function(names, heights) {
+    //make an array of all the people
     let people = []
 
   for(let i = 0; i < names.length; i++){
