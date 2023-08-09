@@ -45,6 +45,7 @@ var merge = function(nums1, m, nums2, n) {
     nums1.length = m
     //sortens length of nums 2 to get rid of bullshit
     nums2.length = n;
+    //pushes contents of nums 2 into nums 1
     nums1.push(...nums2);
     nums1.sort(function(a,b){return a - b})
 };
