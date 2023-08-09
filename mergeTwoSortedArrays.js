@@ -51,4 +51,5 @@ var merge = function(nums1, m, nums2, n) {
     nums1.sort(function(a,b){return a - b})
 
     //this function does not return anything
+    //just modifies nums1
 };
