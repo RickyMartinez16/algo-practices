@@ -41,6 +41,7 @@
 
 var merge = function(nums1, m, nums2, n) {
 
+    //shortens the length of nums1 to the speicfied m length
     nums1.length = m
     nums2.length = n;
     nums1.push(...nums2);
