@@ -28,5 +28,7 @@ var isSameTree = function(p, q) {
     if(!p && !q)return true
     //if either of p or q is null or either value being looked at is that the same as ps or qs return false
     if(!p || !q || p.val !== q.val) return false
+
+    //recursive function call
     return (isSameTree(p.left, q.left) && isSameTree(p.right, q.right))
 };
