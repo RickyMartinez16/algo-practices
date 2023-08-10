@@ -24,6 +24,7 @@
 //recursive function
 
 var isSameTree = function(p, q) {
+    //is the trees are empty return truue
     if(!p && !q)return true
     if(!p || !q || p.val !== q.val) return false
     return (isSameTree(p.left, q.left) && isSameTree(p.right, q.right))
