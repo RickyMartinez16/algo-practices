@@ -31,5 +31,6 @@ var isSameTree = function(p, q) {
 
     //recursive function call
     //check if the left subtree of p tree and q tree are the same and if right sub tree or p and q are the same
+    //will return true if so
     return (isSameTree(p.left, q.left) && isSameTree(p.right, q.right))
 };
