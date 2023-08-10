@@ -21,6 +21,8 @@
 // Output: false
 
 
+//recursive function
+
 var isSameTree = function(p, q) {
     if(!p && !q)return true
     if(!p || !q || p.val !== q.val) return false
