@@ -26,6 +26,7 @@
 var isSameTree = function(p, q) {
     //is the trees are empty return truue
     if(!p && !q)return true
+    //if either of p or q is null or either value being looked at is that the same as ps or qs return false
     if(!p || !q || p.val !== q.val) return false
     return (isSameTree(p.left, q.left) && isSameTree(p.right, q.right))
 };
