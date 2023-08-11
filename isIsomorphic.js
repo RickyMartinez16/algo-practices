@@ -57,6 +57,5 @@ var isIsomorphic = function(s, t) {
         return true
     }
     return false
-    console.log(sMap)
-    console.log(tMap)
+    
 };
