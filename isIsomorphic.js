@@ -30,3 +30,33 @@
 
 
 // below code not working ---------------------
+
+
+var isIsomorphic = function(s, t) {
+    let sMap = {}
+    let tMap = {}
+
+    for(let i = 0; i < s.length; i++){
+        if(sMap[s[i]]){
+            sMap[s[i]]++
+        } else {
+            sMap[s[i]] = 1
+        }
+
+        if(tMap[t[i]]){
+            tMap[t[i]]++
+        } else {
+            tMap[t[i]] = 1
+        }
+    }
+
+    for(let j = 0; j < sMap.length; j++){
+        if(sMap[j] === tMap[j]){
+            continue
+        }
+        return true
+    }
+    return false
+    console.log(sMap)
+    console.log(tMap)
+};
