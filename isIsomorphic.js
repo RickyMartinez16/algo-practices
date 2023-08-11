@@ -31,7 +31,7 @@
 
 // below code not working ---------------------
 
-
+//want to make a map of both strings occursances and then compare the occurances and return true if theyre equal
 var isIsomorphic = function(s, t) {
     let sMap = {}
     let tMap = {}
