@@ -37,6 +37,7 @@
 
 
 function timeConversion(s) {
+    //get the AM/PM
     const meridian = s.slice(-2); // Extract AM/PM
     const timeWithoutMeridian = s.slice(0, -2); // Extract time without AM/PM
     const timeParts = timeWithoutMeridian.split(":"); // Split hours, minutes, and seconds
@@ -59,3 +60,4 @@ const time12Hour = "07:05:45PM";
 
 // Convert and print the time in 24-hour format
 console.log(timeConversion(time12Hour)); // Output: "19:05:45"
+s
