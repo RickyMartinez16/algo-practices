@@ -47,6 +47,7 @@ function timeConversion(s) {
     let hours = parseInt(timeParts[0], 10); // Convert hours to integer
     //minutes stays the same
     const minutes = timeParts[1];
+    //seconds stays the same
     const seconds = timeParts[2];
 
     if (meridian === "PM" && hours !== 12) {
