@@ -45,6 +45,7 @@ function timeConversion(s) {
     const timeParts = timeWithoutMeridian.split(":"); // Split hours, minutes, and seconds
 
     let hours = parseInt(timeParts[0], 10); // Convert hours to integer
+    //minutes stays the same
     const minutes = timeParts[1];
     const seconds = timeParts[2];
 
