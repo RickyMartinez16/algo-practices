@@ -39,6 +39,7 @@
 function timeConversion(s) {
     //get the AM/PM
     const meridian = s.slice(-2); // Extract AM/PM
+    //get the time
     const timeWithoutMeridian = s.slice(0, -2); // Extract time without AM/PM
     const timeParts = timeWithoutMeridian.split(":"); // Split hours, minutes, and seconds
 
