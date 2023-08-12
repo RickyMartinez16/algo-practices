@@ -36,3 +36,26 @@
 // 19:05:45
 
 
+function timeConversion(s) {
+    const meridian = s.slice(-2); // Extract AM/PM
+    const timeWithoutMeridian = s.slice(0, -2); // Extract time without AM/PM
+    const timeParts = timeWithoutMeridian.split(":"); // Split hours, minutes, and seconds
+
+    let hours = parseInt(timeParts[0], 10); // Convert hours to integer
+    const minutes = timeParts[1];
+    const seconds = timeParts[2];
+
+    if (meridian === "PM" && hours !== 12) {
+        hours += 12; // Add 12 hours for PM except 12:00:00PM
+    } else if (meridian === "AM" && hours === 12) {
+        hours = 0; // Convert 12:00:00AM to 00:00:00
+    }
+
+    return `${hours.toString().padStart(2, "0")}:${minutes}:${seconds}`;
+}
+
+// Example input
+const time12Hour = "07:05:45PM";
+
+// Convert and print the time in 24-hour format
+console.log(timeConversion(time12Hour)); // Output: "19:05:45"
