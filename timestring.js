@@ -41,7 +41,7 @@ function timeConversion(s) {
     const meridian = s.slice(-2); // Extract AM/PM
     //get the time
     const timeWithoutMeridian = s.slice(0, -2); // Extract time without AM/PM
-    //split at the colons
+    //split at the colons into an array
     const timeParts = timeWithoutMeridian.split(":"); // Split hours, minutes, and seconds
 
     let hours = parseInt(timeParts[0], 10); // Convert hours to integer
