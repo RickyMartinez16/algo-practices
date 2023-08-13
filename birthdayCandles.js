@@ -40,6 +40,7 @@ function birthdayCakeCandles(candles) {
     //sort the candles small to large
     let sort = candles.sort((a, b) => a - b)
     
+    //loop thru the candles input
     for(let i = 0; i < candles.length; i++){
         let tallest = sort[sort.length - 1]
         if(candles[i] >= tallest){
