@@ -37,6 +37,7 @@
 function birthdayCakeCandles(candles) {
     //keep track of the final count
     let count = 0
+    //sort the candles small to large
     let sort = candles.sort((a, b) => a - b)
     
     for(let i = 0; i < candles.length; i++){
