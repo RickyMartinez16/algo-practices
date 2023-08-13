@@ -51,5 +51,6 @@ function birthdayCakeCandles(candles) {
             count++
         }
     }
+    //return final count
     return count
 }
