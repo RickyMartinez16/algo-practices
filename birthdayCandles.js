@@ -34,3 +34,16 @@
 // Candle heights are . The tallest candles are  units, and there are  of them.
 
 
+function birthdayCakeCandles(candles) {
+    
+    let count = 0
+    let sort = candles.sort((a, b) => a - b)
+    
+    for(let i = 0; i < candles.length; i++){
+        let tallest = sort[sort.length - 1]
+        if(candles[i] >= tallest){
+            count++
+        }
+    }
+    return count
+}
