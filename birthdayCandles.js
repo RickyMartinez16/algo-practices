@@ -42,6 +42,7 @@ function birthdayCakeCandles(candles) {
     
     //loop thru the candles input
     for(let i = 0; i < candles.length; i++){
+        //the tallest candle will be the last of the sorted array
         let tallest = sort[sort.length - 1]
         if(candles[i] >= tallest){
             count++
