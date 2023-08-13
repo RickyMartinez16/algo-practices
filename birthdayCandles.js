@@ -47,6 +47,7 @@ function birthdayCakeCandles(candles) {
         //check each candle in inpiut array
         //if the ith candle is greater than or as tall as the tallest candle 
         if(candles[i] >= tallest){
+            //add one to the count
             count++
         }
     }
