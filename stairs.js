@@ -63,8 +63,3 @@ function staircase(n) {
     }
 }
 
-// Example input
-const size = 6;
-
-// Print the staircase
-staircase(size);
