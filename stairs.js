@@ -58,6 +58,7 @@ function staircase(n) {
         const spaces = ' '.repeat(n - i);
         //make a var for the hashes and repeat it i times
         const hashes = '#'.repeat(i);
+        //prrint stairs
         console.log(spaces + hashes);
     }
 }
