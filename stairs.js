@@ -48,7 +48,7 @@
 // ######
 // Explanation
 
-// The staircase is right-aligned, composed of # symbols and spaces, and has a height and width of .
+// The staircase is right-aligned, composed of # symbols and spaces, and has a height and width of 
 
 
 function staircase(n) {
