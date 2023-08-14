@@ -49,3 +49,18 @@
 // Explanation
 
 // The staircase is right-aligned, composed of # symbols and spaces, and has a height and width of .
+
+
+function staircase(n) {
+    for (let i = 1; i <= n; i++) {
+        const spaces = ' '.repeat(n - i);
+        const hashes = '#'.repeat(i);
+        console.log(spaces + hashes);
+    }
+}
+
+// Example input
+const size = 6;
+
+// Print the staircase
+staircase(size);
