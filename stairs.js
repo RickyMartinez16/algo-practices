@@ -62,4 +62,3 @@ function staircase(n) {
         console.log(spaces + hashes);
     }
 }
-
