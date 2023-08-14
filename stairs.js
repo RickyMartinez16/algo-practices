@@ -1,51 +1,51 @@
-Staircase detail
+// Staircase detail
 
-This is a staircase of size :
+// This is a staircase of size :
 
-   #
-  ##
- ###
-####
-Its base and height are both equal to . It is drawn using # symbols and spaces. The last line is not preceded by any spaces.
+//    #
+//   ##
+//  ###
+// ####
+// Its base and height are both equal to . It is drawn using # symbols and spaces. The last line is not preceded by any spaces.
 
-Write a program that prints a staircase of size .
+// Write a program that prints a staircase of size .
 
-Function Description
+// Function Description
 
-Complete the staircase function in the editor below.
+// Complete the staircase function in the editor below.
 
-staircase has the following parameter(s):
+// staircase has the following parameter(s):
 
-int n: an integer
-Print
+// int n: an integer
+// Print
 
-Print a staircase as described above.
+// Print a staircase as described above.
 
-Input Format
+// Input Format
 
-A single integer, , denoting the size of the staircase.
+// A single integer, , denoting the size of the staircase.
 
-Constraints
+// Constraints
 
- .
+//  .
 
-Output Format
+// Output Format
 
-Print a staircase of size  using # symbols and spaces.
+// Print a staircase of size  using # symbols and spaces.
 
-Note: The last line must have  spaces in it.
+// Note: The last line must have  spaces in it.
 
-Sample Input
+// Sample Input
 
-6 
-Sample Output
+// 6 
+// Sample Output
 
-     #
-    ##
-   ###
-  ####
- #####
-######
-Explanation
+//      #
+//     ##
+//    ###
+//   ####
+//  #####
+// ######
+// Explanation
 
-The staircase is right-aligned, composed of # symbols and spaces, and has a height and width of .
+// The staircase is right-aligned, composed of # symbols and spaces, and has a height and width of .
