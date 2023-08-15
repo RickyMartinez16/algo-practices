@@ -54,6 +54,7 @@
 function plusMinus(arr) {
     //keep track of how many positives
     let positive = 0;
+    //keep track of how many negatives
     let negative = 0;
     let zero = 0
     
