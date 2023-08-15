@@ -63,6 +63,7 @@ function plusMinus(arr) {
     for(let i = 0; i < arr.length; i++){
         //if its greater than 0
         if(arr[i] > 0){
+            //add to pos
             positive++
         } else if(arr[i] < 0){
             negative++
