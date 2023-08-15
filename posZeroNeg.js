@@ -69,6 +69,7 @@ function plusMinus(arr) {
         } else if(arr[i] < 0){
             //add to neg
             negative++
+            //else its zero
         } else {
             zero++
         }
