@@ -71,6 +71,7 @@ function plusMinus(arr) {
             negative++
             //else its zero
         } else {
+            //add to zero
             zero++
         }
     }
