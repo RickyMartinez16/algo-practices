@@ -59,6 +59,7 @@ function plusMinus(arr) {
     //keep track of how many zeros
     let zero = 0
     
+    //loop thru the input array
     for(let i = 0; i < arr.length; i++){
         if(arr[i] > 0){
             positive++
