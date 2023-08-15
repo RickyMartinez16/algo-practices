@@ -52,6 +52,7 @@
 // The proportions of occurrence are positive: , negative:  and zeros: .
 
 function plusMinus(arr) {
+    //keep track of how many positives
     let positive = 0;
     let negative = 0;
     let zero = 0
