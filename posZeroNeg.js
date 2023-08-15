@@ -56,6 +56,7 @@ function plusMinus(arr) {
     let positive = 0;
     //keep track of how many negatives
     let negative = 0;
+    //keep track of how many zeros
     let zero = 0
     
     for(let i = 0; i < arr.length; i++){
