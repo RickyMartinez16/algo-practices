@@ -33,3 +33,11 @@
 
 // The range of the 32-bit integer is .
 // When we add several integer values, the resulting sum might exceed the above range. You might need to use long int C/C++/Java to store such sums.
+
+
+function aVeryBigSum(ar) {
+    const sum = ar.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+        
+        return sum
+
+}
