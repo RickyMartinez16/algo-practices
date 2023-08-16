@@ -36,8 +36,10 @@
 
 
 function aVeryBigSum(ar) {
-    const sum = ar.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-        
-        return sum
+  const sum = ar.reduce(
+    (accumulator, currentValue) => accumulator + currentValue,
+    0
+  );
 
+  return sum;
 }
