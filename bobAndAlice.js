@@ -75,6 +75,7 @@
 function compareTriplets(a, b) {
     //keep track of bobs score
     let bobScore = 0;
+    //keep track of alices score
     let aliceScore = 0;
     
     for(let i = 0; i < a.length; i++){
