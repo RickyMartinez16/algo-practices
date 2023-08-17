@@ -36,7 +36,7 @@
 
 function simpleArraySum(ar) {
     
-
+    //reduce the array to one sum
     const sum = ar.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
         
         return sum
