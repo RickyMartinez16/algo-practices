@@ -70,3 +70,18 @@
 // Comparing the  elements,  so Bob receives a point.
 // Comparing the  and  elements,  and  so Alice receives two points.
 // The return array is .
+
+
+function compareTriplets(a, b) {
+    let bobScore = 0;
+    let aliceScore = 0;
+    
+    for(let i = 0; i < a.length; i++){
+        if(a[i] > b[i]){
+            aliceScore++
+        } else if(a[i] < b[i]){
+            bobScore++
+        } 
+    }
+    return [aliceScore, bobScore]
+}
