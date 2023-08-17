@@ -87,6 +87,6 @@ function compareTriplets(a, b) {
             bobScore++
         } 
     }
-    //return the scores in an array
+    //return the scores in an array alice first
     return [aliceScore, bobScore]
 }
