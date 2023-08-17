@@ -31,3 +31,13 @@
 // Explanation
 
 // We print the sum of the array's elements: .
+
+
+
+function simpleArraySum(ar) {
+    
+
+    const sum = ar.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+        
+        return sum
+    }
