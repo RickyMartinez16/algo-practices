@@ -78,6 +78,7 @@ function compareTriplets(a, b) {
     //keep track of alices score
     let aliceScore = 0;
     
+    //loop thru the inputs
     for(let i = 0; i < a.length; i++){
         if(a[i] > b[i]){
             aliceScore++
