@@ -78,6 +78,7 @@ var isIsomorphic = function(s, t) {
     //create a map of the t input
     const tMap = {};
 
+    //loop thru the inputs
     for (let i = 0; i < s.length; i++) {
         const charS = s[i];
         const charT = t[i];
