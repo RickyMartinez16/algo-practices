@@ -86,7 +86,7 @@ var isIsomorphic = function(s, t) {
 
         //if the s i has already been encountered if not
         if (!sMap[charS]) {
-            
+            //add an entry to the smap with chatS as the key and charT as the value
             sMap[charS] = charT;
         } else if (sMap[charS] !== charT) {
             return false; // Mismatch in mapping
