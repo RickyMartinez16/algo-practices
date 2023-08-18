@@ -80,6 +80,7 @@ var isIsomorphic = function(s, t) {
 
     //loop thru the inputs
     for (let i = 0; i < s.length; i++) {
+        //check each letter of each input
         const charS = s[i];
         const charT = t[i];
 
