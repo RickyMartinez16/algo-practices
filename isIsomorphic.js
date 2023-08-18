@@ -73,6 +73,7 @@ var isIsomorphic = function(s, t) {
         return false; // Different lengths cannot be isomorphic
     }
 
+    //create a map of the s input
     const sMap = {};
     const tMap = {};
 
