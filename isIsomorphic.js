@@ -84,8 +84,9 @@ var isIsomorphic = function(s, t) {
         const charS = s[i];
         const charT = t[i];
 
-        //if the s map key
+        //if the s i has already been encountered if not
         if (!sMap[charS]) {
+            
             sMap[charS] = charT;
         } else if (sMap[charS] !== charT) {
             return false; // Mismatch in mapping
