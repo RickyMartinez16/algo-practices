@@ -68,6 +68,7 @@ var isIsomorphic = function(s, t) {
 
 
 var isIsomorphic = function(s, t) {
+    //if the lengths are not the same cannot be isomorphic
     if (s.length !== t.length) {
         return false; // Different lengths cannot be isomorphic
     }
