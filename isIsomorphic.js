@@ -65,3 +65,32 @@ var isIsomorphic = function(s, t) {
 
 
 //--------------------------------------------
+
+
+var isIsomorphic = function(s, t) {
+    if (s.length !== t.length) {
+        return false; // Different lengths cannot be isomorphic
+    }
+
+    const sMap = {};
+    const tMap = {};
+
+    for (let i = 0; i < s.length; i++) {
+        const charS = s[i];
+        const charT = t[i];
+
+        if (!sMap[charS]) {
+            sMap[charS] = charT;
+        } else if (sMap[charS] !== charT) {
+            return false; // Mismatch in mapping
+        }
+
+        if (!tMap[charT]) {
+            tMap[charT] = charS;
+        } else if (tMap[charT] !== charS) {
+            return false; // Mismatch in mapping
+        }
+    }
+
+    return true; // Strings are isomorphic
+};
