@@ -75,6 +75,7 @@ var isIsomorphic = function(s, t) {
 
     //create a map of the s input
     const sMap = {};
+    //create a map of the t input
     const tMap = {};
 
     for (let i = 0; i < s.length; i++) {
