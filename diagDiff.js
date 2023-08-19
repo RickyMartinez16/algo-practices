@@ -62,6 +62,7 @@ function diagonalDifference(arr) {
     //keep track of seconaday diagonal
     let diag2 = 0
     
+    //loop thru the matrix
     for(let i = 0; i < arr.length; i++){
         diag1 += arr[i][i]
         diag2 += arr[i][arr.length - 1 - i]
