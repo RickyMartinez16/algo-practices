@@ -57,6 +57,7 @@
 // Note: |x| is the absolute value of x
 
 function diagonalDifference(arr) {
+    //keep track of primary daigonal
     let diag1 = 0
     let diag2 = 0
     
