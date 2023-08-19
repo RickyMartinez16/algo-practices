@@ -64,6 +64,7 @@ function diagonalDifference(arr) {
     
     //loop thru the matrix
     for(let i = 0; i < arr.length; i++){
+        //primary diag will be the numbers when i and i are the same
         diag1 += arr[i][i]
         diag2 += arr[i][arr.length - 1 - i]
     }
