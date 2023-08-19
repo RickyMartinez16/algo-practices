@@ -69,6 +69,6 @@ function diagonalDifference(arr) {
         //secondary diag will be each row, and then the start in the top right corner and move left
         diag2 += arr[i][arr.length - 1 - i]
     }
-    //math.abs returns the absolute difference
+    //math.abs returns the absolute difference of two
     return Math.abs(diag1 - diag2)
 }
