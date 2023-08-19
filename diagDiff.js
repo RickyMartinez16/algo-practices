@@ -59,6 +59,7 @@
 function diagonalDifference(arr) {
     //keep track of primary daigonal
     let diag1 = 0
+    //keep track of seconaday diagonal
     let diag2 = 0
     
     for(let i = 0; i < arr.length; i++){
