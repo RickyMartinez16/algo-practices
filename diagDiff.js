@@ -66,6 +66,7 @@ function diagonalDifference(arr) {
     for(let i = 0; i < arr.length; i++){
         //primary diag will be the numbers when i and i are the same
         diag1 += arr[i][i]
+        //secondary diag will be each row, and then the start in the top right corner and move left
         diag2 += arr[i][arr.length - 1 - i]
     }
     return Math.abs(diag1 - diag2)
