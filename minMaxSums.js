@@ -69,6 +69,7 @@ function miniMaxSum(arr) {
             break
         }
     }
+    //do same as above to max sum
     for(let i = 1; i < sort.length; i++){
         max += sort[i]
         maxCount++
