@@ -59,6 +59,7 @@ function miniMaxSum(arr) {
 
     //loop to add to min. start at 0
     for(let i = 0; i < sort.length; i++){
+        //add each to min
         min += sort[i]
         minCount++
         if(minCount === 4){
