@@ -56,6 +56,8 @@ function miniMaxSum(arr) {
     let minCount = 0
     //keep track of how many numbers added to max
     let maxCount = 0
+
+    //loop to add to min. start at 0
     for(let i = 0; i < sort.length; i++){
         min += sort[i]
         minCount++
