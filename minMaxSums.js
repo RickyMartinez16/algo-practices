@@ -46,6 +46,7 @@
 
 
 function miniMaxSum(arr) {
+    //sort the array small to large
     let sort = arr.sort((a, b) => a - b)
     let min = 0
     let max = 0
