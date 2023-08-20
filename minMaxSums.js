@@ -63,6 +63,7 @@ function miniMaxSum(arr) {
         min += sort[i]
         //add one to the mincount so you know hoa many numbers you added
         minCount++
+        //if the min count is 4 
         if(minCount === 4){
             break
         }
