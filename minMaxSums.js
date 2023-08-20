@@ -65,6 +65,7 @@ function miniMaxSum(arr) {
         minCount++
         //if the min count is 4 
         if(minCount === 4){
+            //break out of the loop
             break
         }
     }
