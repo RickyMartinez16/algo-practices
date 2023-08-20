@@ -50,6 +50,7 @@ function miniMaxSum(arr) {
     let sort = arr.sort((a, b) => a - b)
     //keep track of min count
     let min = 0
+    //keep track of max count
     let max = 0
     let minCount = 0
     let maxCount = 0
