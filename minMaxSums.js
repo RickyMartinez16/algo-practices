@@ -43,3 +43,27 @@
 // Sum everything except , the sum is .
 // Sum everything except , the sum is .
 // Hints: Beware of integer overflow! Use 64-bit Integer.
+
+
+function miniMaxSum(arr) {
+    let sort = arr.sort((a, b) => a - b)
+    let min = 0
+    let max = 0
+    let minCount = 0
+    let maxCount = 0
+    for(let i = 0; i < sort.length; i++){
+        min += sort[i]
+        minCount++
+        if(minCount === 4){
+            break
+        }
+    }
+    for(let i = 1; i < sort.length; i++){
+        max += sort[i]
+        maxCount++
+        if(maxCount === 4){
+            break
+        }
+    }
+    console.log(min, max)
+}
