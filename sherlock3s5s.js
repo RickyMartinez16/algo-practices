@@ -59,6 +59,7 @@
 function decentNumber(n) {
     //if input is less than 3 its impossible to make a decent number
     if (n < 3) {
+        //print -1
         console.log(-1);
         return;
     }
