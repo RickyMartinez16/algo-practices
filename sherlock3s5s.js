@@ -64,6 +64,7 @@ function decentNumber(n) {
         return;
     }
 
+    //if the remainder of n and 3 is 0
     if (n % 3 === 0) {
         console.log("5".repeat(n));
         return;
