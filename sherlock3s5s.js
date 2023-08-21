@@ -54,3 +54,25 @@
 // For ,  is the only possible number. (Decent Number Property 3).
 // For ,  is the only possible number. (Decent Number Property 2).
 // For ,  is the Decent Number. All other permutations of these digits are not decent (Decent Number Property 4).
+
+
+function decentNumber(n) {
+    if (n < 3) {
+        console.log(-1);
+        return;
+    }
+
+    if (n % 3 === 0) {
+        console.log("5".repeat(n));
+        return;
+    }
+
+    for (let fives = n; fives >= 0; fives -= 3) {
+        if ((n - fives) % 5 === 0) {
+            console.log("5".repeat(fives) + "3".repeat(n - fives));
+            return;
+        }
+    }
+
+    console.log(-1);
+}
