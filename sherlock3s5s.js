@@ -76,6 +76,7 @@ function decentNumber(n) {
     for (let fives = n; fives >= 0; fives -= 3) {
         //if the remainder of n minus fives divived by 5 is 0
         if ((n - fives) % 5 === 0) {
+            //print 5 repeated fives times plus 3 repeated n minus fives times
             console.log("5".repeat(fives) + "3".repeat(n - fives));
             return;
         }
