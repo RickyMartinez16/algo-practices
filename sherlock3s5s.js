@@ -68,6 +68,7 @@ function decentNumber(n) {
     if (n % 3 === 0) {
         //print 5 and repeat is n number of times
         console.log("5".repeat(n));
+        //return ends the function
         return;
     }
 
@@ -78,6 +79,7 @@ function decentNumber(n) {
         if ((n - fives) % 5 === 0) {
             //print 5 repeated fives times plus 3 repeated n minus fives times
             console.log("5".repeat(fives) + "3".repeat(n - fives));
+            //return will end the function
             return;
         }
     }
