@@ -56,6 +56,9 @@
 // For ,  is the Decent Number. All other permutations of these digits are not decent (Decent Number Property 4).
 
 
+
+//not working------------------
+
 function decentNumber(n) {
     //if input is less than 3 its impossible to make a decent number
     if (n < 3) {
