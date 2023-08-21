@@ -72,6 +72,7 @@ function decentNumber(n) {
     }
 
     //loop
+    //inititalize a variable for 5s which is the input, run for as long as fives is greater than or equal to 0; fives minus 3 after each iteration
     for (let fives = n; fives >= 0; fives -= 3) {
         if ((n - fives) % 5 === 0) {
             console.log("5".repeat(fives) + "3".repeat(n - fives));
