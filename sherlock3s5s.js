@@ -64,6 +64,7 @@ function decentNumber(n) {
     if (n < 3) {
         //print -1
         console.log(-1);
+        //return ends the function
         return;
     }
 
