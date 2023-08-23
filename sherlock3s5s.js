@@ -76,7 +76,7 @@ function decentNumber(n) {
         return;
     }
 
-    //loop
+    //loop thru
     //inititalize a variable for 5s which is the input, run for as long as fives is greater than or equal to 0; fives minus 3 after each iteration
     for (let fives = n; fives >= 0; fives -= 3) {
         //if the remainder of n minus fives divived by 5 is 0
