@@ -37,6 +37,7 @@ var majorityElement = function(nums) {
         }
     }
 
+    //set the key as null
     let maxKey = null;
     let maxValue = -Infinity;
 
