@@ -25,6 +25,7 @@ var majorityElement = function(nums) {
     //create as hash map
     let map = {}
 
+    //loop thru the input nums array
     for(let i = 0; i < nums.length; i++){
         if(map[nums[i]]){
             map[nums[i]]++
