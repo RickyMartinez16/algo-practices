@@ -46,6 +46,7 @@ var majorityElement = function(nums) {
     for (const key of Object.keys(map)) {
         //if the key that your checks has a value greater than the maxvule
         if (map[key] > maxValue) {
+            //the max value now becomes the value of the that map[key]
             maxValue = map[key];
             maxKey = key;
         }
