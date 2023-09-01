@@ -48,6 +48,7 @@ var majorityElement = function(nums) {
         if (map[key] > maxValue) {
             //the max value now becomes the value of the that map[key]
             maxValue = map[key];
+            //grab the key you were looking at
             maxKey = key;
         }
     }
