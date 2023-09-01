@@ -53,6 +53,7 @@ var majorityElement = function(nums) {
         }
     }
 
+    //return the maxskey
     return maxKey;
 
 
