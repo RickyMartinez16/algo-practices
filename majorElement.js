@@ -39,6 +39,7 @@ var majorityElement = function(nums) {
 
     //set the key as null
     let maxKey = null;
+    //start the maxval at negative infity
     let maxValue = -Infinity;
 
     for (const key of Object.keys(map)) {
