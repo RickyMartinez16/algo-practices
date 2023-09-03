@@ -88,6 +88,6 @@ function decentNumber(n) {
         }
     }
 
-    //if it survives the loop the print -1
+    ///if it survives the loop the print -1
     console.log(-1);
 }
