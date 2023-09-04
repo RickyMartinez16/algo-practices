@@ -45,3 +45,18 @@ var twoSum = function(nums, target) {
         }
     }
 };
+
+
+var twoSum = function(nums, target) {
+    const numIndices = {}; // Create an object to store numbers and their indices
+    
+    for (let i = 0; i < nums.length; i++) {
+        const complement = target - nums[i];
+        
+        if (complement in numIndices) {
+            return [numIndices[complement], i];
+        }
+        
+        numIndices[nums[i]] = i; // Store the current number and its index
+    }
+};
