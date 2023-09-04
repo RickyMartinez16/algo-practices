@@ -50,6 +50,7 @@ var twoSum = function(nums, target) {
 var twoSum = function(nums, target) {
     const numIndices = {}; // Create an object to store numbers and their indices
     
+    //loop thru the input nums
     for (let i = 0; i < nums.length; i++) {
         const complement = target - nums[i];
         
