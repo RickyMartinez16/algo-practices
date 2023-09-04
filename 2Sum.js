@@ -56,8 +56,9 @@ var twoSum = function(nums, target) {
         //target minus each number in nums is the number that when added to nums equals the target
         const complement = target - nums[i];
         
-        //if the complement number exsistw in the num indices map
+        //if the complement number exsist as a key in the num indices map
         if (complement in numIndices) {
+            
             return [numIndices[complement], i];
         }
         
