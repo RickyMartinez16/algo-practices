@@ -36,6 +36,7 @@ var twoSum = function(nums, target) {
         for(let j = 1; j < nums.length; j++){
             //if the ith number and the jth number equal the target
             if(nums[i] + nums[j] === target){
+                //check to make sure i and j are not the same element
                 if(i != j){
                     return [i, j]
                 }
