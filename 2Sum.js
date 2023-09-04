@@ -53,6 +53,7 @@ var twoSum = function(nums, target) {
     //loop thru the input nums
     for (let i = 0; i < nums.length; i++) {
         //create a complement number
+        //target minus each number in nums is the number that when added to nums equals the target
         const complement = target - nums[i];
         
         if (complement in numIndices) {
