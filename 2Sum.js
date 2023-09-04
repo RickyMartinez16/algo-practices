@@ -38,6 +38,7 @@ var twoSum = function(nums, target) {
             if(nums[i] + nums[j] === target){
                 //check to make sure i and j are not the same element
                 if(i != j){
+                    //return i and j in an arrya
                     return [i, j]
                 }
             }
