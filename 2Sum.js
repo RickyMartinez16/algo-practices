@@ -58,7 +58,7 @@ var twoSum = function(nums, target) {
         
         //if the complement number exsist as a key in the num indices map
         if (complement in numIndices) {
-            
+            //return the value and i
             return [numIndices[complement], i];
         }
         
