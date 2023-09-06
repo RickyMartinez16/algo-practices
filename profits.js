@@ -48,7 +48,7 @@ var maxProfit = function(prices) {
             //the maxprofit var becomes the greater number between maxProfit and prices[i] - minPrice
 
             //prices[i] minus the min price is either the best price or keep maxProfit
-            
+            //by having minprice and checking each prices[i] you can tell if youre getting the best profits
             maxProfit = Math.max(maxProfit, prices[i] - minPrice);
         }
     }
