@@ -26,6 +26,7 @@
 
 
 var maxProfit = function(prices) {
+    //if the length of the prices input array is eual or less than 1
     if (prices.length <= 1) {
         return 0;
     }
