@@ -32,6 +32,7 @@ var maxProfit = function(prices) {
         return 0;
     }
     
+    //set a minprice var and set it to the first element of the prices array
     let minPrice = prices[0];
     let maxProfit = 0;
     
