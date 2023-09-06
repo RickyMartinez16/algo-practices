@@ -37,6 +37,7 @@ var maxProfit = function(prices) {
     //keep track of the max profit and start it at 0
     let maxProfit = 0;
     
+    //loop thru the prices array and start with element at index 1 
     for (let i = 1; i < prices.length; i++) {
         if (prices[i] < minPrice) {
             minPrice = prices[i];
