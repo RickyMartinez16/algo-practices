@@ -45,6 +45,7 @@ var maxProfit = function(prices) {
             minPrice = prices[i];
         } else {
             //if prices[i] is greater than the min price
+            //the maxprofit var becomes the greater number between maxProfit and prices[i] - minPrice
             maxProfit = Math.max(maxProfit, prices[i] - minPrice);
         }
     }
