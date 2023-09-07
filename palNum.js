@@ -27,3 +27,17 @@
  
 
 // Follow up: Could you solve it without converting the integer to a string?
+
+
+var isPalindrome = function(x) {
+    let string = String(x)
+    let stringSplit = string.split("").reverse().join("")
+    
+    if(stringSplit === string){
+        return true
+    } else {
+        return false
+    }
+
+    // return stringSplit === string ? true : false
+};
