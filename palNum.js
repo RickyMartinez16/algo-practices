@@ -42,6 +42,7 @@ var isPalindrome = function(x) {
         return true
         //if not equal
     } else {
+        //return false
         return false
     }
 
