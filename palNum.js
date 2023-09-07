@@ -32,6 +32,7 @@
 var isPalindrome = function(x) {
     //make the input num a string
     let string = String(x)
+    //split the string into an array
     let stringSplit = string.split("").reverse().join("")
     
     if(stringSplit === string){
