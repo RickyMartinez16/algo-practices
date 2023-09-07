@@ -40,6 +40,7 @@ var isPalindrome = function(x) {
         //it is a pal
         //return true
         return true
+        //if not equal
     } else {
         return false
     }
