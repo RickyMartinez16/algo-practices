@@ -35,6 +35,7 @@ var isPalindrome = function(x) {
     //split the string into an array then reverse it then join it again
     let stringSplit = string.split("").reverse().join("")
     
+    //if the string split is the same as string
     if(stringSplit === string){
         return true
     } else {
