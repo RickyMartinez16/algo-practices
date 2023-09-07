@@ -46,5 +46,6 @@ var isPalindrome = function(x) {
         return false
     }
 
+    //can also use ternery return
     // return stringSplit === string ? true : false
 };
