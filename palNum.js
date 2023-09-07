@@ -37,6 +37,7 @@ var isPalindrome = function(x) {
     
     //if the string split is the same as string
     if(stringSplit === string){
+        //it is a pal
         return true
     } else {
         return false
