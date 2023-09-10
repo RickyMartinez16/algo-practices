@@ -32,6 +32,7 @@ var isPalindrome = function(s) {
     //split the input into an array. reverse it. join the array. remove non alpha numeric chars. chaneg them all to lowercase
     let reverse = s.split("").reverse().join("").replace(/[^a-zA-Z0-9]/g, "").toLowerCase()
 
+    //check if the reverse var is equal to the input merge and removed non alpha numeric lowercase
     if(reverse === s.split("").join("").replace(/[^a-zA-Z0-9]/g, "").toLowerCase()){
         return true
     }
