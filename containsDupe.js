@@ -20,3 +20,14 @@
 
 // 1 <= nums.length <= 105
 // -109 <= nums[i] <= 109
+
+
+var containsDuplicate = function(nums) {
+    const unique = new Set(nums)
+
+    if(unique.size < nums.length){
+        return true
+    }
+
+    return false
+};
