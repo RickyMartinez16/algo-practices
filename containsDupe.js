@@ -23,6 +23,7 @@
 
 
 var containsDuplicate = function(nums) {
+    //use a set to find the unqie numbers
     const unique = new Set(nums)
 
     if(unique.size < nums.length){
