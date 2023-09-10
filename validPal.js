@@ -28,3 +28,13 @@
 // s consists only of printable ASCII characters.
 
 
+var isPalindrome = function(s) {
+    let reverse = s.split("").reverse().join("").replace(/[^a-zA-Z0-9]/g, "").toLowerCase()
+
+    if(reverse === s.split("").join("").replace(/[^a-zA-Z0-9]/g, "").toLowerCase()){
+        return true
+    }
+
+    return false
+
+};
