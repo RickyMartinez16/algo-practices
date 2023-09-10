@@ -29,6 +29,7 @@
 
 
 var isPalindrome = function(s) {
+    //split the input into an array. reverse it.
     let reverse = s.split("").reverse().join("").replace(/[^a-zA-Z0-9]/g, "").toLowerCase()
 
     if(reverse === s.split("").join("").replace(/[^a-zA-Z0-9]/g, "").toLowerCase()){
