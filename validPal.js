@@ -34,9 +34,11 @@ var isPalindrome = function(s) {
 
     //check if the reverse var is equal to the input merge and removed non alpha numeric lowercase
     if(reverse === s.split("").join("").replace(/[^a-zA-Z0-9]/g, "").toLowerCase()){
+        //if theyre the same return true
         return true
     }
 
+    //all else return fasle
     return false
 
 };
