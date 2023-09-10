@@ -31,6 +31,6 @@ var containsDuplicate = function(nums) {
         //if unique is less than nums return true
         return true
     }
-
+    //otherwise return false
     return false
 };
