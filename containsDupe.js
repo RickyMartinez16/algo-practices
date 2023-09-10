@@ -28,6 +28,7 @@ var containsDuplicate = function(nums) {
 
     //compare the size of the set and the length of the input array
     if(unique.size < nums.length){
+        //if unique is less than nums return true
         return true
     }
 
