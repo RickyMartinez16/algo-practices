@@ -33,6 +33,7 @@ var longestCommonPrefix = function(strs) {
     //the prefix starts as the whole first string
     let prefix = strs[0]
 
+    //loop thru the input array of strings
     for(let i = 1; i < strs.length; i++){
         while(strs[i].indexOf(prefix) != 0){
             prefix = prefix.slice(0, prefix.length - 1)
