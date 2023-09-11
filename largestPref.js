@@ -26,6 +26,7 @@ var longestCommonPrefix = function(strs) {
     //edge case
     // if the lengoth of the input array is 0 
     if(strs.length < 1){
+        //return empty string
         return ""
     }
 
