@@ -21,3 +21,20 @@
  
 
 // Follow up: What if the inputs contain Unicode characters? How would you adapt your solution to such a case?
+
+
+var isAnagram = function(s, t) {
+    let sSorted = s.split("").sort()
+    let tSorted = t.split("").sort()
+
+    if(sSorted.length != tSorted.length){
+        return false
+    }
+
+    for(let i = 0; i < sSorted.length; i++){
+        if(sSorted[i] != tSorted[i]){
+            return false
+        }
+    }
+    return true
+};
