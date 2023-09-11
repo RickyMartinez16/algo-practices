@@ -37,6 +37,8 @@ var longestCommonPrefix = function(strs) {
     for(let i = 1; i < strs.length; i++){
         //while loop
         //whike the ith string starting at index 1
+        //if the indexOf the prefix does not equal 0
+        //if the prefix is not found at the beginning of each string
         while(strs[i].indexOf(prefix) != 0){
             prefix = prefix.slice(0, prefix.length - 1)
         }
