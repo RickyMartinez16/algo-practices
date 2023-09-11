@@ -39,6 +39,7 @@ var isAnagram = function(s, t) {
     for(let i = 0; i < sSorted.length; i++){
         //if each letter is not the same in the ith position in each array
         if(sSorted[i] != tSorted[i]){
+            //retrun false
             return false
         }
     }
