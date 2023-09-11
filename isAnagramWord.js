@@ -31,6 +31,7 @@ var isAnagram = function(s, t) {
 
     //if the lengths of the arrays is not the same
     if(sSorted.length != tSorted.length){
+        //return false
         return false
     }
 
