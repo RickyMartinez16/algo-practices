@@ -29,6 +29,7 @@ var isAnagram = function(s, t) {
     //split the t input into an array and then sort in alphaebtical order
     let tSorted = t.split("").sort()
 
+    //if the lengths of the arrays is not the same
     if(sSorted.length != tSorted.length){
         return false
     }
