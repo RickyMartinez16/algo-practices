@@ -43,5 +43,6 @@ var isAnagram = function(s, t) {
             return false
         }
     }
+    //return true if the loop
     return true
 };
