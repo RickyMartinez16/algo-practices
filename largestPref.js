@@ -23,6 +23,7 @@
 
 
 var longestCommonPrefix = function(strs) {
+    //edge case
     if(strs.length < 1){
         return ""
     }
