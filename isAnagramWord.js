@@ -35,6 +35,7 @@ var isAnagram = function(s, t) {
         return false
     }
 
+    //loop thru the arrays
     for(let i = 0; i < sSorted.length; i++){
         if(sSorted[i] != tSorted[i]){
             return false
