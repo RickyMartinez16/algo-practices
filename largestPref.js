@@ -44,6 +44,7 @@ var longestCommonPrefix = function(strs) {
             prefix = prefix.slice(0, prefix.length - 1)
         }
 
+        //if the prefix ever gets to an empty string 
         if(prefix === ""){
             return ""
         }
