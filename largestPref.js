@@ -46,6 +46,7 @@ var longestCommonPrefix = function(strs) {
 
         //if the prefix ever gets to an empty string 
         if(prefix === ""){
+            //just return the empty string
             return ""
         }
     }
