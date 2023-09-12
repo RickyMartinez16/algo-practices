@@ -28,3 +28,12 @@
 // 1 <= s.length <= 104
 // s consists of only English letters and spaces ' '.
 // There will be at least one word in s.
+
+
+var lengthOfLastWord = function(s) {
+    s = s.trim()
+    let split = s.split(" ")
+
+    return split[split.length - 1].length
+
+};
