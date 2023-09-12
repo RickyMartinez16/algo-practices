@@ -36,6 +36,7 @@ var lengthOfLastWord = function(s) {
     //split the s input into an array
     let split = s.split(" ")
 
+    //return the last words length
     return split[split.length - 1].length
 
 };
