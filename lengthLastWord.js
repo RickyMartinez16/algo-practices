@@ -31,6 +31,7 @@
 
 
 var lengthOfLastWord = function(s) {
+    //remove all the white space at the end of s input with trim
     s = s.trim()
     let split = s.split(" ")
 
