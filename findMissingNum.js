@@ -25,3 +25,12 @@
 // 1 <= n <= 104
 // 0 <= nums[i] <= n
 // All the numbers of nums are unique.
+
+
+var missingNumber = function(nums) {
+    for(let i = 0; i < nums.length + 1; i++){
+        if(nums.indexOf(i) < 0){
+            return i
+        }
+    }
+};
