@@ -30,6 +30,7 @@
 var missingNumber = function(nums) {
     //loop thru the input plus 1 to account for the last number if its missing
     for(let i = 0; i < nums.length + 1; i++){
+        //if the indexOf i is less than 0
         if(nums.indexOf(i) < 0){
             return i
         }
