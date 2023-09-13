@@ -24,7 +24,8 @@
 // n == nums.length
 // 1 <= n <= 104
 // 0 <= nums[i] <= n
-// All the numbers of nums are unique.
+// All the numbers of nums are unique
+
 
 
 var missingNumber = function(nums) {
