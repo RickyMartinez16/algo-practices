@@ -63,6 +63,7 @@ var mergeAlternately = function(word1, word2) {
             merged.push(word1Split[i])
             merged.push(word2Split[i])
         }
+        //return the merged array string
         return merged.join("")
     }
 };
