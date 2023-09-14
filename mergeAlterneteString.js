@@ -42,6 +42,7 @@ var mergeAlternately = function(word1, word2) {
     //split each letter inn the second word into an array
     let word2Split = word2.split("")
 
+    //create an final array we will put the letters in
     let merged = []
 
     if(word1Split.length >= word2Split.length){
