@@ -55,6 +55,7 @@ var mergeAlternately = function(word1, word2) {
         }
         //return the final string
         return merged.join("")
+        //if the second word is longer
     } else {
         for(let i = 0; i < word2Split.length; i++){
             merged.push(word1Split[i])
