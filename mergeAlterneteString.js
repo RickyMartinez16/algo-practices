@@ -47,6 +47,7 @@ var mergeAlternately = function(word1, word2) {
 
     //if the first word is bigger or equal to the second word
     if(word1Split.length >= word2Split.length){
+        //loop thru the first word split
         for(let i = 0; i < word1Split.length; i++){
             merged.push(word1Split[i])
             merged.push(word2Split[i])
