@@ -37,6 +37,7 @@
 
 
 var mergeAlternately = function(word1, word2) {
+    //split each letter in the first word into an array
     let word1Split = word1.split("")
     let word2Split = word2.split("")
 
