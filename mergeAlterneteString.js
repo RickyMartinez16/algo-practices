@@ -59,6 +59,7 @@ var mergeAlternately = function(word1, word2) {
     } else {
         ///loop thru the second word
         for(let i = 0; i < word2Split.length; i++){
+            //push every other letter 
             merged.push(word1Split[i])
             merged.push(word2Split[i])
         }
