@@ -34,3 +34,25 @@
 
 // 1 <= word1.length, word2.length <= 100
 // word1 and word2 consist of lowercase English letters.
+
+
+var mergeAlternately = function(word1, word2) {
+    let word1Split = word1.split("")
+    let word2Split = word2.split("")
+
+    let merged = []
+
+    if(word1Split.length >= word2Split.length){
+        for(let i = 0; i < word1Split.length; i++){
+            merged.push(word1Split[i])
+            merged.push(word2Split[i])
+        }
+        return merged.join("")
+    } else {
+        for(let i = 0; i < word2Split.length; i++){
+            merged.push(word1Split[i])
+            merged.push(word2Split[i])
+        }
+        return merged.join("")
+    }
+};
