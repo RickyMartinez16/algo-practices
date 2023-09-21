@@ -29,6 +29,7 @@ var singleNumber = function(nums) {
     //create a map
     let map = {}
 
+    //loop thru the input
     for(let i = 0; i < nums.length; i++){
         if(map[nums[i]]){
             map[nums[i]]++
