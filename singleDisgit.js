@@ -36,6 +36,7 @@ var singleNumber = function(nums) {
             //add one to the value
             map[nums[i]]++
         } else {
+            //otherwise make the value 1
             map[nums[i]] = 1
         }
     }
