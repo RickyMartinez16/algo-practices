@@ -22,6 +22,7 @@
 
 
 var majorityElement = function(nums) {
+    //create a map
     let map = {}
 
     for(let i = 0; i < nums.length; i++){
