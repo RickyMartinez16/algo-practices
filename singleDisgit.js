@@ -33,6 +33,7 @@ var singleNumber = function(nums) {
     for(let i = 0; i < nums.length; i++){
         //if the key exits in the map
         if(map[nums[i]]){
+            //add one to the value
             map[nums[i]]++
         } else {
             map[nums[i]] = 1
