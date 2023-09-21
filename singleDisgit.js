@@ -26,8 +26,7 @@
 
 
 var singleNumber = function(nums) {
-    //create a map
-    let map = {}
+    //create a map / object
 
     //loop thru the input
     for(let i = 0; i < nums.length; i++){
