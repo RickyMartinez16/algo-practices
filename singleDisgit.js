@@ -31,6 +31,7 @@ var singleNumber = function(nums) {
 
     //loop thru the input
     for(let i = 0; i < nums.length; i++){
+        //if the key exits in the map
         if(map[nums[i]]){
             map[nums[i]]++
         } else {
