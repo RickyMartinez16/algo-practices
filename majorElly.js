@@ -37,6 +37,7 @@ var majorityElement = function(nums) {
         }
     }
 
+    //major will keep track of the key
     let major = 0
     let maxFreq = 0
 
