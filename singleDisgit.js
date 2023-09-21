@@ -23,3 +23,24 @@
 // 1 <= nums.length <= 3 * 104
 // -3 * 104 <= nums[i] <= 3 * 104
 // Each element in the array appears twice except for one element which appears only once.
+
+
+var singleNumber = function(nums) {
+    let map = {}
+
+    for(let i = 0; i < nums.length; i++){
+        if(map[nums[i]]){
+            map[nums[i]]++
+        } else {
+            map[nums[i]] = 1
+        }
+    }
+
+    for (let key in map) {
+        // console.log(`${key}: ${map[key]}`);
+        if(map[key] === 1){
+            return key
+        }
+    }
+    
+};
