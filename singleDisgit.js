@@ -43,6 +43,7 @@ var singleNumber = function(nums) {
 
     //loop thru the new map
     for (let key in map) {
+        //log sees what youre printing
         // console.log(`${key}: ${map[key]}`);
         //check each key
         //if the value for that key is 1
