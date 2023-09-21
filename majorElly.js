@@ -47,6 +47,7 @@ var majorityElement = function(nums) {
         // console.log(`${key}: ${map[key]}`);
         //if the value of the key is more than the max freq
         if(map[key] > maxFreq){
+            //keep track of the new major key
             major = key
             maxFreq = map[key]
         }
