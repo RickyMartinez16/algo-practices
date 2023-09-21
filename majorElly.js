@@ -19,3 +19,28 @@
 // n == nums.length
 // 1 <= n <= 5 * 104
 // -109 <= nums[i] <= 109
+
+
+var majorityElement = function(nums) {
+    let map = {}
+
+    for(let i = 0; i < nums.length; i++){
+        if(map[nums[i]]){
+            map[nums[i]]++
+        } else {
+            map[nums[i]] = 1
+        }
+    }
+
+    let major = 0
+    let maxFreq = 0
+
+    for(let key in map){
+        console.log(`${key}: ${map[key]}`);
+        if(map[key] > maxFreq){
+            major = key
+            maxFreq = map[key]
+        }
+    }
+    return major
+};
