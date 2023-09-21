@@ -39,6 +39,7 @@ var majorityElement = function(nums) {
 
     //major will keep track of the key
     let major = 0
+    //max freq will keep track of the value
     let maxFreq = 0
 
     for(let key in map){
