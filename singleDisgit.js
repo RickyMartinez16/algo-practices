@@ -41,6 +41,7 @@ var singleNumber = function(nums) {
         }
     }
 
+    //loop thru the new map
     for (let key in map) {
         // console.log(`${key}: ${map[key]}`);
         if(map[key] === 1){
