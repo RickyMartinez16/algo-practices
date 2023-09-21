@@ -32,6 +32,7 @@ var majorityElement = function(nums) {
             //add one of the value
             map[nums[i]]++
         } else {
+            //otherwise create the key and set the value to 1
             map[nums[i]] = 1
         }
     }
