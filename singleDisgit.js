@@ -47,6 +47,7 @@ var singleNumber = function(nums) {
         //check each key
         //if the value for that key is 1
         if(map[key] === 1){
+            //return the key
             return key
         }
     }
