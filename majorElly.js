@@ -53,5 +53,6 @@ var majorityElement = function(nums) {
             maxFreq = map[key]
         }
     }
+    //return the major var
     return major
 };
