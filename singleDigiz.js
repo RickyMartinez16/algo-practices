@@ -22,6 +22,7 @@
 
 
 var addDigits = function(num) {
+    //turn each number into a string and split it to get indicual numbers
     let splitString = String(num).split("")
     
     let final = 0
