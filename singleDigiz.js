@@ -32,6 +32,7 @@ var addDigits = function(num) {
 
     //if the final is greater than 9
     if(final > 9){
+        //recuse the same function
         return addDigits(final)
     } else {
         return final
