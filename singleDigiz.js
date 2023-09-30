@@ -30,6 +30,7 @@ var addDigits = function(num) {
     //for each number in the split string array turn it into a number and add it to the final number 
     splitString.forEach((number) => final += Number(number))
 
+    //if the final is greater than 9
     if(final > 9){
         return addDigits(final)
     } else {
