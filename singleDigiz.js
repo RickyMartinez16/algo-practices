@@ -35,6 +35,7 @@ var addDigits = function(num) {
         //recuse the same function
         return addDigits(final)
     } else {
+        //reutrn the final if less than 10
         return final
     }
     
