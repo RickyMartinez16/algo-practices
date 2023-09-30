@@ -27,6 +27,7 @@ var addDigits = function(num) {
     //keep track of final 
     let final = 0
     
+    //for each number in the split string array
     splitString.forEach((number) => final += Number(number))
 
     if(final > 9){
