@@ -19,3 +19,19 @@
 // Constraints:
 
 // 0 <= num <= 231 - 1
+
+
+var addDigits = function(num) {
+    let splitString = String(num).split("")
+    
+    let final = 0
+    
+    splitString.forEach((number) => final += Number(number))
+
+    if(final > 9){
+        return addDigits(final)
+    } else {
+        return final
+    }
+    
+};
