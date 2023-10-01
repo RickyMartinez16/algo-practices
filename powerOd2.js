@@ -29,7 +29,7 @@ function isPowerOfTwo(n) {
     if (n <= 0) {
         return false; // Negative numbers and zero are not powers of two.
     }
-    
+    //we calculate the base-2 logarithm (log2) of n using Math.log2(n).
     const logBase2 = Math.log2(n);
     return Math.floor(logBase2) === logBase2;
 }
