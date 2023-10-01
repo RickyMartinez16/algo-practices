@@ -31,6 +31,7 @@ function isPowerOfTwo(n) {
     }
     //we calculate the base-2 logarithm (log2) of n using Math.log2(n).
     const logBase2 = Math.log2(n);
+    //compare the floor value of the logarithm with the original logarithm value. If they are equal, it means that n is a power of two.
     return Math.floor(logBase2) === logBase2;
 }
 
