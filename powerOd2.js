@@ -29,6 +29,9 @@ function isPowerOfTwo(n) {
     if (n <= 0) {
         return false; // Negative numbers and zero are not powers of two.
     }
+    
     const logBase2 = Math.log2(n);
     return Math.floor(logBase2) === logBase2;
 }
+
+
