@@ -24,5 +24,6 @@
 
 var strStr = function(haystack, needle) {
     //indexOf method returns the first occurance of whatever youre looking for
+    //built in method
     return haystack.indexOf(needle)
 };
