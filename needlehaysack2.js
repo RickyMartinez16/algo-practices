@@ -27,3 +27,5 @@ var strStr = function(haystack, needle) {
     //built in method
     return haystack.indexOf(needle)
 };
+
+//need to do greedy
