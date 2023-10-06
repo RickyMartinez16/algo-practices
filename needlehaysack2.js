@@ -28,4 +28,5 @@ var strStr = function(haystack, needle) {
     return haystack.indexOf(needle)
 };
 
-//need to do greedy
+//need to do greedy 
+//greedy takes the biggest bite out of the problem first
