@@ -49,10 +49,7 @@ var reverseVowels = function(s) {
         //change the letters in the sSplit array to become the reversed vowels
         sSplit[indexArray[i]] = vowelArrayReverse[i]
     }
-    // console.log(sSplit)
-    // console.log(vowelArrayReverse)
-    // console.log(indexArray)
 
-    //return joined split input
+    //return sSplit but join it
     return sSplit.join("")
 };
