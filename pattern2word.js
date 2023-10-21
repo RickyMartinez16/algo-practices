@@ -26,3 +26,37 @@
 // s contains only lowercase English letters and spaces ' '.
 // s does not contain any leading or trailing spaces.
 // All the words in s are separated by a single space.
+
+
+var wordPattern = function(pattern, s) {
+    
+    let words = s.split(" ")
+
+    let pattern2Word = {};
+    let word2Pattern = {};
+
+    for(let i = 0; i < pattern.length; i++){
+
+        let p = pattern[i];
+        let word = words[i]
+
+        if(pattern2Word[p]){
+            if(pattern2Word[p] !== word){
+                return false
+            }
+        } else {
+                pattern2Word[p] = word
+            } 
+        
+        if(word2Pattern[word]){
+            if(word2Pattern[word] !== p){
+                return false
+            } 
+        } else {
+            word2Pattern[word] = p
+        }
+
+    }
+    return true
+
+};
