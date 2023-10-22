@@ -128,5 +128,6 @@ function wordPattern(pattern, s) {
         }
     }
 
+    //return true
     return true;
 }
