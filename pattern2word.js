@@ -120,6 +120,7 @@ function wordPattern(pattern, s) {
             wordToPattern.set(word, letter);
             //else if it does exist
         } else {
+            //check if the value for word is equal to letter
             if (wordToPattern.get(word) !== letter) {
                 return false;
             }
