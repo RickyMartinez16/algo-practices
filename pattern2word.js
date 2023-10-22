@@ -114,6 +114,7 @@ function wordPattern(pattern, s) {
             }
         }
 
+        //check if the word to pattern doesnt have the word
         if (!wordToPattern.has(word)) {
             wordToPattern.set(word, letter);
         } else {
