@@ -118,6 +118,7 @@ function wordPattern(pattern, s) {
         if (!wordToPattern.has(word)) {
             //if it doesnt the set the word and the key letter
             wordToPattern.set(word, letter);
+            //else if it does exist
         } else {
             if (wordToPattern.get(word) !== letter) {
                 return false;
