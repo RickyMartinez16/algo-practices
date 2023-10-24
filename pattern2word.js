@@ -107,6 +107,7 @@ function wordPattern(pattern, s) {
             patternToWord.set(letter, word);
         } else {
             //else if does check if the letter key has a value that is the current word
+            //if it doesnt equal word
             if (patternToWord.get(letter) !== word) {
                 return false;
             }
