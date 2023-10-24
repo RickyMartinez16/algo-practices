@@ -98,6 +98,7 @@ function wordPattern(pattern, s) {
     for (let i = 0; i < pattern.length; i++) {
         //get each letter
         const letter = pattern[i];
+        //get each word
         const word = words[i];
 
         if (!patternToWord.has(letter)) {
