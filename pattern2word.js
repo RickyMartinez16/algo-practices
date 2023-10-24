@@ -101,11 +101,12 @@ function wordPattern(pattern, s) {
         //get each word
         const word = words[i];
 
-        //check if the pattern to word map does doesnt exist.
+        //check if the pattern to word map doesnt exist.
         if (!patternToWord.has(letter)) {
-            //if it does set the letter key with the corresponsing word
+            //if it doesnt set the letter key with the corresponsing word
             patternToWord.set(letter, word);
         } else {
+            //else if does check if the letter key has a value that is the current word
             if (patternToWord.get(letter) !== word) {
                 return false;
             }
