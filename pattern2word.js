@@ -103,6 +103,7 @@ function wordPattern(pattern, s) {
 
         //check if the pattern to word map does doesnt exist.
         if (!patternToWord.has(letter)) {
+            //if it does set the letter key with the corresponsing word
             patternToWord.set(letter, word);
         } else {
             if (patternToWord.get(letter) !== word) {
