@@ -101,6 +101,7 @@ function wordPattern(pattern, s) {
         //get each word
         const word = words[i];
 
+        //check if the pattern to word map does doesnt exist.
         if (!patternToWord.has(letter)) {
             patternToWord.set(letter, word);
         } else {
