@@ -80,6 +80,7 @@ var wordPattern = function(pattern, s) {
 
 
 function wordPattern(pattern, s) {
+    //create an array called words by splitting the s input
     const words = s.split(' ');
 
     if (pattern.length !== words.length) {
