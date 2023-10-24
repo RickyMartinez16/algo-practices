@@ -89,6 +89,7 @@ function wordPattern(pattern, s) {
         return false;
     }
 
+    //create a pattern to word map
     const patternToWord = new Map();
     const wordToPattern = new Map();
 
