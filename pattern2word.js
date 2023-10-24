@@ -91,6 +91,7 @@ function wordPattern(pattern, s) {
 
     //create a pattern to word map
     const patternToWord = new Map();
+    //create a word to pattern map
     const wordToPattern = new Map();
 
     for (let i = 0; i < pattern.length; i++) {
