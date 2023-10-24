@@ -85,6 +85,7 @@ function wordPattern(pattern, s) {
 
     //check if the pattern length is the same as the words array length
     if (pattern.length !== words.length) {
+        //if not reutrn false
         return false;
     }
 
