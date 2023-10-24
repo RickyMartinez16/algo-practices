@@ -76,3 +76,39 @@ var wordPattern = function(pattern, s) {
     return true
 
 };
+
+
+
+function wordPattern(pattern, s) {
+    const words = s.split(' ');
+
+    if (pattern.length !== words.length) {
+        return false;
+    }
+
+    const patternToWord = new Map();
+    const wordToPattern = new Map();
+
+    for (let i = 0; i < pattern.length; i++) {
+        const letter = pattern[i];
+        const word = words[i];
+
+        if (!patternToWord.has(letter)) {
+            patternToWord.set(letter, word);
+        } else {
+            if (patternToWord.get(letter) !== word) {
+                return false;
+            }
+        }
+
+        if (!wordToPattern.has(word)) {
+            wordToPattern.set(word, letter);
+        } else {
+            if (wordToPattern.get(word) !== letter) {
+                return false;
+            }
+        }
+    }
+
+    return true;
+}
