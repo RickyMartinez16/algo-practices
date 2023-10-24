@@ -96,7 +96,7 @@ function wordPattern(pattern, s) {
 
     //loop thru the patten input
     for (let i = 0; i < pattern.length; i++) {
-        //
+        //get each letter
         const letter = pattern[i];
         const word = words[i];
 
