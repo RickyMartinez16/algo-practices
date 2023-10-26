@@ -60,6 +60,7 @@ var wordPattern = function(pattern, s) {
         
         //check if the word to pattern map has the word key and val
         if(word2Pattern[word]){
+            //check if the key equal p if not 
             if(word2Pattern[word] !== p){
                 return false
             } 
