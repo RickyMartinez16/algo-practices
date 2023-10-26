@@ -68,6 +68,7 @@ var wordPattern = function(pattern, s) {
 
             //else if it doesnt exsist
         } else {
+            //create it 
             word2Pattern[word] = p
         }
 
