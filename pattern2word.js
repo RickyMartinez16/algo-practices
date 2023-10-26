@@ -43,7 +43,7 @@ var wordPattern = function(pattern, s) {
 
         //create a variable p. it will be each letter in the pattern
         let p = pattern[i];
-        //create a variable word.
+        //create a variable word. it is each word in the words array
         let word = words[i]
 
         if(pattern2Word[p]){
