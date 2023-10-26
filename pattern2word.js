@@ -35,6 +35,7 @@ var wordPattern = function(pattern, s) {
 
     //create a map of the pattern to the word
     let pattern2Word = {};
+    //create a map of the word to the pattern
     let word2Pattern = {};
 
     for(let i = 0; i < pattern.length; i++){
