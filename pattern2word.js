@@ -46,7 +46,9 @@ var wordPattern = function(pattern, s) {
         //create a variable word. it is each word in the words array
         let word = words[i]
 
+        //check if the pattern 2 word [p] key exsits with a value
         if(pattern2Word[p]){
+            //if it does exist but the value does not equal word
             if(pattern2Word[p] !== word){
                 return false
             }
