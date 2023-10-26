@@ -50,6 +50,7 @@ var wordPattern = function(pattern, s) {
         if(pattern2Word[p]){
             //if it does exist but the value does not equal word
             if(pattern2Word[p] !== word){
+                //return false
                 return false
             }
         } else {
