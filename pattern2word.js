@@ -33,6 +33,7 @@ var wordPattern = function(pattern, s) {
     //split the input words into an array named words
     let words = s.split(" ")
 
+    //create a map of the pattern to the word
     let pattern2Word = {};
     let word2Pattern = {};
 
