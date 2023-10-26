@@ -41,6 +41,7 @@ var wordPattern = function(pattern, s) {
     //loop thru the pattern
     for(let i = 0; i < pattern.length; i++){
 
+        //create a variable p. it will be each letter in the pattern
         let p = pattern[i];
         let word = words[i]
 
