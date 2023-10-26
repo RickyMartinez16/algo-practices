@@ -30,7 +30,7 @@
 
 //this code failing last test
 var wordPattern = function(pattern, s) {
-    
+    //split the input words into an array named words
     let words = s.split(" ")
 
     let pattern2Word = {};
