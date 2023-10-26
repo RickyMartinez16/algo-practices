@@ -62,6 +62,7 @@ var wordPattern = function(pattern, s) {
         if(word2Pattern[word]){
             //check if the key equal p if not 
             if(word2Pattern[word] !== p){
+                //return false
                 return false
             } 
         } else {
