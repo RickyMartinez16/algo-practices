@@ -58,6 +58,7 @@ var wordPattern = function(pattern, s) {
                 pattern2Word[p] = word
             } 
         
+        //check if the word to pattern map has the word key
         if(word2Pattern[word]){
             if(word2Pattern[word] !== p){
                 return false
