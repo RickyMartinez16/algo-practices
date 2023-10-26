@@ -53,6 +53,7 @@ var wordPattern = function(pattern, s) {
                 //return false
                 return false
             }
+            //else if the key doesnt exists then create it with the corresponding word key
         } else {
                 pattern2Word[p] = word
             } 
