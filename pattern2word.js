@@ -28,7 +28,7 @@
 // All the words in s are separated by a single space.
 
 
-//this code failing
+//this code failing last test
 var wordPattern = function(pattern, s) {
     
     let words = s.split(" ")
