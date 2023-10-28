@@ -27,6 +27,7 @@
 
 
 var isPowerOfFour = function(n) {
+    //edge case
     if(n <= 0) return false
 
     while(n % 4 === 0){
