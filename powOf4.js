@@ -33,6 +33,7 @@ var isPowerOfFour = function(n) {
 
     //while the reaminder of n divived by 4 is 0
     while(n % 4 === 0){
+        //n = n divived by 4
         n /= 4
     }
 
