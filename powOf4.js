@@ -38,5 +38,6 @@ var isPowerOfFour = function(n) {
     }
 
     //return true if n is 1
+    //return false if n doesnt equal 1
     return n === 1
 };
