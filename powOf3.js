@@ -28,6 +28,7 @@
 
 var isPowerOfThree = function(n) {
     //edge case
+    //if n is less than or euqla to 0 return false
     if(n <= 0) return false
 
     while (n % 3 === 0) {
