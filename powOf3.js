@@ -32,6 +32,7 @@ var isPowerOfThree = function(n) {
     if(n <= 0) return false
 
     //while loop
+    //while the remainder of n / 3 is 0
     while (n % 3 === 0) {
         n /= 3;
     }
