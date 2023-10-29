@@ -38,5 +38,6 @@ var isPowerOfThree = function(n) {
         n /= 3;
     }
 
+    //if n is euqal to 1 return true
     return n === 1;
 };
