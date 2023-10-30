@@ -45,4 +45,4 @@ var isPowerOfThree = function(n) {
 
 
 //keep dividing it by 3 until it's no longer divisible by 3 
-//and check if the final result is 1.
+//and check if the final result is 1
