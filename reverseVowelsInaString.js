@@ -31,6 +31,7 @@ var reverseVowels = function(s) {
     //loop thru the input
     for(let i = 0; i < s.length; i++){
         
+        //check if each letter in the input if its a vowel or not
         if(/^[aeiou]$/i.test(sSplit[i])){
             vowelArray.push(sSplit[i])
             indexArray.push(i)
