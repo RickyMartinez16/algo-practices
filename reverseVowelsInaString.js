@@ -53,5 +53,6 @@ var reverseVowels = function(s) {
     // console.log(vowelArrayReverse)
     // console.log(indexArray)
 
+    //return joined split input
     return sSplit.join("")
 };
