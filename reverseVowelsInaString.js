@@ -44,6 +44,7 @@ var reverseVowels = function(s) {
     //reverse the vowel array to get the reverse order we want
     let vowelArrayReverse = vowelArray.reverse()
 
+    //loop thru the index array
     for(let i = 0; i < indexArray.length; i++){
         sSplit[indexArray[i]] = vowelArrayReverse[i]
     }
