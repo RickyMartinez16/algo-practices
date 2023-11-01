@@ -37,10 +37,11 @@ var reverseVowels = function(s) {
             vowelArray.push(sSplit[i])
             //also push the index of that letter into the array
             indexArray.push(i)
-            // sSplit.splice(i, i)
+            
         }
     }
 
+    //reverse the vowel array to get the reverse order we want
     let vowelArrayReverse = vowelArray.reverse()
 
     for(let i = 0; i < indexArray.length; i++){
