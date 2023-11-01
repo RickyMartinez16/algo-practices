@@ -25,6 +25,7 @@ var reverseVowels = function(s) {
     let vowelArray = []
     //make an array that will hold the indexes of those vowels
     let indexArray = []
+    //split the input into an array
     let sSplit = s.split("")
     for(let i = 0; i < s.length; i++){
         
