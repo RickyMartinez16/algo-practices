@@ -21,6 +21,7 @@
 
 
 var intersection = function(nums1, nums2) {
+    //create a new set to hold the intersection numbs
     let intSet = new Set()
 
     for(let i = 0; i < nums1.length; i++){
