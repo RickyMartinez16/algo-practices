@@ -25,6 +25,7 @@ var intersection = function(nums1, nums2) {
     //using a set so there won't be dupes
     let intSet = new Set()
 
+    //loop thru the nums1 input
     for(let i = 0; i < nums1.length; i++){
         if(nums2.includes(nums1[i])){
             intSet.add(nums1[i])
