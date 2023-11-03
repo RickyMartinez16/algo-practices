@@ -35,5 +35,6 @@ var intersection = function(nums1, nums2) {
     }
 
     //return the set in an array form
+    //Array.from makes it an array
     return Array.from(intSet)
 };
