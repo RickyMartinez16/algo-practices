@@ -18,3 +18,16 @@
 
 // 1 <= nums1.length, nums2.length <= 1000
 // 0 <= nums1[i], nums2[i] <= 1000
+
+
+var intersection = function(nums1, nums2) {
+    let intSet = new Set()
+
+    for(let i = 0; i < nums1.length; i++){
+        if(nums2.includes(nums1[i])){
+            intSet.add(nums1[i])
+        }
+    }
+
+    return Array.from(intSet)
+};
