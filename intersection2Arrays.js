@@ -27,6 +27,7 @@ var intersection = function(nums1, nums2) {
 
     //loop thru the nums1 input
     for(let i = 0; i < nums1.length; i++){
+        //check if nums1 includes each number from nums1
         if(nums2.includes(nums1[i])){
             intSet.add(nums1[i])
         }
