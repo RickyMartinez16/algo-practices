@@ -33,6 +33,7 @@ var canConstruct = function(ransomNote, magazine) {
     for(let i = 0; i < magazine.length; i++){
         //if the ith letter in the magaizne input already exists in the map
         if(map[magazine[i]]){
+            //then add one to the value
             map[magazine[i]]++
         } else {
             map[magazine[i]] = 1
