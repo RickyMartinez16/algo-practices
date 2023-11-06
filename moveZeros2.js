@@ -33,6 +33,7 @@ var moveZeroes = function(nums) {
 
     //loop thru the input
     for(let i = 0; i < nums.length; i++){
+        //check if the ith elelemtn is NOT a zero
         if(nums[i] !== 0){
             [nums[i], nums[nonZeroIndex]] = [nums[nonZeroIndex], nums[i]];
             nonZeroIndex++
