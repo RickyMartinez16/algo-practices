@@ -22,6 +22,7 @@
 
 
 var moveZeroes = function(nums) {
+    //edge case
     if(!nums.includes(0)) return nums
 
     let nonZeroIndex = 0;
@@ -35,3 +36,5 @@ var moveZeroes = function(nums) {
 
     return nums
 };
+
+
