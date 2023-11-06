@@ -42,6 +42,7 @@ var moveZeroes = function(nums) {
         }
     }
 
+    //return the same array correct
     return nums
 };
 
