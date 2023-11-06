@@ -37,6 +37,7 @@ var moveZeroes = function(nums) {
         if(nums[i] !== 0){
             //change the values of nums[i] and nums[nonzeroindex]. swap them
             [nums[i], nums[nonZeroIndex]] = [nums[nonZeroIndex], nums[i]];
+            //add one of the nonzeroidnex to move your pointer up
             nonZeroIndex++
         }
     }
