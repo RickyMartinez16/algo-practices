@@ -31,6 +31,7 @@ var moveZeroes = function(nums) {
     //it will start at 0
     let nonZeroIndex = 0;
 
+    //loop thru the input
     for(let i = 0; i < nums.length; i++){
         if(nums[i] !== 0){
             [nums[i], nums[nonZeroIndex]] = [nums[nonZeroIndex], nums[i]];
