@@ -23,6 +23,7 @@
 
 var moveZeroes = function(nums) {
     //edge case
+    //check if the nums input includes a 0
     if(!nums.includes(0)) return nums
 
     let nonZeroIndex = 0;
