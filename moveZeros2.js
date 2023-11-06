@@ -27,6 +27,7 @@ var moveZeroes = function(nums) {
     //if no zeros then just return the nums array
     if(!nums.includes(0)) return nums
 
+    //keep track of where you want your first non zero index to be
     let nonZeroIndex = 0;
 
     for(let i = 0; i < nums.length; i++){
