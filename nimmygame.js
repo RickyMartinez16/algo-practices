@@ -36,3 +36,5 @@ var canWinNim = function(n) {
     //if n is a multiple of 4 you will lose
     return n % 4 !== 0
 };
+
+// If n is 1, 2, or 3, you can remove all the stones on your turn and win because there are no stones left for your opponent.
