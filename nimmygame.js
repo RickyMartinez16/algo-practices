@@ -43,4 +43,5 @@ var canWinNim = function(n) {
 
 // If n is 5, 6, or 7, you can make a move that leaves your opponent with 4 stones. This means your opponent will lose, as explained in the previous point.
 
-If n is 8, you will lose. Your opponent can mimic your moves and ensure you are left with 4 stones, leading to their victory.
+// If n is 8, you will lose. Your opponent can mimic your moves and ensure you are left with 4 stones, leading to their victory.
+
