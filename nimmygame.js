@@ -33,5 +33,6 @@
 
 
 var canWinNim = function(n) {
+    //if n is a multiple of 4 you will lose
     return n % 4 !== 0
 };
