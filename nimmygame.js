@@ -30,3 +30,8 @@
 // Constraints:
 
 // 1 <= n <= 231 - 1
+
+
+var canWinNim = function(n) {
+    return n % 4 !== 0
+};
