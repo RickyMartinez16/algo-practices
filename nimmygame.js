@@ -40,3 +40,5 @@ var canWinNim = function(n) {
 // If n is 1, 2, or 3, you can remove all the stones on your turn and win because there are no stones left for your opponent.
 
 // If n is 4, you will lose the game. No matter how many stones you remove (1 to 3), your opponent can always respond in a way that guarantees they win.
+
+If n is 5, 6, or 7, you can make a move that leaves your opponent with 4 stones. This means your opponent will lose, as explained in the previous point.
