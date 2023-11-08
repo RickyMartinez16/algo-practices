@@ -34,7 +34,7 @@
 
 var canWinNim = function(n) {
     //if n is a multiple of 4 you will lose
-    //% is the remainder of.
+    //% is the remainder of. so n / 4 if there is not 0 as a remiander you lose
     return n % 4 !== 0
 };
 
