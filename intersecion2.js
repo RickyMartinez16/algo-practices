@@ -28,6 +28,7 @@ var intersect = function(nums1, nums2) {
 
     //populate the frequencie map
     for(let i = 0; i < nums1.length; i++){
+        //if the key exsists in the map
         if(map[nums1[i]]){
             map[nums1[i]]++
         } else {
