@@ -55,6 +55,7 @@ var intersect = function(nums1, nums2) {
         if(map[nums2[i]] > 0){
             //add that key to the interseciond array
             intersection.push(nums2[i])
+            //take one away from the value
             map[nums2[i]]--
         }
     }
