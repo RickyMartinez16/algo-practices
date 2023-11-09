@@ -18,3 +18,34 @@
 
 // 1 <= nums1.length, nums2.length <= 1000
 // 0 <= nums1[i], nums2[i] <= 1000
+
+
+var intersect = function(nums1, nums2) {
+    let intersection = [];
+    let map = {};
+
+    for(let i = 0; i < nums1.length; i++){
+        if(map[nums1[i]]){
+            map[nums1[i]]++
+        } else {
+            map[nums1[i]] = 1
+        }
+    }
+
+    // for(let num of nums2){
+    //     if(map[num] > 0){
+    //         intersection.push(num)
+    //         map[num]--
+    //     }
+    // }
+    // return intersection
+
+    for(let i = 0; i < nums2.length; i++){
+        if(map[nums2[i]] > 0){
+            intersection.push(nums2[i])
+            map[nums2[i]]--
+        }
+    }
+
+    return intersection
+};
