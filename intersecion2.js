@@ -51,6 +51,7 @@ var intersect = function(nums1, nums2) {
     //for loop
     //loop thru the numbers 2 input
     for(let i = 0; i < nums2.length; i++){
+        //if the value of nums2[i] is more than 1
         if(map[nums2[i]] > 0){
             intersection.push(nums2[i])
             map[nums2[i]]--
