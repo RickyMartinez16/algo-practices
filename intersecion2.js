@@ -53,6 +53,7 @@ var intersect = function(nums1, nums2) {
     for(let i = 0; i < nums2.length; i++){
         //if the value of nums2[i] is more than 1
         if(map[nums2[i]] > 0){
+            //add that key to the interseciond array
             intersection.push(nums2[i])
             map[nums2[i]]--
         }
