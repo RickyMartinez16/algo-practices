@@ -30,6 +30,7 @@ var intersect = function(nums1, nums2) {
     for(let i = 0; i < nums1.length; i++){
         //if the key exsists in the map
         if(map[nums1[i]]){
+            //add one to the key value
             map[nums1[i]]++
         } else {
             map[nums1[i]] = 1
