@@ -26,6 +26,7 @@ var intersect = function(nums1, nums2) {
     //make a map to keep track of frequencies
     let map = {};
 
+    //populate the frequencie map
     for(let i = 0; i < nums1.length; i++){
         if(map[nums1[i]]){
             map[nums1[i]]++
