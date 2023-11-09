@@ -38,6 +38,8 @@ var intersect = function(nums1, nums2) {
         }
     }
 
+    //can do the same thing with a let of loop
+
     // for(let num of nums2){
     //     if(map[num] > 0){
     //         intersection.push(num)
