@@ -23,6 +23,7 @@
 var intersect = function(nums1, nums2) {
     //make an array to hold the intersecting numbers
     let intersection = [];
+    //make a map to keep track of frequencies
     let map = {};
 
     for(let i = 0; i < nums1.length; i++){
