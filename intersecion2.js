@@ -33,6 +33,7 @@ var intersect = function(nums1, nums2) {
             //add one to the key value
             map[nums1[i]]++
         } else {
+            //if it doesnt exist make it exist and the value will be 1
             map[nums1[i]] = 1
         }
     }
