@@ -48,6 +48,7 @@ var intersect = function(nums1, nums2) {
     // }
     // return intersection
 
+    //for loop
     for(let i = 0; i < nums2.length; i++){
         if(map[nums2[i]] > 0){
             intersection.push(nums2[i])
