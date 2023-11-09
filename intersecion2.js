@@ -21,6 +21,7 @@
 
 
 var intersect = function(nums1, nums2) {
+    //make an array to hold the intersecting numbers
     let intersection = [];
     let map = {};
 
