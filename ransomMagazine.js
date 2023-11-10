@@ -29,6 +29,7 @@ var canConstruct = function(ransomNote, magazine) {
     //create a map to hold the frequencies of the magazine letters
     let map = {};
 
+    //populate the map with the letters that are in the magazine
     for(let i = 0; i < magazine.length; i++){
         if(map[magazine[i]]){
             map[magazine[i]]++
