@@ -40,6 +40,7 @@ var canConstruct = function(ransomNote, magazine) {
 
     //loop thru the ransomnote input
     for(let i = 0; i < ransomNote.length; i++){
+        //check the if each letter in the ransom note 
         if(map[ransomNote[i]] > 0){
             map[ransomNote[i]]--
         } else {
