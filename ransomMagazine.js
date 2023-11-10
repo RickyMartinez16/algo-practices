@@ -45,6 +45,7 @@ var canConstruct = function(ransomNote, magazine) {
         if(map[ransomNote[i]] > 0){
             map[ransomNote[i]]--
         } else {
+            //if you are our of letters or its not in the map you cannot create the note
             return false
         }
     }
