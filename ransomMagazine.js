@@ -23,3 +23,25 @@
 
 // 1 <= ransomNote.length, magazine.length <= 105
 // ransomNote and magazine consist of lowercase English letters.
+
+
+var canConstruct = function(ransomNote, magazine) {
+    let map = {};
+
+    for(let i = 0; i < magazine.length; i++){
+        if(map[magazine[i]]){
+            map[magazine[i]]++
+        } else {
+            map[magazine[i]] = 1
+        }
+    }
+
+    for(let i = 0; i < ransomNote.length; i++){
+        if(map[ransomNote[i]] > 0){
+            map[ransomNote[i]]--
+        } else {
+            return false
+        }
+    }
+    return true
+};
