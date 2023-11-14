@@ -30,6 +30,7 @@ var firstUniqChar = function(s) {
 
     //loop thru the string to populate the map
     for(let i = 0; i < s.length; i++){
+        //if the key exsits in the map
         if(map[s[i]]){
             map[s[i]]++
         } else {
