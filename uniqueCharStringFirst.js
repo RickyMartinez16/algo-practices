@@ -43,7 +43,7 @@ var firstUniqChar = function(s) {
 
     //loop thru the string
     for(let i = 0; i < s.length; i++){
-        //if the map has a key for s[i]
+        //if the map has a key for s[i] and it's value is 1
         if(map[s[i]] === 1){
             return i
         }
