@@ -25,6 +25,7 @@
 
 var firstUniqChar = function(s) {
 
+    //make a map to track the frequencies 
     let map = {}
 
     for(let i = 0; i < s.length; i++){
