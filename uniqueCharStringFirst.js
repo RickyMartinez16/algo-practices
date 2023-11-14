@@ -49,6 +49,7 @@ var firstUniqChar = function(s) {
             return i
         }
     }
+    //if it completes the loop reutrn -1
     return -1
 
 
