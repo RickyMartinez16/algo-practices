@@ -32,6 +32,7 @@ var firstUniqChar = function(s) {
     for(let i = 0; i < s.length; i++){
         //if the key exsits in the map
         if(map[s[i]]){
+            //add one to its value
             map[s[i]]++
         } else {
             map[s[i]] = 1
