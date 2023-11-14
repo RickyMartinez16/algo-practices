@@ -35,6 +35,7 @@ var firstUniqChar = function(s) {
             //add one to its value
             map[s[i]]++
         } else {
+            //if not the create the key and assign the value to 1
             map[s[i]] = 1
         }
     }
