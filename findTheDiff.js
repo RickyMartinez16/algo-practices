@@ -37,6 +37,7 @@ var findTheDifference = function(s, t) {
             //add one of that keys value
             sMap[letter]++
         } else {
+            //if it doesnt exist create it and assign it to value of 1
             sMap[letter] = 1
         }
     }
