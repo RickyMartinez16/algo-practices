@@ -34,6 +34,7 @@ var findTheDifference = function(s, t) {
     for(let letter of s){
         //if the s map has a key of the lette already
         if(sMap[letter]){
+            //add one of that keys value
             sMap[letter]++
         } else {
             sMap[letter] = 1
