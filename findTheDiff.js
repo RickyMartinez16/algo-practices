@@ -30,6 +30,7 @@ var findTheDifference = function(s, t) {
     //create a map for the ltters in t
     let tMap = {};
 
+    //populate the s map
     for(let letter of s){
         if(sMap[letter]){
             sMap[letter]++
