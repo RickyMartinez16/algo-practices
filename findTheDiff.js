@@ -42,6 +42,7 @@ var findTheDifference = function(s, t) {
         }
     }
 
+    //populate the t map
     for(let letter of t){
         if(tMap[letter]){
             tMap[letter]++
