@@ -44,6 +44,7 @@ var findTheDifference = function(s, t) {
 
     //populate the t map
     for(let letter of t){
+        //if the t map has a key of the letter in t already existing
         if(tMap[letter]){
             tMap[letter]++
         } else {
