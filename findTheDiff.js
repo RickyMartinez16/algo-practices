@@ -27,6 +27,7 @@
 var findTheDifference = function(s, t) {
     //create a map for the letters in s
     let sMap = {};
+    //create a map for the ltters in t
     let tMap = {};
 
     for(let letter of s){
