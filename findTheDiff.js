@@ -22,3 +22,34 @@
 // 0 <= s.length <= 1000
 // t.length == s.length + 1
 // s and t consist of lowercase English letters.
+
+
+var findTheDifference = function(s, t) {
+    let sMap = {};
+    let tMap = {};
+
+    for(let letter of s){
+        if(sMap[letter]){
+            sMap[letter]++
+        } else {
+            sMap[letter] = 1
+        }
+    }
+
+    for(let letter of t){
+        if(tMap[letter]){
+            tMap[letter]++
+        } else {
+            tMap[letter] = 1
+        }
+    }
+
+    // console.log(sMap)
+    // console.log(tMap)
+
+    for(let letter of t){
+        if(sMap[letter] !== tMap[letter]){
+            return letter
+        }
+    }
+};
