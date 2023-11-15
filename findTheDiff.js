@@ -32,6 +32,7 @@ var findTheDifference = function(s, t) {
 
     //populate the s map
     for(let letter of s){
+        //if the s map has a key of the lette already
         if(sMap[letter]){
             sMap[letter]++
         } else {
