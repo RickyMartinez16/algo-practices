@@ -61,6 +61,7 @@ var findTheDifference = function(s, t) {
     for(let letter of t){
         //if the sMap letter key value does not equal the tMap letter value you have your winner
         if(sMap[letter] !== tMap[letter]){
+            //return it
             return letter
         }
     }
