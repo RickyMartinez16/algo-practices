@@ -54,8 +54,7 @@ var findTheDifference = function(s, t) {
         }
     }
 
-    // console.log(sMap)
-    // console.log(tMap)
+    
 
     //loop thru the t string (cause its the one with added element)
     for(let letter of t){
