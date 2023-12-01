@@ -39,6 +39,7 @@ var fizzBuzz = function(n) {
         } else if(i % 3 === 0){
             //push fizz
             array.push("Fizz")
+            //else if remainder of i / 5 is 0
         } else if(i % 5 === 0){
             array.push("Buzz")
         } else {
