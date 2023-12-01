@@ -35,7 +35,9 @@ var fizzBuzz = function(n) {
         if(i % 3 === 0 && i % 5 === 0){
             //push fizzbuzz
             array.push("FizzBuzz")
+            //else if remainder of i / 3 is 0
         } else if(i % 3 === 0){
+
             array.push("Fizz")
         } else if(i % 5 === 0){
             array.push("Buzz")
