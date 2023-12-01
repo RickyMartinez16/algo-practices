@@ -41,6 +41,7 @@ var fizzBuzz = function(n) {
             array.push("Fizz")
             //else if remainder of i / 5 is 0
         } else if(i % 5 === 0){
+            //push buzz
             array.push("Buzz")
         } else {
             array.push(String(i))
