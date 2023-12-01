@@ -26,6 +26,7 @@
 
 
 var fizzBuzz = function(n) {
+    //final array to store the answres
     let array = []
 
     for(let i = 1; i <= n; i++){
