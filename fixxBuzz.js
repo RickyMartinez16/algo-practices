@@ -29,6 +29,7 @@ var fizzBuzz = function(n) {
     //final array to store the answres
     let array = []
 
+    //loop starting at number 1
     for(let i = 1; i <= n; i++){
         if(i % 3 === 0 && i % 5 === 0){
             array.push("FizzBuzz")
