@@ -44,6 +44,7 @@ var fizzBuzz = function(n) {
             //push buzz
             array.push("Buzz")
         } else {
+            //else turn i intro a string and push that
             array.push(String(i))
         }
     }
