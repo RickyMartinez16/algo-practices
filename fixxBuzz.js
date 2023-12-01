@@ -32,6 +32,7 @@ var fizzBuzz = function(n) {
     //loop starting at number 1
     for(let i = 1; i <= n; i++){
         //if remainder of 1 / 3 is 0 AND remainder of 1 / 5 is 0
+        //have to do this first
         if(i % 3 === 0 && i % 5 === 0){
             //push fizzbuzz
             array.push("FizzBuzz")
