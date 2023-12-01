@@ -48,6 +48,6 @@ var fizzBuzz = function(n) {
             array.push(String(i))
         }
     }
-
+    //return the final array
     return array
 };
