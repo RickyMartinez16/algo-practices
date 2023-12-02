@@ -36,6 +36,7 @@ var countSegs = function(s){
     let sSplit = input.split(/\s+/);
 
     // Filter out empty segments
+    // if its a non empty seg get rid of it
     let nonEmptySegments = sSplit.filter(segment => segment !== '');
 
     return nonEmptySegments.length;
