@@ -21,6 +21,7 @@
 // s consists of lowercase and uppercase English letters, digits, or one of the following characters "!@#$%^&*()_+-=',.:".
 // The only space character in s is ' '.
 
+//check if the input is empty if so return 0
 if (!s) return 0;
 
 let input = s.trim();
