@@ -32,6 +32,7 @@ var countSegs = function(s){
     if (input.length === 0) return 0;
 
     // Split by one or more spaces
+    //if space or consectuive space split there instrad of just " "
     let sSplit = input.split(/\s+/);
 
     // Filter out empty segments
