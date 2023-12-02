@@ -40,5 +40,6 @@ var countSegs = function(s){
     //filter method creates a new array
     let nonEmptySegments = sSplit.filter(segment => segment !== '');
 
+    //count the length of the non empty segs
     return nonEmptySegments.length;
 }
