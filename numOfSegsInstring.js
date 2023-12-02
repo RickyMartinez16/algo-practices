@@ -21,16 +21,20 @@
 // s consists of lowercase and uppercase English letters, digits, or one of the following characters "!@#$%^&*()_+-=',.:".
 // The only space character in s is ' '.
 
-//check if the input is empty if so return 0
-if (!s) return 0;
 
-let input = s.trim();
-if (input.length === 0) return 0;
+var countSegs = function(s){
+    //check if the input is empty if so return 0
+    if (!s) return 0;
 
-// Split by one or more spaces
-let sSplit = input.split(/\s+/);
+    //get rid of all leading and trailnig white space with trim()
+    let input = s.trim();
+    if (input.length === 0) return 0;
 
-// Filter out empty segments
-let nonEmptySegments = sSplit.filter(segment => segment !== '');
+    // Split by one or more spaces
+    let sSplit = input.split(/\s+/);
 
-return nonEmptySegments.length;
+    // Filter out empty segments
+    let nonEmptySegments = sSplit.filter(segment => segment !== '');
+
+    return nonEmptySegments.length;
+}
