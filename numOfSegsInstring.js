@@ -28,6 +28,7 @@ var countSegs = function(s){
 
     //get rid of all leading and trailnig white space with trim()
     let input = s.trim();
+    //if the input length is now 0 then return 0
     if (input.length === 0) return 0;
 
     // Split by one or more spaces
