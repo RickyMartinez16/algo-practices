@@ -20,3 +20,16 @@
 // 0 <= s.length <= 300
 // s consists of lowercase and uppercase English letters, digits, or one of the following characters "!@#$%^&*()_+-=',.:".
 // The only space character in s is ' '.
+
+if (!s) return 0;
+
+let input = s.trim();
+if (input.length === 0) return 0;
+
+// Split by one or more spaces
+let sSplit = input.split(/\s+/);
+
+// Filter out empty segments
+let nonEmptySegments = sSplit.filter(segment => segment !== '');
+
+return nonEmptySegments.length;
