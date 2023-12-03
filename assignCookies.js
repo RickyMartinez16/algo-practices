@@ -14,7 +14,7 @@ var findContentChildren = function(g, s) {
 
         if (j < cookies.length) {
             // Assign the smallest available cookie to the current child
-            kids++;
+            happyKids++;
             cookies.splice(j, 1); // Remove the assigned cookie from the array
         } else {
             // No more cookies available for the current child
