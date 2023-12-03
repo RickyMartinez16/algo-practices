@@ -3,7 +3,7 @@ var findContentChildren = function(g, s) {
     let greedyKids = g.sort((a, b) => a - b);
     let cookies = s.sort((a, b) => a - b);
 
-    let kids = 0;
+    let happyKids = 0;
 
     for (let i = 0; i < greed.length; i++) {
         let j = 0;
