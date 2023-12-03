@@ -22,5 +22,5 @@ var findContentChildren = function(g, s) {
         }
     }
 
-    return kids;
+    return happyKids;
 };
