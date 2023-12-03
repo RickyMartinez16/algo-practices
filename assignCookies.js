@@ -5,7 +5,7 @@ var findContentChildren = function(g, s) {
 
     let kids = 0;
 
-    for (let i = 0; i < g.length; i++) {
+    for (let i = 0; i < greed.length; i++) {
         let j = 0;
         while (j < s.length && s[j] < g[i]) {
             // Skip cookies that are too small for the current child
