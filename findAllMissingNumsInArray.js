@@ -18,3 +18,29 @@
 // n == nums.length
 // 1 <= n <= 105
 // 1 <= nums[i] <= n
+
+
+var findDisappearedNumbers = function(nums) {
+    // let length = nums.length;
+    // console.log(length)
+
+    let array = [];
+
+    let map = {}
+
+    for(let i = 0; i < nums.length; i++){
+        if(map[nums[i]]){
+            map[nums[i]]++
+        } else {
+            map[nums[i]] = 1
+        }
+    }
+
+    for(let i = 1; i <= nums.length; i++){
+        if(!map[i]){
+            array.push(i)
+        }
+    }
+
+    return array
+};
