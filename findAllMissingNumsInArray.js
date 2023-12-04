@@ -21,8 +21,7 @@
 
 
 var findDisappearedNumbers = function(nums) {
-    // let length = nums.length;
-    // console.log(length)
+
 
     let array = [];
 
