@@ -39,6 +39,7 @@ var findDisappearedNumbers = function(nums) {
         }
     }
 
+    //loop thru the input starting at 1
     for(let i = 1; i <= nums.length; i++){
         if(!map[i]){
             array.push(i)
