@@ -21,7 +21,7 @@
 
 
 var findDisappearedNumbers = function(nums) {
-
+    //make a final array to store
     let array = [];
 
     let map = {}
