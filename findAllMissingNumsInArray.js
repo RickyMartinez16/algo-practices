@@ -43,6 +43,7 @@ var findDisappearedNumbers = function(nums) {
     for(let i = 1; i <= nums.length; i++){
         //if there is no key in the map for i
         if(!map[i]){
+            //push that key into the final array
             array.push(i)
         }
     }
