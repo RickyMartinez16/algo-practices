@@ -26,6 +26,7 @@ var findDisappearedNumbers = function(nums) {
     //make a map to track frequencies
     let map = {}
 
+    //loop thru the input nums to populate the map
     for(let i = 0; i < nums.length; i++){
         if(map[nums[i]]){
             map[nums[i]]++
