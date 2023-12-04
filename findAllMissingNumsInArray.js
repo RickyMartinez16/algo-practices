@@ -32,6 +32,7 @@ var findDisappearedNumbers = function(nums) {
         if(map[nums[i]]){
             //add one to its value
             map[nums[i]]++
+            //if it doesnt already exist in the map
         } else {
             map[nums[i]] = 1
         }
