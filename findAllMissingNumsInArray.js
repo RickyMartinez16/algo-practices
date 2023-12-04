@@ -22,7 +22,6 @@
 
 var findDisappearedNumbers = function(nums) {
 
-
     let array = [];
 
     let map = {}
