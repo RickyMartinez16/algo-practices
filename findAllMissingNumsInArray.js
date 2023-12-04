@@ -23,7 +23,7 @@
 var findDisappearedNumbers = function(nums) {
     //make a final array to store
     let array = [];
-
+    //make a map to track frequencies
     let map = {}
 
     for(let i = 0; i < nums.length; i++){
